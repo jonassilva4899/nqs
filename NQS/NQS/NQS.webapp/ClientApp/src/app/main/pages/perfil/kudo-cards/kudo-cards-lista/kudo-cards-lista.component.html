@@ -1,0 +1,35 @@
+<table class="table--hover w-100-p" mat-table matSort [dataSource]="dataSource">
+    <ng-container matColumnDef="tipoKudoCard">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="{'width': '20%'}"> Kudo Card </th>
+        <td mat-cell *matCellDef="let row"> {{ row.mensagemKudoCard }} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="nomeOrganizacao">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="{'width': '20%'}"> Organização </th>
+        <td mat-cell *matCellDef="let row"> {{ row.nomeOrganizacao }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="destinatario">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="{'width': '40%'}">
+            {{ listaRecebidos ? 'Remetente' : 'Destinatário' }}
+        </th>
+        <td mat-cell *matCellDef="let row">
+            {{ listaRecebidos ? row.remetente : row.destinatario }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="mensagemKudoCard">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="{'width': '40%'}"> Mensagem </th>
+        <td mat-cell *matCellDef="let row">
+            <span class="overflow-ellipsis">{{ row.mensagemBoxKudoCard }}</span>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="visualizarKudoCard(row)"></tr>
+</table>
+
+<p class="text-center" *ngIf="isLoading">Carregando Kudo Cards...</p>
+<p class="text-center" *ngIf="!isLoading && !listaKudoCards.length">Nenhum Kudo Card.</p>
+
+<mat-paginator [length]="listaKudoCards.length" [pageSize]="5" [pageSizeOptions]="[5, 10]"></mat-paginator>

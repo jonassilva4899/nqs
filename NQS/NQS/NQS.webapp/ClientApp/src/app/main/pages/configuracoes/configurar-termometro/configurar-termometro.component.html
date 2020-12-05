@@ -1,0 +1,57 @@
+<!--<div class="fieldset mb-32">-->
+    <!--<h2 class="legend">Configurar Termômetro</h2>-->
+    <!--<ng-container *ngIf="infoCompetencias && infoCompetencias.temCompetencia">
+        <p>
+            {{ infoCompetencias.qtdCompetencias }}
+            {{ infoCompetencias.qtdCompetencias > 1 ? 'competências' : 'competência' }} com
+            {{ infoCompetencias.qtdTotalQuestoes }}
+            {{ infoCompetencias.qtdTotalQuestoes > 1 ? 'questões' : 'questão' }} no total.
+        </p>
+        <div fxLayout="row" fxLayoutAlign="end center">
+            <button
+                class="w-124 ml-12"
+                mat-raised-button
+                color="primary"
+                (click)="abrirListaDeCompetencias()"be
+            >
+                Editar
+            </button>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="infoCompetencias && !infoCompetencias.temCompetencia">
+        <p>
+            Nenhuma configuração encontrada.
+        </p>
+        <div fxLayout="row" fxLayoutAlign="end center">
+            <button
+                *exibirParaNiveis="[NivelPermissao.GoobeeAdmin]"
+                class="w-124 ml-12"
+                mat-stroked-button
+                color="primary"
+                (click)="abrirImportacaoConfiguracoesCompetencias()"
+            >
+                Importar
+            </button>
+            <div fxLayout="row" fxLayoutAlign="end center">
+                <button
+                    class="w-124 ml-12"
+                    mat-raised-button
+                    color="primary"
+                    (click)="abrirListaDeCompetencias()"
+                >
+                    Configurar
+                </button>
+            </div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="!infoCompetencias && isLoading.infoCompetencias">
+        <p>Carregando...</p>
+        <div fxLayout="row" fxLayoutAlign="end center">
+            <div fxLayout="row" fxLayoutAlign="end center">
+                <button class="w-124 ml-12" mat-raised-button color="primary" disabled>
+                    Configurar
+                </button>
+            </div>
+        </div>
+    </ng-container>
+</div>-->

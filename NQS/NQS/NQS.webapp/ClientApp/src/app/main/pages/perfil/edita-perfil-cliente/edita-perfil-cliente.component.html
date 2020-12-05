@@ -1,0 +1,71 @@
+<form class="mat-card gt-dialog--form borderNone pl-4" fxLayout="column" fxLayoutAlign="start" name="form"
+    [@animate]="{value:'*', params:{delay:'500ms',scale:'0.2'}}">
+
+    <div class="h2 mb-24">Gerenciar Clientes</div>
+
+    <cliente-control
+        class="cliente-control"
+        *ngIf="criaCliente"
+        [formControl]="novoClienteCtrl"
+        [listaClientes$]="listaClientes$"
+        placeholder="Cliente *">
+    </cliente-control>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field appearance="outline" class="pr-sm-8" fxFlex="100">
+            <mat-label>Início</mat-label>
+            <input matInput [matDatepicker]="inicioDatePicker" [formControl]="dataInicioCtrl" name="inicio" required>
+            <mat-datepicker-toggle matSuffix [for]="inicioDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #inicioDatePicker color="primary"></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="pr-sm-8" fxFlex="100">
+            <mat-label>Fim</mat-label>
+            <input matInput [matDatepicker]="fimDatePicker" [formControl]="dataFimCtrl" name="fim">
+            <mat-datepicker-toggle matSuffix [for]="fimDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #fimDatePicker color="primary"></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center" class="mb-16">
+        <button mat-raised-button type="button" class="w-100" color="primary" (click)="adicionaNovoCliente()"
+            [disabled]="isLoading.salvar || isLoading.pegarClientes" fxFlex="30">
+            <ng-container *ngIf="novoCliente; else elseBtn">
+                Adicionar
+            </ng-container>
+            <ng-template #elseBtn>
+                Salvar
+            </ng-template>
+            <mat-progress-bar mode="indeterminate" *ngIf="isLoading.salvar"></mat-progress-bar>
+        </button>
+    </div>
+
+    <div>
+        <mat-table [dataSource]="this.clientesPessoais" class="mat-elevation-z8 table-container" fusePerfectScrollbar>
+            <ng-container matColumnDef="nome">
+                <mat-header-cell *matHeaderCellDef>Nome</mat-header-cell>
+                <mat-cell *matCellDef="let cliente"> {{cliente.nome}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="dataInicio">
+                <mat-header-cell *matHeaderCellDef>Data Início</mat-header-cell>
+                <mat-cell *matCellDef="let cliente"> {{cliente.dataInicio | date: 'dd/MM/yyyy'}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="dataFim">
+                <mat-header-cell *matHeaderCellDef>Data Fim</mat-header-cell>
+                <mat-cell *matCellDef="let cliente"> {{cliente.dataFim | date: 'dd/MM/yyyy'}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="acao">
+                <mat-header-cell *matHeaderCellDef>Ação</mat-header-cell>
+                <mat-cell *matCellDef="let cliente">
+                    <button type="button" mat-raised-button color="primary"
+                        (click)="editarCliente(cliente)">Editar</button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="colunasTabela"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: colunasTabela;"></mat-row>
+        </mat-table>
+    </div>
+</form>

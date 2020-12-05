@@ -1,0 +1,91 @@
+<div>
+    <mat-card class="p-4 m-10">
+        <mat-card-content>
+            <button *ngIf="!atributosTime.ativo" mat-mini-fab matTooltip="Time desativado" matTooltipPosition="above"
+                color="primary" class="btn--xs btn-time-desativado" aria-label="Time desativado">
+                <mat-icon color="white">not_interested</mat-icon>
+            </button>
+            <button *ngIf="atributosTime.praticaAgilEmFalta" mat-mini-fab matTooltip="Time com Práticas pendentes!" matTooltipPosition="right"
+                color="primary" class="btn--xs btn--medium btn-time-praticas-pend" aria-label="Time com Práticas pendentes!"
+                [routerLink]="['/praticas-ageis/time/', this.atributosTime.id, this.atributosTime.nome]">
+                <mat-icon color="white" class="icon--medium">report_problem</mat-icon>
+            </button>
+            <div class="flex-container" fxLayout="row" fxLayoutAlign="center start">
+                <div class="content-image card-time-imagem" fxFlex="50">
+                    <ng-container *ngIf="atributosTime?.logo === ''; else elseTemplate">
+                        <div>
+                            <img [class.img-time-desativado]="!atributosTime.ativo"
+                                src="assets/images/logos/placeholder_times.svg" class="img-preview mt-12 circulo">
+                        </div>
+                    </ng-container>
+                    <ng-template #elseTemplate>
+                        <div><span
+                                [ngStyle]="{'background-image': 'url(' + (atributosTime?.logo | encodeWhiteSpace) + ')'}"
+                                class="img-preview mt-12 circulo"></span></div>
+                    </ng-template>
+                    <div class="flex-container" fxLayout="row" fxLayoutAlign="center">
+                        <h3 class="nome-time">{{atributosTime?.nome}}</h3>
+                    </div>
+                </div>
+
+                <div fxFlex="50">
+                    <mat-list role="list" fxLayoutAlign="start start">
+                        <div class="content card-time-lista">
+                            <ul class="lista">
+                                <li>
+                                    <mat-icon class="icon-lista">people</mat-icon> Membros:
+                                    <span class="numbers-list">{{atributosTime?.membros}}</span>
+                                </li>
+                                <li>
+                                    <mat-icon class="icon-lista">account_circle</mat-icon> Colaboradores:
+                                    <span class="numbers-list">{{atributosTime?.colaboradores}}</span>
+                                </li>
+                                <li>
+                                    <mat-icon class="icon-lista">assessment</mat-icon> Projetos:
+                                    <span class="numbers-list">{{atributosTime?.projetos}}</span>
+                                </li>
+                                <li>
+                                    <mat-icon class="s-16"
+                                    svgIcon="goobee_termometro"></mat-icon>
+                                    Práticas:
+                                    <span class="numbers-list">{{titulo}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </mat-list>
+                </div>
+            </div>
+            <div class="content card-time-progresso ml-16 mr-12" hidden>
+                <h4>Capacidade: </h4>
+                <!-- <mat-progress-bar mode="determinate" value="{{atributosTime?.capacidade}}"></mat-progress-bar> -->
+                <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+
+                <!-- <span class="progress-bar-number">{{atributosTime?.capacidade}}%</span> -->
+                <span class="progress-bar-number">70%</span>
+
+            </div>
+        </mat-card-content>
+        <mat-card-actions
+            *exibirParaNiveis="[
+                NivelPermissao.GoobeeAdmin,
+                NivelPermissao.OrganizationAdmin,
+                NivelPermissao.AgileCoach
+            ]; ouSeTeamLeader: [atributosTime.id]; ouSeTeamMember:atributosTime.id"
+            class="m-0 mat-card-actions--border-top"
+            fxLayoutAlign="space-between">
+            <button
+                mat-button
+                class="card-button-times pl-12"
+                [routerLink]="['/praticas-ageis/time/', this.atributosTime.id, this.atributosTime.nome]">
+                <mat-icon class="card-icone-botao" aria-hidden="false">all_inclusive</mat-icon>
+                Práticas Ágeis
+            </button>
+            <button
+                mat-button
+                class="card-button-times p-0"
+                [routerLink]="['/times/detalhe/', this.atributosTime.id]">
+                Ver Time
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Kudo Cards</h1>
+<div mat-dialog-content>
+    <mat-tab-group>
+
+        <mat-tab label="Enviados" *ngIf="!visaoTime">
+            <app-kudo-cards-lista
+                [isLoading]="isLoading.listaKudoCards"
+                [listaKudoCards]="listaKudoCardsEnviados">
+            </app-kudo-cards-lista>
+        </mat-tab>
+
+        <mat-tab label="Recebidos">
+            <app-kudo-cards-lista
+                [isLoading]="isLoading.listaKudoCards"
+                [listaRecebidos]="true"
+                [listaKudoCards]="listaKudoCardsRecebidos">
+            </app-kudo-cards-lista>
+        </mat-tab>
+
+    </mat-tab-group>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        class="w-116"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+</div>

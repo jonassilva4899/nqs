@@ -1,0 +1,81 @@
+<h1 mat-dialog-title>Enviar Kudo Card</h1>
+
+<div mat-dialog-content>
+    <form fxLayout="column" fxLayoutAlign="start" [formGroup]="form">
+        <ul class="elevated-list">
+            <li
+                class="elevated-list__item"
+                *ngFor="let card of kudoCards"
+                [ngClass]="{'selected': form.get('kudoCardID').value === card.id}"
+                [matTooltip]="card.nome"
+                (click)="selecionaKudoCard(card)">
+                <img class="elevated-list__img" [src]="card.imagem">
+            </li>
+        </ul>
+
+        <span class="mat-error" *ngIf="form.get('kudoCardID').touched && form.get('kudoCardID').invalid">
+            Selecione 1 Kudo Card
+        </span>
+
+        <mat-radio-group class="mt-20" formControlName="tipoDestinatario">
+            <mat-radio-button class="mb-32 mr-32"  [value]="KudoCardTipoDestinatario.Pessoa">Enviar para uma pessoa</mat-radio-button>
+            <mat-radio-button class="mb-32" [value]="KudoCardTipoDestinatario.Time">Enviar para um time</mat-radio-button>
+        </mat-radio-group>
+        <span class="mat-error mb-12" *ngIf="form.get('tipoDestinatario').touched && form.get('tipoDestinatario').invalid">
+            Selecione o tipo de destinatário
+        </span>
+
+        <mat-form-field appearance="outline" *ngIf="form.get('tipoDestinatario').value === KudoCardTipoDestinatario.Pessoa">
+            <mat-label>Enviar para a pessoa:</mat-label>
+            <input
+                matInput
+                formControlName="pessoa"
+                [matAutocomplete]="autoPessoa"
+                (blur)="verificarSeNomeExiste(form.get('pessoa'))">
+            <mat-autocomplete #autoPessoa="matAutocomplete" [displayWith]="exibirNomeNoAutoComplete('nome')">
+                <mat-option *ngFor="let pessoa of pessoasFiltro" [value]="pessoa">{{ pessoa.nome }}</mat-option>
+            </mat-autocomplete>
+            <mat-error>Campo é obrigatório</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" *ngIf="form.get('tipoDestinatario').value === KudoCardTipoDestinatario.Time">
+            <mat-label>Enviar para o time:</mat-label>
+            <input
+                matInput
+                formControlName="time"
+                [matAutocomplete]="autoTime"
+                (blur)="verificarSeNomeExiste(form.get('time'))">
+            <mat-autocomplete #autoTime="matAutocomplete" [displayWith]="exibirNomeNoAutoComplete('nome')">
+                <mat-option *ngFor="let time of timesFiltro" [value]="time">{{ time.nome }}</mat-option>
+            </mat-autocomplete>
+            <mat-error>Campo é obrigatório</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Mensagem</mat-label>
+            <textarea rows="5" matInput formControlName="mensagem"></textarea>
+            <mat-error>Campo obrigatório</mat-error>
+        </mat-form-field>
+    </form>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        type="button"
+        class="w-116 mr-16"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+    <button
+        mat-raised-button
+        color="primary"
+        class="w-116"
+        type="button"
+        (click)="enviarKudoCard()"
+        [disabled]="isLoading.enviar">
+        Enviar
+        <mat-progress-bar *ngIf="isLoading.enviar" mode="indeterminate"></mat-progress-bar>
+    </button>
+</div>

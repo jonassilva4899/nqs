@@ -1,0 +1,5 @@
+<mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" rowHeight="251px">
+    <mat-grid-tile *ngFor="let times of listaTimes?.objeto">
+        <app-card-time [atributosTime]="times"></app-card-time>
+    </mat-grid-tile>
+</mat-grid-list>

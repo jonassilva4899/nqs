@@ -1,0 +1,30 @@
+<div fxLayout="column" fxFlex fusePerfectScrollbar>
+    <mat-list class="date" cdkFocusRegionStart>
+        <div class="mat-display-1 mb-0 p-8">
+            <div class="mb-4" fxLayoutAlign="center center">
+                <h4>Notificações</h4>
+                <mat-icon class="ml-8 icon-notification-read" (click)="lerTodas()">clear_all</mat-icon>
+            </div>
+        </div>
+    </mat-list>
+    <mat-divider></mat-divider>
+
+    <mat-list>
+        <mat-list-item *ngFor="let notificacao of listaNotificacoes; let i= index" [@slideInOut]>
+            <mat-icon mat-list-icon class="icon-notification-read" (click)="lerNotificacao(notificacao.id, i)">
+                check_circle
+            </mat-icon>
+            <h4 matLine class="primary-text">{{ notificacao?.titulo}}</h4>
+            <p matLine class="secondary-text">{{ notificacao?.mensagem }}</p>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+        <mat-list-item *ngIf="listaNotificacoes?.length <= 0" [@slideInOut]>
+            <h3 matLine>Sem notificações</h3>
+            <p matLine class="secondary-text">Você não tem novas mensagens!</p>
+        </mat-list-item>
+    </mat-list>
+
+
+    <mat-divider></mat-divider>
+
+</div>

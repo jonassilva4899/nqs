@@ -1,0 +1,166 @@
+$color01: #EEE809;
+$color02: #FCAF17;
+$color03: #493083;
+$color04: #F27DA9;
+$color05: #EF4136;
+$color06: #00BCE7;
+$color07: #F9C1CF;
+$color08: #60C3AD;
+$color09: #A7AF39;
+$color10: #00B26B;
+
+@mixin motivatorStyle($bg-color) {
+    .motivator__head {
+        background-color: $bg-color;
+    }
+}
+
+.motivators {
+    counter-reset: motivadores;
+
+    .item-head {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        .list--inline {
+            justify-content: space-between;
+
+            &::-webkit-scrollbar {
+                width: 0.35rem;
+                height: 17px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                background-color: #5d5d5d;
+                border-radius: 1rem;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background-color: #8e8e8e;
+                border-radius: 1rem;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                box-shadow: inset 0 0 0 50rem rgba(255, 255, 255, 0.15);
+            }
+
+            @media (max-width: 780px) {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+
+            > li {
+                flex: 1;
+                padding: 2rem;
+
+                @media (min-width: 781px) and (max-width: 991px) {
+                    padding-left: 1rem;
+                }
+
+                @media (max-width: 780px) {
+                    flex: 0 0 100px;
+                }
+            }
+        }
+    }
+}
+
+.motivator {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    &--color01 { @include motivatorStyle($color01) }
+    &--color02 { @include motivatorStyle($color02) }
+    &--color03 { @include motivatorStyle($color03) }
+    &--color04 { @include motivatorStyle($color04) }
+    &--color05 { @include motivatorStyle($color05) }
+    &--color06 { @include motivatorStyle($color06) }
+    &--color07 { @include motivatorStyle($color07) }
+    &--color08 { @include motivatorStyle($color08) }
+    &--color09 { @include motivatorStyle($color09) }
+    &--color10 { @include motivatorStyle($color10) }
+
+    &:before {
+        counter-increment: motivadores;
+        // content: counter(motivadores);
+        content: attr(data-index);
+        position: absolute;
+        top: 50%;
+        width: 2rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 1rem 0 0 1rem;
+        transform: translate(-100%, -50%);
+        background-color: #EA9124;
+
+        @media (min-width: 781px) and (max-width: 991px) {
+            width: 1rem;
+            height: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__head {
+        padding: 0.65rem;
+        color: #fff;
+        text-align: center;
+        background-color: #7a7a7a;
+    }
+
+    &__img {
+        background-color: #fff;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
+}
+
+.motivators__list .list--inline.cdk-drop-list-dragging {
+    list-style: none;
+
+    > li {
+        list-style: none;
+
+        &:not(.cdk-drag-placeholder) {
+            transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+}
+
+.no-style {
+    list-style: none;
+}

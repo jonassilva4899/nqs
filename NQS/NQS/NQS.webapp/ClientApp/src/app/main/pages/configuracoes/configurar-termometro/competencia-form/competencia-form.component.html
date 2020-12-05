@@ -1,0 +1,67 @@
+<h1 mat-dialog-title *ngIf="acao === Acao.Cadastro">Cadastrar competência</h1>
+<h1 mat-dialog-title *ngIf="acao === Acao.Edicao">Editar competência</h1>
+
+<div mat-dialog-content>
+    <form fxLayout="column" [formGroup]="form">
+
+        <mat-form-field appearance="outline" fxFlex="1 1 100%">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="nome">
+            <mat-error>Campo obrigatório</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="1 1 100%">
+            <mat-label>Descrição</mat-label>
+            <textarea rows="6" matInput formControlName="descricao" placeholder="Descreva a competência"></textarea>
+            <mat-error>Campo obrigatório</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="1 1 100%">
+            <mat-label *ngIf="!isLoading.listaPraticas">Práticas Ágeis</mat-label>
+            <mat-label *ngIf="isLoading.listaPraticas">Carregando Práticas Ágeis...</mat-label>
+
+            <mat-select [compareWith]="compareFn" formControlName="praticasAgeis" multiple>
+                <mat-option class="select-search-option can-t-touch-this">
+                    <mat-form-field
+                        class="mat-form-field--xs mat-form-field--pb-0 w-100-p can-touch-this"
+                        appearance="outline">
+                        <mat-label>Buscar</mat-label>
+                        <mat-icon class="mr-0" matPrefix>search</mat-icon>
+                        <input
+                            matInput
+                            #filtroPraticasAgeis
+                            (input)="filtrarPraticasAgeis(filtroPraticasAgeis.value)"
+                            (click)="$event.stopPropagation()"
+                        >
+                    </mat-form-field>
+                </mat-option>
+                <mat-option *ngFor="let pratica of listaPraticasFiltro" [value]="pratica">
+                    {{ pratica.nomePraticaAgil }}
+                </mat-option>
+            </mat-select>
+            <mat-error>Campo obrigatório</mat-error>
+        </mat-form-field>
+
+    </form>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        type="button"
+        class="w-116 mr-16"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+    <button
+        mat-raised-button
+        color="primary"
+        class="w-116"
+        type="button"
+        [disabled]="isLoading.salvar"
+        (click)="salvarCompetencia()">
+        Salvar
+        <mat-progress-bar *ngIf="isLoading.salvar"></mat-progress-bar>
+    </button>
+</div>

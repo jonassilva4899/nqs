@@ -1,0 +1,141 @@
+<div id="login" class="inner-scroll" fxLayout="row" fxLayoutAlign="start">
+
+    <div id="login-intro" fxFlex fxHide fxShow.gt-xs>
+
+        <!--<div class="logo" [@animate]="{value:'*',params:{scale:'0.2'}}">-->
+        <!--<img src="assets/images/logos/logo_goobee.svg">-->
+        <!--<img src="assets/images/logos/download.png">
+
+        </div>
+
+        <div class="title" [@animate]="{value:'*',params:{delay:'50ms',y:'25px'}}">
+            Bem-Vindo a Leega!
+        </div>
+
+        <div class="description" [@animate]="{value:'*',params:{delay:'100ms',y:'25px'}}">
+            Consultoria!
+        </div>-->
+
+    </div>
+
+    <div id="login-form-wrapper" fusePerfectScrollbar [@animate]="{value:'*',params:{delay:'300ms',x:'100%'}}">
+
+        <div id="login-form">
+
+
+
+            <!--<section>
+                <div class="example-label">Stroked</div>
+                <div class="example-button-row">
+                    <a mat-stroked-button [routerLink]="['/teste']">Link</a>
+                </div>
+            </section>-->
+
+
+            <div class="logo" fxHide.gt-xs>
+                <img src="assets/images/logos/download.png">
+            </div>
+
+            <div *ngIf="loginEstado" [@animate]="{value:'fadeIn',params:{delay:'150ms',y:'25px'}}">
+                <div class="title">LOGIN</div>
+                <form name="loginForm" [formGroup]="loginForm" novalidate (submit)="onSubmit()">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email">
+                        <mat-icon matSuffix class="secondary-text">mail</mat-icon>
+                        <mat-error *ngIf="loginForm.get('email').hasError('required')">
+                            O email é obrigatório.
+                        </mat-error>
+                        <mat-error *ngIf="!loginForm.get('email').hasError('required') && loginForm.get('email').hasError('email')">
+                            Por favor, informe um email valido.
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Senha</mat-label>
+                        <input matInput [type]="verSenha ? 'text' : 'password'" formControlName="senha">
+                        <mat-icon matSuffix class="secondary-text" *ngIf="!loginForm.get('senha').value">
+                            vpn_key
+                        </mat-icon>
+                        <mat-icon matSuffix class="secondary-text cursor-pointer" *ngIf="loginForm.get('senha').value"
+                                  (click)="verSenha = !verSenha">
+                            {{ verSenha ? 'visibility_off' : 'visibility' }}
+                        </mat-icon>
+                        <mat-error>
+                            Digite a senha.
+                        </mat-error>
+                    </mat-form-field>
+
+                    <div class="remember-forgot-password" fxLayout="row" fxLayout.xs="column"
+                         fxLayoutAlign="space-between center">
+
+                        <a class="esqueceu-senha" (click)="esqueciSenha()">
+                            Esqueceu sua senha?
+                        </a>
+                    </div>
+
+                    <button type="submit" class="submit-button" aria-label="LOGIN" mat-raised-button color="accent"
+                            [disabled]="loginForm.invalid || isLoading.login">
+                        LOGIN
+                        <mat-progress-bar *ngIf="isLoading.login" mode="indeterminate"></mat-progress-bar>
+                    </button>
+                    <button type="submit" class="submit-button" routerLink="/teste" aria-label="CADASTRE-SE" mat-raised-button color="accent">
+                        CADASTRE-SE
+                      </button>
+
+                    <p class="mat-error" *ngIf="hasError.login">Usuário ou senha inválidos.</p>
+                </form>
+
+                <div class="separator">
+                    <span class="text">OU</span>
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <button type="button" mat-raised-button class="google" (click)="logInComGoogle()">
+                        <mat-icon svgIcon="google_sign"></mat-icon> Login com Google
+                        <mat-progress-bar *ngIf="isLoading.loginGoogle" mode="indeterminate"></mat-progress-bar>
+                    </button>
+                </div>
+            </div>
+            <div *ngIf="!loginEstado" [@animate]="{value:'fadeOut',params:{delay:'150ms',y:'25px'}}" #elseTemplate>
+                <div class="title">ESQUECI MINHA SENHA</div>
+                <form name="loginForm" [formGroup]="esqueciSenhaForm" novalidate>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email">
+                        <mat-icon matSuffix class="secondary-text">mail</mat-icon>
+                        <mat-error *ngIf="esqueciSenhaForm.get('email').hasError('required')">
+                            O email é obrigatório.
+                        </mat-error>
+                        <mat-error *ngIf="!esqueciSenhaForm.get('email').hasError('required') &&
+                                esqueciSenhaForm.get('email').hasError('email')">
+                            Por favor, informe um email valido.
+                        </mat-error>
+                    </mat-form-field>
+
+                    <div class="remember-forgot-password" fxLayout="row" fxLayout.xs="column"
+                         fxLayoutAlign="space-between center">
+
+                        <a class="esqueceu-senha" (click)="voltarLogin()">
+                            Efetuar Login
+                        </a>
+                    </div>
+
+                    <button mat-raised-button color="accent" class="submit-button" aria-label="LOGIN"
+                            [disabled]="esqueciSenhaForm.invalid || this.enviarEmailFlag" (click)="recuperarSenha()">
+                        <ng-container *ngIf="!this.enviarEmailFlag; else elseTemplate">
+                            RECUPERAR SENHA
+                        </ng-container>
+                        <ng-template #elseTemplate>
+                            ENVIANDO...
+                        </ng-template>
+                    </button>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

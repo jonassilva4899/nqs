@@ -1,0 +1,161 @@
+<!-- <div class="page-layout carded fullwidth" fusePerfectScrollbar>
+    <div class="center">
+        <div class="container my-32 h-100-p">
+            <div class="row h-100-p" [ngClass]="{'has-enps': temENPS, 'sem-time': !timeSelecionado || !timeSelecionado.id}">
+                <div class="home-col-1">
+
+                    <div class="home-col-4">
+                        <div class="item">
+                            <div class="item-head mb-16">
+                                <span class="logo-text h1" [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                                    Como estou me sentindo hoje?
+                                </span>
+                            </div>
+                            <app-personal-mood-card [timeSelecionado]="timeSelecionado"></app-personal-mood-card>
+                        </div>
+                    </div>
+
+                    <div *ngIf="temENPS" class="home-col-4">
+                        <div class="item">
+                            <app-enps-resposta-card (temENPS)="temENPS = $event"></app-enps-resposta-card>
+                        </div>
+                    </div>
+
+                    <div class="home-col-5">
+
+                        <div class="item">
+                            <div class="item-head my-16">
+                                <span class="logo-text h1" fxLayout="column"
+                                    [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Termômetro Ágil</span>
+                            </div>
+                            <app-termometro-agil-card [timeSelecionado]="timeSelecionado"></app-termometro-agil-card>
+                        </div>
+
+                    </div>
+
+                    <div class="home-col-6">
+
+                        <div class="item" [ngClass]="{'full': !timeSelecionado || !timeSelecionado.id}">
+                            <div class="item-head my-16">
+                                <span class="logo-text h1" fxLayout="column"
+                                    [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Team Mood</span>
+                            </div>
+                            <app-team-mood-card [timeSelecionado]="timeSelecionado"></app-team-mood-card>
+                        </div>
+
+                        <div class="item" *ngIf="timeSelecionado && timeSelecionado.id">
+                            <div class="item-head my-16">
+                                <span class="logo-text h1" fxLayout="column"
+                                    [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Kudo Cards</span>
+                            </div>
+                            <app-kudo-cards-card [visaoTime]="true" [timeSelecionado]="timeSelecionado">
+                            </app-kudo-cards-card>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="home-col-2">
+
+                    <app-dicas-agile-coach-lista [timeSelecionado]="timeSelecionado">
+                    </app-dicas-agile-coach-lista>
+
+                </div>
+
+                <div class="home-col-7">
+                    <div
+                        *exibirParaNiveis="[
+                            NivelPermissao.GoobeeAdmin,
+                            NivelPermissao.OrganizationAdmin
+                        ]"
+                        class="item">
+                        <div class="item-head my-16">
+                            <span class="logo-text h1" fxLayout="column"
+                                [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">eNPS</span>
+                        </div>
+                        <app-enps-card [timeSelecionado]="timeSelecionado">
+                        </app-enps-card>
+                    </div>
+                    <div
+                        *exibirParaNiveis="[
+                            NivelPermissao.GoobeeAdmin,
+                            NivelPermissao.OrganizationAdmin,
+                            NivelPermissao.AgileCoach,
+                            NivelPermissao.TeamLeader
+                        ]"
+                        class="item">
+                        <div class="item-head my-16">
+                            <span class="logo-text h1" fxLayout="column"
+                                [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Checkpoints Realizados</span>
+                        </div>
+                        <app-indicador-checkpoints-card
+                            [timeSelecionado]="timeSelecionado">
+                        </app-indicador-checkpoints-card>
+                    </div>
+                </div>
+
+                <div class="home-col-3">
+                    <ng-container *ngFor="let praticaConfigurada of praticasConfiguradas">
+                        <ng-container [ngSwitch]="praticaConfigurada">
+                            <div class="item" *ngSwitchCase="PraticaAgilChave.Movimento">
+                                <div class="item-head my-16">
+                                    <span class="logo-text h1" fxLayout="column"
+                                        [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Movimento - 48
+                                        Horas</span>
+                                </div>
+                                <app-movimentacao-card [tipo]="tipoMovCapacity.Movimentacao"
+                                    [timeSelecionado]="timeSelecionado"></app-movimentacao-card>
+                            </div>
+
+                            <div class="item" *ngSwitchCase="PraticaAgilChave.Leadtime">
+                                <div class="item-head my-16">
+                                    <span class="logo-text h1" fxLayout="column"
+                                        [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">LeadTime</span>
+                                </div>
+                                <app-leadtime-card [timeSelecionado]="timeSelecionado"></app-leadtime-card>
+                            </div>
+
+                            <div class="item" *ngSwitchCase="PraticaAgilChave.Throughput">
+                                <div class="item-head my-16">
+                                    <span class="logo-text h1" fxLayout="column"
+                                        [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Throughput -
+                                        Mês</span>
+                                </div>
+                                <app-throughput-mes-card [timeSelecionado]="timeSelecionado" [quantidadeMeses]="1">
+                                </app-throughput-mes-card>
+                            </div>
+
+                            <div class="item" *ngSwitchCase="PraticaAgilChave.Throughput3Meses">
+                                <div class="item-head my-16">
+                                    <span class="logo-text h1" fxLayout="column"
+                                        [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Throughput - 3 Meses</span>
+                                </div>
+                                <app-throughput-mes-card [timeSelecionado]="timeSelecionado" [quantidadeMeses]="3">
+                                </app-throughput-mes-card>
+                            </div>
+
+                            <div class="item" *ngSwitchCase="PraticaAgilChave.Capacity">
+                                <div class="item-head my-16">
+                                    <span class="logo-text h1" fxLayout="column"
+                                        [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Capacity</span>
+                                </div>
+                                <app-capacity-card [timeSelecionado]="timeSelecionado">
+                                </app-capacity-card>
+                            </div>
+
+                            <div class="item" *ngSwitchCase="PraticaAgilChave.Indicador">
+                                <div class="item-head my-16">
+                                    <span class="logo-text h1" fxLayout="column"
+                                        [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">Indicador</span>
+                                </div>
+                                <app-indicador-card-config [timeSelecionado]="timeSelecionado">
+                                </app-indicador-card-config>
+                            </div>
+                        </ng-container>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

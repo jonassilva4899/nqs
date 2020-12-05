@@ -1,0 +1,201 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.HotSite\\Leega.HotSite.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
+        "projectName": "Leega.Dtos",
+        "projectPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
+        "packagesPath": "C:\\Users\\andre.corte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Dtos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andre.corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
+                "projectPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.HotSite\\Leega.HotSite.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.HotSite\\Leega.HotSite.csproj",
+        "projectName": "Leega.HotSite",
+        "projectPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.HotSite\\Leega.HotSite.csproj",
+        "packagesPath": "C:\\Users\\andre.corte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.HotSite\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andre.corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj": {
+                "projectPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+        "projectName": "Leega.Util",
+        "projectPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+        "packagesPath": "C:\\Users\\andre.corte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre.corte\\source\\repos\\NQS\\NQS\\NQS.Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andre.corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.3.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

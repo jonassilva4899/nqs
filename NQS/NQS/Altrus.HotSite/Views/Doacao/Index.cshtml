@@ -1,0 +1,40 @@
+﻿@model List<Leega.Dtos.Doacao>
+
+<div>
+    <form id="filtrocampanha" asp-action="index" asp-controller="doacao">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-sm-12 mb-3">
+                    <h4 class="title">
+                        Minhas doações
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="doacoes" class="datatable table table-bordered table-striped table-hover" data-page-length="10">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $().ready(function () {
+        $(".datatable").dataTable({
+            ajax: {
+                url: "/doacao/list",
+                dataSrc: ""
+            },
+            columns: [
+                { data: "id", title: "Id" },
+                { data: "data", type: "datetime", title: "Data", render: function (data) { return new Date(data).toLocaleDateString('pt-BR', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' }); } },
+                { data: "valor", class: "text-right", title: "Valor", render: function (data) { return $.fn.dataTable.render.number(',', '.', 2, 'R$ ').display(data); } },
+                { data: "recorrencia", title: "Recorrência" },
+                { data: "pagamento[].tipopagamento.nome", title: "Forma Pagamento" },
+                { data: "pagamento[].tipopagamentostatus.descricao", title: "Status" },
+                { data: "pagamento[].datastatus", type: "datetime", title: "Atualização", render: function (data) { return new Date(data).toLocaleDateString('pt-BR', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' }); } }
+            ]
+        });
+    });
+</script>

@@ -1,0 +1,11 @@
+<div class="page-layout blank p-24" fusePerfectScrollbar>
+    <div fxLayoutAlign="space-between" fxLayout="row" fxLayout.lt-md="column" fxFlexAlign="center">
+        <div fxFlex="30">
+            <app-card-detalhe-time class="card-grid" [receberDetalheTime]="(timeDetalhe$ | async)?.objeto">
+            </app-card-detalhe-time>
+        </div>
+        <div fxFlex="65" class="space-div-time">
+            <card-membros-time [idTime]="this.idTime"></card-membros-time>
+        </div>
+    </div>
+</div>

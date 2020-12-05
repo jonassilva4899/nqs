@@ -1,0 +1,71 @@
+<div id="register" fxLayout="column">
+    <div id="register-form-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <div id="register-form" [@animate]="{value:'*',params:{duration:'300ms',y:'100px'}}">
+            <div class="logo">
+                <!--<img src="assets/images/logos/download.png">-->
+            </div>
+            <div class="title" *ngIf="!contaGoogle">Ative sua Conta</div>
+            <div class="title" *ngIf="contaGoogle">Associe sua conta Google!</div>
+
+            <form name="registroForm" *ngIf="!contaGoogle" [formGroup]="registroForm" novalidate>
+                <mat-form-field appearance="outline">
+                    <mat-label>Nome</mat-label>
+                    <input matInput formControlName="nome" [value]="this.infosParaAtivar.objeto.nome || 'Carregando...'"
+                        readonly>
+                    <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+                    <mat-error>
+                        Nome é um campo obrigatório.
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email"
+                        [value]="this.infosParaAtivar.objeto.email || 'Carregando...'" readonly>
+                    <mat-icon matSuffix class="secondary-text">mail</mat-icon>
+                    <mat-error *ngIf="registroForm.get('email').hasError('required')">
+                        Email é um campo obrigatório.
+                    </mat-error>
+                    <mat-error *ngIf="registroForm.get('email').hasError('email')">
+                        Por favor, informe um email válido.
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" formControlName="senha" value="">
+                    <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+                    <mat-error>
+                        Senha é um campo obrigatório.
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha (Confirmação)</mat-label>
+                    <input matInput type="password" formControlName="senhaConfirmacao">
+                    <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+                    <mat-error *ngIf="registroForm.get('senhaConfirmacao').hasError('required')">
+                        Senha (Confirmação) é um campo obrigatório.
+                    </mat-error>
+                    <mat-error *ngIf="!registroForm.get('senhaConfirmacao').hasError('required') &&
+                                       registroForm.get('senhaConfirmacao').hasError('senhasNaoIdenticas')">
+                        As senhas devem ser iguais.
+                    </mat-error>
+                </mat-form-field>
+                <button mat-raised-button color="accent" class="submit-button" aria-label="Ativar"
+                    [disabled]="registroForm.invalid" (click)="enviaAtivacao()">
+                    Ativar
+                </button>
+            </form>
+
+            <div *ngIf="contaGoogle" class="register" fxLayout="column" fxLayoutAlign="center center">
+                <button mat-raised-button class="google" (click)="enviaSincronizacaoGoogle()">
+                    <mat-icon svgIcon="google_sign"></mat-icon> Entrar
+                </button>
+            </div>
+
+
+            <div class="register" fxLayout="column" fxLayoutAlign="center center">
+                <span class="text">Já tem uma conta?</span>
+                <a class="link" [routerLink]="'/login'">Login</a>
+            </div>
+        </div>
+    </div>
+</div>

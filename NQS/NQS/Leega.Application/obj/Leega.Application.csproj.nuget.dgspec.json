@@ -1,0 +1,268 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {}
+  },
+  "projects": {
+    "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj",
+        "projectName": "Leega.Application",
+        "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
+                "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
+              },
+              "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+                "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+              },
+              "C:\\gitgubnqs\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
+                "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.46.0, )"
+            },
+            "IdentityServer4.AccessTokenValidation": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
+        "projectName": "Leega.Data.Enums",
+        "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
+        "projectName": "Leega.DataMySql",
+        "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.DataMySql\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
+                "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[0.69.9, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\gitgubnqs\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+        "projectName": "Leega.Util",
+        "projectPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\NQS.Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.3.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

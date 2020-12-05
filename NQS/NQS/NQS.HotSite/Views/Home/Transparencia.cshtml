@@ -1,0 +1,90 @@
+﻿@model Leega.HotSite.Models.Tranparencia
+
+<div>
+    <form id="filtrocampanha" asp-action="transparencia" asp-controller="home">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-sm-12 mb-3">
+                    <h4 class="title">
+                        Transparência
+                    </h4>
+                </div>
+            </div>
+            <div class="row align-items-baseline">
+                <div class="col-3 my-3">
+                    <div class="dropdown dropright">
+                        <button class="btn btn-whiteonblue dropdown-toggle" id="buttonOng" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ong´s</button>
+                        <div class="dropdown-menu" aria-labelledby="buttonOng">
+                            <ul class="overflow-auto" style="max-height:200px;">
+                                @for (var item = 0; item < Model.ongs.Count; item++)
+                                {
+                                    <input type="hidden" asp-for="@Model.ongs[item].id" />
+                                    <input type="hidden" asp-for="@Model.ongs[item].razaosocial" />
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" asp-for="@Model.ongs[item].selecionado" />
+                                        <label asp-for="@Model.ongs[item].selecionado">@Model.ongs[item].razaosocial</label>
+                                    </div>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 my-3">
+                    <div class="dropdown dropright">
+                        <button class="btn btn-whiteonblue dropdown-toggle" id="buttonCampanha" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Campanhas</button>
+                        <div class="dropdown-menu" aria-labelledby="buttonCampanha">
+                            <ul class="overflow-auto" style="max-height:200px;">
+                                @for (var item = 0; item < Model.campanhas.Count; item++)
+                                {
+                                    <input type="hidden" asp-for="@Model.campanhas[item].id" />
+                                    <input type="hidden" asp-for="@Model.campanhas[item].nome" />
+                                    <div class="dropdown-item">
+                                        <input type="checkbox" asp-for="@Model.campanhas[item].selecionado" />
+                                        <label asp-for="@Model.campanhas[item].selecionado">@Model.campanhas[item].nome</label>
+                                    </div>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <button class="btn btn-blueonwhite">Filtrar</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title text-black-50">Doações</h6>
+                            <h3 class="card-text text-black-50 text-center"><strong>@Model.totais.doacoes.ToString("C2")</strong></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title text-black-50">Doadores</h6>
+                            <h3 class="card-text text-black-50 text-center"><strong>@Model.totais.doadores</strong></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title text-black-50">Ong´s</h6>
+                            <h3 class="card-text text-black-50 text-center"><strong>@Model.totais.ongs</strong></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title text-black-50">Campanhas</h6>
+                            <h3 class="card-text text-black-50 text-center"><strong>@Model.totais.campanhas</strong></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,9 @@
+::ng-deep {
+    .mat-tab-labels {
+        background-color: rgba(#000, 0.25);
+    }
+
+    body.theme-default .mat-tab-labels {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}

@@ -1,0 +1,30 @@
+quick-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+    z-index: 99;
+
+    .mat-slide-toggle-content {
+        flex: 1;
+    }
+    .secondary-text {
+        white-space: normal !important;
+        font-size: 11px;
+    }
+
+    .primary-text {
+        font-size: 14px !important;
+    }
+}
+
+.icon-notification-read {
+    cursor: pointer;
+}
+
+.icon-notification-read:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(48, 144, 253);
+}

@@ -1,0 +1,26 @@
+.adicionar-time {
+    border: 1px solid orange !important;
+    color: orange !important;
+
+    .icon {
+        font-size: 20px;
+        color: orange !important;
+    }
+}
+
+.filtro{
+    width: 100%;
+}
+
+.btn-adicionar-time {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: -14px;
+    line-height: 36px;
+}
+
+@media(max-width: 960px){
+    .btn-adicionar-time {
+       margin: 0;
+    }
+}

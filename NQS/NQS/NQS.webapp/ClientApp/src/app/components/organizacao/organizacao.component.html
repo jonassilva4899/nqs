@@ -1,0 +1,53 @@
+<h1 mat-dialog-title *ngIf="!this.editar">Nova organização</h1>
+<h1 mat-dialog-title *ngIf="this.editar">Editar organização</h1>
+
+
+<p class="grey-fg">Configure a organização</p>
+
+<p *ngIf="isLoading.buscando">Carregando...</p>
+
+<div mat-dialog-content>
+    <form [formGroup]="organizacaoForm" (keydown.enter)="$event.preventDefault()">
+        <div fxLayout="column" fxLayoutAlign="start">
+            <mat-form-field appearance="outline">
+                <mat-label>Nome da Organização</mat-label>
+                <input maxlength="50" matInput formControlName="nome" required>
+                <mat-icon matSuffix>business</mat-icon>
+                <mat-error>Campo 'Nome da Organização' é obrigatório</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Descrição</mat-label>
+                <textarea maxlength="1000"
+                          rows="12"
+                          matInput
+                          #inputDescricao
+                          formControlName="descricao"
+                          placeholder="Descreva a organização a ser criada..."
+                          required>
+                </textarea>
+                <span class="char-length-count">{{ 1000 - inputDescricao.value.length }} caracteres restantes</span>
+                <mat-error>Campo 'Descrição' obrigatório</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Localização</mat-label>
+                <input maxlength="50" matInput formControlName="localizacao" required>
+                <mat-icon matSuffix>location_city</mat-icon>
+                <mat-error>Campo 'Localização' é obrigatório</mat-error>
+            </mat-form-field>
+            <app-upload-imagem [titulo]="'Foto da Organização'" [imageUrl]="imageUrl" (respostaImagemBase64)="receberImagemBase64($event)"></app-upload-imagem>
+        </div>
+    </form>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button mat-stroked-button color="primary" type="button" class="w-116 mr-16" (click)="_dialogRef.close()">
+        Fechar
+    </button>
+    <button [disabled]="isLoading.buscando" mat-raised-button color="primary" class="w-116" type="button"
+            (click)="addEditOrganizacao()">
+        Salvar
+        <mat-progress-bar *ngIf="isLoading.acao" mode="indeterminate"></mat-progress-bar>
+    </button>
+</div>

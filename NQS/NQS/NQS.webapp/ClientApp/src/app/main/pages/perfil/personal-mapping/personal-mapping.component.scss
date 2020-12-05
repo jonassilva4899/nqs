@@ -1,0 +1,81 @@
+$personal-mapping-gutter: 2rem;
+
+.personal-mapping {
+    .item-card.title-left {
+        margin-top: 3rem;
+    }
+
+    &__list {
+        display: flex;
+        width: 100%;
+        margin: 5px;
+
+        > .row {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% + #{$personal-mapping-gutter * 2});
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
+        .mat-card {
+            flex: 0 1 calc(100% - 4rem);
+            margin: 2rem;
+
+            @media (min-width: 541px) {
+                flex: 0 1 calc(50% - 4rem);
+            }
+
+            @media (min-width: 769px) {
+                flex: 0 1 calc(33.33% - 4rem);
+            }
+
+            @media (min-width: 1025px) {
+                flex: 0 1 calc(25% - 4rem);
+            }
+        }
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        border-radius: 100%;
+        background: #c94f4f;
+        transform: scale(0.8) translate(50%, -50%);
+        transition: all 150ms ease;
+
+        &:active {
+            transform: scale(0.7) translate(50%, -50%);
+        }
+    }
+}
+
+.personal-mapping__skeleton {
+    min-height: 115px;
+    opacity: 0.5;
+    background-image: linear-gradient(90deg, transparent, #424242, transparent),
+                      linear-gradient(0, #4f4a4a, #4f4a4a),
+                      linear-gradient(0, #4f4a4a, #4f4a4a),
+                      linear-gradient(0, #4f4a4a, #4f4a4a)!important;
+    background-size: 30% 100%,
+                     calc(100% - 3.2rem) 2rem,
+                     calc(100% - 3.2rem) 1.4rem,
+                     calc(100% - 3.2rem) 1.4rem!important;
+    background-repeat: no-repeat!important;
+    background-position: -30% 0,
+                         1.6rem 1.85rem,
+                         1.6rem 5.1rem,
+                         1.6rem 7.6rem!important;
+    animation: skeletonPersonalMapping linear 1500ms infinite;
+}
+
+@keyframes skeletonPersonalMapping {
+    to {
+      background-position: 130% 0,
+                           1.6rem 1.85rem,
+                           1.6rem 5.1rem,
+                           1.6rem 7.6rem;
+    }
+}

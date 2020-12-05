@@ -1,0 +1,100 @@
+<h1 mat-dialog-title>{{ boxExcelConfig?.titulo }}</h1>
+
+<p mat-dialog-subtitle class="grey-fg">Configure o {{ boxExcelConfig?.titulo.toLowerCase() }} do time
+    {{ boxExcelConfig?.timeSelecionado.nome }}</p>
+
+<div mat-dialog-content>
+    <form fxLayout="column" fxLayoutAlign="start" [formGroup]="form">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Opções de Configuração</mat-label>
+            <mat-select [(ngModel)]="opcao" [ngModelOptions]="{standalone: true}">
+                <mat-option [value]="tipoEnum.ValorManual">Valor Manual</mat-option>
+                <mat-option [value]="tipoEnum.Planilha">Planilha</mat-option>
+                <mat-option [value]="tipoEnum.Quadro">Quadro</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" *ngIf="opcao === tipoEnum.ValorManual">
+            <mat-label>Quantidade</mat-label>
+            <input matInput [(ngModel)]="quantidade" [ngModelOptions]="{standalone: true}" autocomplete="off"
+                type="number" maxlength="10" min="0" required>
+            <mat-error>Campo obrigatório</mat-error>
+        </mat-form-field>
+
+        <div class="field-upload" *ngIf="opcao === tipoEnum.Planilha">
+            <mat-label class="grey-500-fg mb-12">Arquivo Excel: *</mat-label>
+            <span class="label green ml-8" *ngIf="this.boxExcelFormEdit?.urlArquivoExcel" (click)="download($event)">
+                <mat-icon class="s-20 mr-12">cloud_download</mat-icon> Baixar Excel
+            </span>
+            <span class="file-name">
+                {{
+                        arquivo.value?.length ?
+                        arquivo.value[0].name :
+                        this.boxExcelFormEdit?.urlArquivoExcel ?
+                                '' : 'Nenhum arquivo selecionado...'
+                }}
+            </span>
+            <app-file-upload class="btn-upload" formControlName="ExcelArquivoExcel" accept=".xlsx">
+                <mat-icon class="cursor-pointer" matTooltip="Escolher arquivo">backup</mat-icon>
+            </app-file-upload>
+            <span class="mat-error" *ngIf="arquivo && arquivo.touched && arquivo.invalid">
+                {{ form.get('ExcelArquivoExcel') | parseFormErrors }}
+            </span>
+        </div>
+
+        <div class="mt-32" *ngIf="opcao === tipoEnum.Planilha">
+            <mat-label class="d-block grey-500-fg mb-12 pt-12">
+                Template exemplo do arquivo Excel:
+            </mat-label>
+            <table class="mat-table table--bordered w-100-p">
+                <thead>
+                    <tr>
+                        <th *ngFor="let tituloExemplo of boxExcelConfig?.tituloExemploExcel">
+                            {{tituloExemplo}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td *ngFor="let exemplo of boxExcelConfig?.exemploExcel">
+                            {{exemplo}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <mat-form-field appearance="outline" *ngIf="opcao === tipoEnum.Quadro">
+            <mat-label>Selecione o Quadro</mat-label>
+            <mat-select [compareWith]="compareFn" [formControl]="quadro"
+                [placeholder]="listaQuadros$ ? 'Carregando...': 'Selecione o(s) Quadro(s)'" multiple required>
+                <mat-select-trigger>
+                    {{ quadro?.value[0]?.nome ? quadro?.value[0]?.nome : '' }}
+                    <span *ngIf="quadro?.value?.length > 1" class="example-additional-selection">
+                        (+{{quadro?.value?.length - 1}} {{quadro?.value?.length === 2 ? 'outro' : 'outros'}})
+                    </span>
+                </mat-select-trigger>
+                <mat-option *ngFor="let item of (listaQuadros$ | async)" [value]="item" #valorLista>
+                    {{ item.nome  }}
+                </mat-option>
+            </mat-select>
+            <mat-error>Campo obrigatório</mat-error>
+        </mat-form-field>
+        <p *ngIf="opcao === tipoEnum.Quadro">
+            {{ valorLista?.value ? '' : 'Configure corretamente as colunas dos quadros...'}}
+        </p>
+
+    </form>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button mat-stroked-button color="primary" type="button" class="w-116 mr-16" (click)="_dialogRef.close()">
+        Fechar
+    </button>
+    <button mat-raised-button color="primary" class="w-116" type="button" (click)="salvarConfiguracao()"
+        [disabled]="isLoading.salvar">
+        Salvar
+        <mat-progress-bar *ngIf="isLoading.salvar" mode="indeterminate"></mat-progress-bar>
+    </button>
+</div>

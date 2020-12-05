@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.46.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Leega.Data.Enums\Leega.Data.Enums.csproj" />
+    <ProjectReference Include="..\Leega.DataMySql\Leega.DataMySql.csproj" />
+    <ProjectReference Include="..\NQS.Util\Leega.Util.csproj" />
+  </ItemGroup>
+
+</Project>

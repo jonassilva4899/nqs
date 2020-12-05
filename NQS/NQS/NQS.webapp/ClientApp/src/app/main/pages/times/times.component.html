@@ -1,0 +1,94 @@
+<div class="page-layout blank p-24" fusePerfectScrollbar>
+    <div
+        class="header"
+        fxLayout="column"
+        fxLayout.gt-sm="row"
+        fxLayoutAlign.gt-sm="center center">
+        <form
+            class="filtros"
+            [formGroup]="filtros"
+            fxLayout="row wrap"
+            fxFlex.gt-sm="1 1 auto">
+
+            <mat-form-field
+                fxFlex="1 1 100%"
+                fxFlex.gt-xs="1 1 50%"
+                fxFlex.gt-sm="1 1 20%"
+                appearance="outline"
+                class="mat-form-field--xs mat-form-field--pb-0 p-8">
+                <mat-label>Projeto</mat-label>
+                <mat-select formControlName="idProjeto">
+                    <mat-option [value]="">Todos projetos</mat-option>
+                    <mat-option *ngFor="let projeto of listaProjetos" [value]="projeto.idProjeto">
+                        {{ projeto.nome }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field
+                fxFlex="1 1 100%"
+                fxFlex.gt-xs="1 1 50%"
+                fxFlex.gt-sm="1 1 20%"
+                appearance="outline"
+                class="mat-form-field--xs mat-form-field--pb-0 p-8">
+                <mat-label>Cliente</mat-label>
+                <mat-select formControlName="idCliente">
+                    <mat-option [value]="">Todos clientes</mat-option>
+                    <mat-option *ngFor="let cliente of listaClientes" [value]="cliente.id">
+                        {{ cliente.nome }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field
+                fxFlex="1 1 100%"
+                fxFlex.gt-xs="1 1 50%"
+                fxFlex.gt-sm="1 1 20%"
+                appearance="outline"
+                class="mat-form-field--xs mat-form-field--pb-0 p-8">
+                <mat-label>Termometro Agil</mat-label>
+                <mat-select formControlName="temperatura">
+                    <mat-option [value]="">Todas</mat-option>
+                    <mat-option *ngFor="let key of TermometroAgil" [value]="key">
+                        {{ TermometroAgilEnum[key] }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <div
+                fxLayout
+                fxLayoutAlign="start center"
+                fxFlex="1 1 100%"
+                fxFlex.gt-xs="1 1 50%"
+                fxFlex.gt-sm="1 1 20%">
+                <mat-spinner *ngIf="isLoading.filtros && isLoading.listaTimes" color="primary" diameter="32"></mat-spinner>
+            </div>
+        </form>
+        <div
+            class="actions"
+            fxLayoutAlign="end center"
+            fxFlex.gt-sm="0 0 auto">
+            <button
+                *exibirParaNiveis="[
+                    NivelPermissao.GoobeeAdmin,
+                    NivelPermissao.OrganizationAdmin,
+                    NivelPermissao.AgileCoach
+                ]"
+                mat-button
+                class="botao-padrao"
+                (click)="adicionarTime()">
+                <mat-icon class="icon">add </mat-icon>Novo Time
+            </button>
+        </div>
+    </div>
+
+    <div *ngIf="isLoading.listaTimes && !isLoading.filtros" class="local-loading">
+        <mat-spinner color="primary" diameter="48"></mat-spinner>
+    </div>
+
+    <div *ngIf="!isLoading.listaTimes && (!listaTimes || !listaTimes.objeto.length)" class="local-loading">
+        Nenhum time encontrado.
+    </div>
+
+    <app-lista-times [listaTimes]="listaTimes"></app-lista-times>
+</div>

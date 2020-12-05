@@ -1,0 +1,48 @@
+<h1 mat-dialog-title>{{ data.acao === Acao.Edicao ? 'Edição' : 'Cadastro' }} de Personal Mapping</h1>
+<mat-icon class="close-icon" (click)="fechar()">close</mat-icon>
+
+<div mat-dialog-content>
+    <form class="mat-card borderNone p-0 mt-40" name="form" [formGroup]="form" (ngSubmit)="salvar()" xFill fxLayout="column">
+        <div fxLayout="column">
+            <mat-form-field class="w-100-p" fxFlex="1 1 100%" appearance="outline">
+                <mat-label>Título:</mat-label>
+                <input matInput formControlName="titulo">
+                <mat-error>Campo inválido</mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-100-p" fxFlex="1 1 100%" appearance="outline">
+                <mat-label>Descrição:</mat-label>
+                <mat-icon matSuffix class="cursor-pointer" (click)="adicionarItem($event)">add_box</mat-icon>
+                <input matInput formControlName="descricao" (keydown.enter)="adicionarItem($event)">
+                <mat-error>Campo inválido</mat-error>
+            </mat-form-field>
+
+            <ul class="list list--bullet list--primary">
+                <li class="align-icon" *ngFor="let item of form.get('itens').value; let i = index" (click)="removerItem(i)">
+                    {{ item.nomeItem }}
+                    <mat-icon class="cursor-pointer">close</mat-icon>
+                </li>
+            </ul>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="end">
+            <button
+                mat-stroked-button
+                color="primary"
+                class="mt-16 w-100"
+                type="button"
+                (click)="fechar()"
+            >Fechar</button>
+
+            <button
+                mat-raised-button
+                color="primary"
+                class="ml-16 mt-16 w-100"
+                type="submit"
+                [disabled]="isLoading.salvar"
+            >
+                Salvar
+                <mat-progress-bar *ngIf="isLoading.salvar" mode="indeterminate"></mat-progress-bar>
+            </button>
+        </div>
+    </form>
+</div>

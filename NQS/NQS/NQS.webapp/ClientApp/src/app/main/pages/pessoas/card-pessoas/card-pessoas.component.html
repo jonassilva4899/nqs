@@ -1,0 +1,65 @@
+<div>
+    <mat-card class="p-4 m-8 mt-4">
+        <mat-card-header fxLayoutAlign="end center" *ngIf="exibeAlertaData">
+            <button mat-mini-fab matTooltip="Data de Checkpoint vencida!" matTooltipPosition="right" class="mt-4 warning-checkpoint">
+                <mat-icon class="icon-white">warning</mat-icon>
+            </button>
+        </mat-card-header>
+        <div fxFlexFill fxLayoutAlign="center center">
+            <ng-container *ngIf="atributosPessoa.foto === ''; else elseTemplate">
+                <img mat-card-image src="assets/images/logos/goobee_masculino.png"
+                    class="img-preview m-0 mt-12 circulo">
+            </ng-container>
+            <ng-template #elseTemplate>
+                <span [ngStyle]="{'background-image': 'url(' + (atributosPessoa.foto | encodeWhiteSpace) + ')'}"
+                    class="img-preview m-0 mt-12 circulo"></span>
+            </ng-template>
+        </div>
+        <mat-card-content>
+            <div fxflex class="text-div-center" fxLayout="column">
+                <mat-card-title class="nome-pessoa m-4">{{atributosPessoa.nome}}</mat-card-title>
+                <mat-card-subtitle class="funcao-pessoa mt-0">{{atributosPessoa.funcaoPrincipal}}</mat-card-subtitle>
+            </div>
+        </mat-card-content>
+        <div class="card-divider"></div>
+        <mat-card-actions class="m-16" fxLayoutAlign="space-between">
+            <ng-container *ngIf="atributosPessoa.ultimoCheckpoint; else ultimoCheckpointVazio">
+                <div>
+                    <small>Último checkpoint:<br>{{atributosPessoa.ultimoCheckpoint | date: 'dd/MM/yyyy'}}</small><br>
+                </div>
+            </ng-container>
+            <ng-template #ultimoCheckpointVazio>
+                <div>
+                    <small>Último checkpoint:<br>-- --</small><br>
+                </div>
+            </ng-template>
+            <ng-container *ngIf="atributosPessoa.proximoCheckpoint; else proximoCheckpointVazio">
+                <div>
+                    <small>Próximo checkpoint:<br>{{atributosPessoa.proximoCheckpoint | date: 'dd/MM/yyyy'}}</small>
+                </div>
+            </ng-container>
+            <ng-template #proximoCheckpointVazio>
+                <div>
+                    <small>Próximo checkpoint:<br>-- --</small><br>
+                </div>
+            </ng-template>
+        </mat-card-actions>
+        <mat-card-actions class="mb-0 m-8" fxLayoutAlign="space-between">
+            <button mat-button class="m-0" [routerLink]="['/perfil/', atributosPessoa.id]">
+                Perfil
+            </button>
+            <button
+                *exibirParaNiveis="[
+                    NivelPermissao.GoobeeAdmin,
+                    NivelPermissao.OrganizationAdmin,
+                    NivelPermissao.AgileCoach
+                ]; ouSeTeamLeader: atributosPessoa.idsTimes;"
+                mat-button
+                class="m-0"
+                [routerLink]="['/checkpoint/', atributosPessoa.id, atributosPessoa.nome]"
+            >
+                Checkpoints
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

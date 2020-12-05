@@ -1,0 +1,70 @@
+:host {
+    width: 100%;
+    height: auto;
+
+    mat-card {
+        border-radius: 8px;
+        .card-divider {
+            margin-left: 16px;
+            margin-right: 16px;
+            position: absolute;
+            bottom: 45px;
+            border-top: 1.5px solid rgba(252, 252, 252, 0.32);
+            width: 86%;
+            border-radius: 50px;
+        }
+    }
+
+    img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .nome-pessoa {
+        color: #ea9124;
+        line-height: 1;
+    }
+
+    .circulo img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .circulo {
+        background-color: #aaa;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        max-width: 90px;
+        max-height: 90px;
+        min-width: 90px;
+        min-height: 90px;
+        overflow: hidden;
+        position: relative;
+        background-size: cover; /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .card-button-pessoas {
+        font-size: 13px;
+    }
+
+    .warning-checkpoint {
+        margin-top: -39px !important;
+        margin-right: -12px;
+        margin-bottom: -50px;
+        color: white !important;
+    }
+
+    .icon-white{
+        margin-top: -6px !important;
+    }
+
+    .text-div-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

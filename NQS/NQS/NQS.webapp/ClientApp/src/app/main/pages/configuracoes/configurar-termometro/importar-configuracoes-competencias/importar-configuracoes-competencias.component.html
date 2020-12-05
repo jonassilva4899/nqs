@@ -1,0 +1,39 @@
+<h1 mat-dialog-title>Importar configurações de competências</h1>
+<h2 mat-dialog-subtitle class="grey-400-fg font-size-16">Selecione uma organização para importar as configurações de competências.</h2>
+
+<div mat-dialog-content>
+    <mat-form-field appearance="outline" fxFlex="1 1 100%">
+        <mat-label *ngIf="!isLoading.listaOrganizacoes">Organização</mat-label>
+        <mat-label *ngIf="isLoading.listaOrganizacoes">Carregando organizações...</mat-label>
+
+        <mat-select [formControl]="organizacao">
+            <mat-option *ngFor="let organizacao of listaOrganizacoes" [value]="organizacao">
+                {{ organizacao.nomeOrganizacao }}
+            </mat-option>
+        </mat-select>
+        <mat-error>Campo obrigatório</mat-error>
+    </mat-form-field>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        type="button"
+        class="w-116"
+        (click)="dialogRef.close()"
+    >
+        Fechar
+    </button>
+    <button
+        mat-raised-button
+        color="primary"
+        type="button"
+        [disabled]="isLoading.salvar"
+        class="w-116 ml-16"
+        (click)="importarConfiguracoesCompetencias()"
+    >
+        Importar
+        <mat-progress-bar *ngIf="isLoading.salvar" mode="indeterminate"></mat-progress-bar>
+    </button>
+</div>

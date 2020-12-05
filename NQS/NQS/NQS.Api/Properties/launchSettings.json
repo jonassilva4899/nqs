@@ -1,0 +1,29 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:44392/",
+      "sslPort": 44391
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/info",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": ""
+      }
+    },
+    "goobeeteamsApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/info",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": ""
+      },
+      "applicationUrl": "http://localhost:44342/"
+    }
+  }
+}

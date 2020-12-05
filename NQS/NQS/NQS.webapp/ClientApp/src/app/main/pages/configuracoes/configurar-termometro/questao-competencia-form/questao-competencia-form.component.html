@@ -1,0 +1,74 @@
+<h1 mat-dialog-title *ngIf="acao === Acao.Cadastro">Criar questão</h1>
+<h1 mat-dialog-title *ngIf="acao === Acao.Edicao">Editar questão</h1>
+
+<div mat-dialog-content>
+    <form fxLayout="column" [formGroup]="form">
+
+        <mat-form-field appearance="outline" fxFlex="1 1 100%">
+            <mat-label>Questão</mat-label>
+            <input matInput formControlName="tituloQuestao">
+            <mat-error>Campo obrigatório</mat-error>
+        </mat-form-field>
+
+        <div class="container-questoes" fxLayout>
+            <div class="questoes" fxLayout="column" fxFlex="1 1 auto">
+                <p class="m-0"><b class="temp-color-fervendo">Fervendo</b></p>
+                <mat-form-field formGroupName="fervendo" class="mat-form-field--no-label" appearance="outline" fxFlex="1 1 100%">
+                    <!-- <mat-label>Fervendo</mat-label> -->
+                    <textarea rows="3" matInput formControlName="descricao" placeholder="Descreva a temperatura: Fervendo"></textarea>
+                    <mat-error>Campo obrigatório</mat-error>
+                </mat-form-field>
+
+                <p class="m-0"><b class="temp-color-quente">Quente</b></p>
+                <mat-form-field formGroupName="quente" class="mat-form-field--no-label" appearance="outline" fxFlex="1 1 100%">
+                    <!-- <mat-label>Quente</mat-label> -->
+                    <textarea rows="3" matInput formControlName="descricao" placeholder="Descreva a temperatura: Quente"></textarea>
+                    <mat-error>Campo obrigatório</mat-error>
+                </mat-form-field>
+
+                <p class="m-0"><b class="temp-color-morno">Morno</b></p>
+                <mat-form-field formGroupName="morno" class="mat-form-field--no-label" appearance="outline" fxFlex="1 1 100%">
+                    <!-- <mat-label>Morno</mat-label> -->
+                    <textarea rows="3" matInput formControlName="descricao" placeholder="Descreva a temperatura: Morno"></textarea>
+                    <mat-error>Campo obrigatório</mat-error>
+                </mat-form-field>
+
+                <p class="m-0"><b class="temp-color-frio">Frio</b></p>
+                <mat-form-field formGroupName="frio" class="mat-form-field--no-label" appearance="outline" fxFlex="1 1 100%">
+                    <!-- <mat-label>Frio</mat-label> -->
+                    <textarea rows="3" matInput formControlName="descricao" placeholder="Descreva a temperatura: Frio"></textarea>
+                    <mat-error>Campo obrigatório</mat-error>
+                </mat-form-field>
+
+                <p class="m-0"><b class="temp-color-congelado">Congelado</b></p>
+                <mat-form-field formGroupName="congelado" class="mat-form-field--no-label" appearance="outline" fxFlex="1 1 100%">
+                    <!-- <mat-label>Congelado</mat-label> -->
+                    <textarea rows="3" matInput formControlName="descricao" placeholder="Descreva a temperatura: Congelado"></textarea>
+                    <mat-error>Campo obrigatório</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        type="button"
+        class="w-116 mr-16"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+    <button
+        mat-raised-button
+        color="primary"
+        class="w-116"
+        type="button"
+        [disabled]="isLoading.salvar"
+        (click)="salvarQuestao()">
+        Salvar
+        <mat-progress-bar *ngIf="isLoading.salvar"></mat-progress-bar>
+    </button>
+</div>

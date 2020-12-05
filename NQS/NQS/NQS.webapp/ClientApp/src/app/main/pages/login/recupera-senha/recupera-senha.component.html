@@ -1,0 +1,45 @@
+<div id="register" fxLayout="column">
+    <div id="register-form-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <div id="register-form" [@animate]="{value:'*',params:{duration:'300ms',y:'100px'}}">
+            <div class="logo">
+                <!--<img src="assets/images/logos/download.png">-->
+            </div>
+            <div class="title">Recupere sua Senha</div>
+            <form name="registroForm" [formGroup]="recuperarSenhaForm" novalidate>
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" formControlName="senha" value="">
+                    <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+                    <mat-error>
+                        Senha é um campo obrigatório.
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha (Confirmação)</mat-label>
+                    <input matInput type="password" formControlName="senhaConfirmacao" autocomplete="nova-senha">
+                    <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+                    <mat-error *ngIf="recuperarSenhaForm.get('senhaConfirmacao').hasError('required')">
+                        Senha (Confirmação) é um campo obrigatório.
+                    </mat-error>
+                    <mat-error *ngIf="!recuperarSenhaForm.get('senhaConfirmacao').hasError('required') &&
+                                       recuperarSenhaForm.get('senhaConfirmacao').hasError('senhasNaoIdenticas')">
+                        As senhas devem ser iguais.
+                    </mat-error>
+                </mat-form-field>
+                <button mat-raised-button color="accent" class="submit-button" aria-label="LOGIN"
+                [disabled]="recuperarSenhaForm.invalid || this.redefinirFlag" (click)="redefinirSenha()">
+                <ng-container *ngIf="!this.redefinirFlag; else elseTemplate">
+                    REDEFINIR SENHA
+                </ng-container>
+                <ng-template #elseTemplate>
+                    ENVIANDO...
+                </ng-template>
+            </button>
+            </form>
+            <div class="register" fxLayout="column" fxLayoutAlign="center center">
+                <span class="text">Já tem uma conta?</span>
+                <a class="link" [routerLink]="'/login'">Login</a>
+            </div>
+        </div>
+    </div>
+</div>

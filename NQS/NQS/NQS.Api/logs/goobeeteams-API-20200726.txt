@@ -1,0 +1,48 @@
+===> 2020-07-26 15:26:53.592 -03:00 [Information] Starting web host
+===> 2020-07-26 15:26:54.843 -03:00 [Information] User profile is available. Using '"C:\Users\Diogo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-07-26 15:26:55.130 -03:00 [Debug] Reading data from file '"C:\Users\Diogo\AppData\Local\ASP.NET\DataProtection-Keys\key-0d00c128-1f0e-4abe-8a1b-8f9e5c77c2b1.xml"'.
+===> 2020-07-26 15:26:55.404 -03:00 [Debug] Found key {0d00c128-1f0e-4abe-8a1b-8f9e5c77c2b1}.
+===> 2020-07-26 15:26:55.470 -03:00 [Debug] Considering key {0d00c128-1f0e-4abe-8a1b-8f9e5c77c2b1} with expiration date 2020-10-17 03:59:58Z as default key.
+===> 2020-07-26 15:26:55.633 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-07-26 15:26:55.641 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-07-26 15:26:55.645 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-07-26 15:26:55.658 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-07-26 15:26:55.667 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-07-26 15:26:55.692 -03:00 [Debug] Using key {0d00c128-1f0e-4abe-8a1b-8f9e5c77c2b1} as the default key.
+===> 2020-07-26 15:26:55.693 -03:00 [Debug] Key ring with default key {0d00c128-1f0e-4abe-8a1b-8f9e5c77c2b1} was loaded during application startup.
+===> 2020-07-26 15:26:56.698 -03:00 [Error] Startup::Configure
+===> 2020-07-26 15:26:57.649 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-07-26 15:26:57.787 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-07-26 15:26:58.439 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-07-26 15:27:10.621 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-07-26 15:27:10.760 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: localhost@goobeeteams'
+===> 2020-07-26 15:27:10.762 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-07-26 15:27:10.767 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-07-26 15:27:10.956 -03:00 [Debug] Execution loop BackgroundServerProcess:625002ba has started in 132,1765 ms
+===> 2020-07-26 15:27:13.488 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-07-26 15:27:15.167 -03:00 [Information] Server desktop-p5r99eq:7368:3f4169a1 successfully announced in 4124,2067 ms
+===> 2020-07-26 15:27:15.241 -03:00 [Information] Server desktop-p5r99eq:7368:3f4169a1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-07-26 15:27:15.359 -03:00 [Debug] Execution loop ServerHeartbeatProcess:87f204d7 has started in 187,5433 ms
+===> 2020-07-26 15:27:15.466 -03:00 [Debug] Execution loop ServerWatchdog:8437f8ab has started in 217,5369 ms
+===> 2020-07-26 15:27:15.541 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:903adc8c has started in 89,8829 ms
+===> 2020-07-26 15:27:15.587 -03:00 [Information] 1 servers were removed due to timeout
+===> 2020-07-26 15:27:15.599 -03:00 [Debug] Execution loop ExpirationManager:cebd0c80 has started in 112,2728 ms
+===> 2020-07-26 15:27:15.604 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-07-26 15:27:15.709 -03:00 [Debug] Execution loop CountersAggregator:bf8d940b has started in 122,8132 ms
+===> 2020-07-26 15:27:15.718 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-07-26 15:27:15.838 -03:00 [Debug] Execution loop Worker:0fa93937 has started in 170,271 ms
+===> 2020-07-26 15:27:15.936 -03:00 [Debug] Execution loop DelayedJobScheduler:49302766 has started in 164,3312 ms
+===> 2020-07-26 15:27:16.179 -03:00 [Information] Server desktop-p5r99eq:7368:3f4169a1 all the dispatchers started
+===> 2020-07-26 15:27:16.272 -03:00 [Debug] Execution loop RecurringJobScheduler:b6f423e5 has started in 379,1072 ms
+===> 2020-07-26 15:27:16.536 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-07-26 15:27:22.701 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-07-26 15:27:22.715 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-07-26 15:27:22.736 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-07-26 15:27:45.401 -03:00 [Debug] Server desktop-p5r99eq:7368:3f4169a1 heartbeat successfully sent
+===> 2020-07-26 15:27:48.991 -03:00 [Debug] 86 recurring job(s) processed by scheduler.
+===> 2020-07-26 15:27:50.565 -03:00 [Information] Found AWS options in IConfiguration
+===> 2020-07-26 15:27:50.805 -03:00 [Information] Found AWS credentials for the profile default

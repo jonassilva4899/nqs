@@ -1,0 +1,76 @@
+<div class="container flex-start motivators">
+    <div class="item-head title-left">
+        <span class="logo-text h1">Motivadores</span>
+    </div>
+    <div class="container">
+        <mat-card class="motivators__list">
+            <mat-card-content *ngIf="isLoading.motivadores || isLoading.adicionar; else elseCarregando">
+                <div class="local-loading">
+                    <mat-spinner color="primary" diameter="48"></mat-spinner>
+                </div>
+            </mat-card-content>
+            <ng-template #elseCarregando>
+                <ng-container *ngIf="idsTimes">
+                    <mat-card-content *ngIf="motivadores && motivadores.motivadores.length; else elseVazio">
+                        <ng-container
+                            *exibirParaNiveis="[
+                                NivelPermissao.GoobeeAdmin,
+                                NivelPermissao.OrganizationAdmin,
+                                NivelPermissao.AgileCoach
+                            ]; ouSeTeamLeader: idsTimes; ouSeMesmaPessoa: idPessoa; else elsePermissao">
+                            <ol
+                                class="list list--inline"
+                                cdkDropList
+                                cdkDropListOrientation="horizontal"
+                                (cdkDropListDropped)="drop($event)">
+                                <li
+                                    class="no-style"
+                                    *ngFor="let motivador of motivadores.motivadores; let i = index"
+                                    [title]="motivador.nome"
+                                    cdkDrag>
+                                    <div class="motivator" [attr.data-index]="i + 1">
+                                        <div class="motivator__img">
+                                            <img [src]="exibirImgMotivador(motivador)" [alt]="motivador.nome">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </ng-container>
+                        <ng-template #elsePermissao>
+                            <ol class="list list--inline">
+                                <li
+                                    class="no-style"
+                                    *ngFor="let motivador of motivadores.motivadores; let i = index"
+                                    [title]="motivador.nome">
+                                    <div class="motivator" [attr.data-index]="i + 1">
+                                        <div class="motivator__img">
+                                            <img [src]="exibirImgMotivador(motivador)" [alt]="motivador.nome">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </ng-template>
+                    </mat-card-content>
+                    <ng-template #elseVazio>
+                        <ng-container
+                            *exibirParaNiveis="[
+                                NivelPermissao.GoobeeAdmin,
+                                NivelPermissao.OrganizationAdmin,
+                                NivelPermissao.AgileCoach
+                            ]; ouSeTeamLeader: idsTimes; ouSeMesmaPessoa: idPessoa; else elsePermissao">
+                            <mat-card
+                                class="mat-card--add cursor-pointer"
+                                matTooltip="Adicionar Motivadores"
+                                (click)="adicionarMotivadoresPessoa()">
+                                <mat-card-content>
+                                    <mat-icon>add</mat-icon>
+                                </mat-card-content>
+                            </mat-card>
+                        </ng-container>
+                        <ng-template #elsePermissao>Sem motivadores configurados</ng-template>
+                    </ng-template>
+                </ng-container>
+            </ng-template>
+        </mat-card>
+    </div>
+</div>

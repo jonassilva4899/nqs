@@ -1,0 +1,65 @@
+[
+  {
+    "Id": "1886a98c-e3ae-455e-8540-18696ff0d311",
+    "Tipo": "1",
+    "Mensagem": "Obrigado pela Força!",
+    "ResponsavelCriacao": "5E7ED33B-9B08-4B3F-A102-5F0154958F77",
+    "DataCriacao": "2020-01-01",
+    "ResponsavelEdicao": "",
+    "DataEdicao": ""
+  },
+  {
+    "Id": "db819363-d095-4fb9-ab31-49d5283036b5",
+    "Tipo": "2",
+    "Mensagem": "Parabéns Mestre!",
+    "ResponsavelCriacao": "5E7ED33B-9B08-4B3F-A102-5F0154958F77",
+    "DataCriacao": "2020-01-01",
+    "ResponsavelEdicao": "",
+    "DataEdicao": ""
+  },
+  {
+    "Id": "11eac8b9-afa9-4cbb-bf08-fd25c9e5b5cb",
+    "Tipo": "3",
+    "Mensagem": "Que Maravilha!",
+    "ResponsavelCriacao": "5E7ED33B-9B08-4B3F-A102-5F0154958F77",
+    "DataCriacao": "2020-01-01",
+    "ResponsavelEdicao": "",
+    "DataEdicao": ""
+  },
+  {
+    "Id": "ca9616a9-d58e-4594-848f-3b5480367ade",
+    "Tipo": "4",
+    "Mensagem": "Que Trabalho Incrível!",
+    "ResponsavelCriacao": "5E7ED33B-9B08-4B3F-A102-5F0154958F77",
+    "DataCriacao": "2020-01-01",
+    "ResponsavelEdicao": "",
+    "DataEdicao": ""
+  },
+  {
+    "Id": "89480578-c701-4529-9565-0fb269f95b8c",
+    "Tipo": "5",
+    "Mensagem": "Você é Imbatível",
+    "ResponsavelCriacao": "5E7ED33B-9B08-4B3F-A102-5F0154958F77",
+    "DataCriacao": "2020-01-01",
+    "ResponsavelEdicao": "",
+    "DataEdicao": ""
+  },
+  {
+    "Id": "cf4025ee-6728-4f9f-b879-446e8e366cb2",
+    "Tipo": "6",
+    "Mensagem": "Super Trabalho!",
+    "ResponsavelCriacao": "5E7ED33B-9B08-4B3F-A102-5F0154958F77",
+    "DataCriacao": "2020-01-01",
+    "ResponsavelEdicao": "",
+    "DataEdicao": ""
+  },
+  {
+    "Id": "8d9224ad-5fe4-4018-86b1-a92257614ca2",
+    "Tipo": "7",
+    "Mensagem": "Time Poderoso",
+    "ResponsavelCriacao": "5E7ED33B-9B08-4B3F-A102-5F0154958F77",
+    "DataCriacao": "2020-01-01",
+    "ResponsavelEdicao": "",
+    "DataEdicao": ""
+  }
+]

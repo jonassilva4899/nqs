@@ -1,0 +1,131 @@
+﻿@model Leega.UI.Models.Pessoa;
+
+@{
+    Layout = "_LoginLayout";
+}
+
+<div id="login-screen" class="container-fluid">
+    <div class="row" data-ride="carousel">
+        <div id="login-bg-left" class="col-lg-6 col-xl-7 marcas d-lg-flex align-items-center  d-none bg-color-1 text-white">
+            <div class="row justify-content-center">
+                <div class="col-10 col-xl-8">
+                    <h1 class="mb-4">
+                        SEJA O SEU <strong>MELHOR</strong>.<br>
+                        SEJA <strong>ALTRUS</strong>!
+                    </h1>
+                    <p class="text-white">
+                        Apresentamos causas previamente
+                        certificadas para você ajudar com
+                        segurança
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-5 pt-lg-3 pt-5 d-flex align-items-center panel text-center white">
+            <div class="row justify-content-center">
+                <div class="col-12 logo">
+                    <img class="logo">
+                </div>
+                <div class="col-sm-7 col-10 text-left mt-lg-3 mt-5">
+                    <form method="post" asp-action="register">
+                        <input type="hidden" asp-for="returnUrl" />
+                        <div class="row">
+                            <label for="username">E-mail:</label>
+                            <input type="email" asp-for="register.username" placeholder="Insira seu e-mail" />
+                            <span asp-validation-for="register.username" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            <input type="hidden" asp-for="tipo" value="@Model.tipo" />
+                            @if (@Model.tipo == "F")
+                            {
+                                <label for="username">CPF:</label>
+                                <input type="text" asp-for="cpfcnpj" data-mask="000.000.000-00" placeholder="000.000.000-00" />
+                            }
+                            else
+                            {
+                                <label for="username">CNPJ:</label>
+                                <input type="text" asp-for="cpfcnpj" data-mask="00.000.000/0000-00" placeholder="00.000.000/0000-00" />
+                            }
+                            <span asp-validation-for="cpfcnpj" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            @if (@Model.tipo == "F")
+                            {
+                                <label for="username">Nome Completo:</label>
+                                <input type="text" asp-for="nome" placeholder="Insira seu nome" />
+                            }
+                            else
+                            {
+                                <label for="username">Razão Social:</label>
+                                <input type="text" asp-for="nome" placeholder="Insira seu razão social" />
+                            }
+                            <span asp-validation-for="nome" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            @if (@Model.tipo == "F")
+                            {
+                                <label for="username">Nome Social:</label>
+                                <input type="text" asp-for="nomesocial" placeholder="Insira seu nome social" title="Insira aqui o nome que deseja utilizar dentro da plataforma" />
+                            }
+                            else
+                            {
+                                <label for="username">Nome Fantasia:</label>
+                                <input type="text" asp-for="nomesocial" placeholder="Insira seu nome fantasia" />
+                            }
+                            <span asp-validation-for="nomesocial" class="text-danger"></span>
+                        </div>
+                        @if (@Model.tipo == "J")
+                        {
+                            <div class="row">
+                                <label for="username">Responsável:</label>
+                                <input type="text" asp-for="contato.nome" required placeholder="Responsável pela empresa" />
+                                <span asp-validation-for="contato.nome" class="text-danger"></span>
+                            </div>
+                            <div class="row">
+                                <label for="username">Email do Responsável:</label>
+                                <input type="email" asp-for="contato.email" required placeholder="Email do responsável pela empresa" />
+                                <span asp-validation-for="contato.email" class="text-danger"></span>
+                            </div>
+                            <div class="row">
+                                <label for="username">Telefone do Responsável:</label>
+                                <input type="text" asp-for="contato.telefone" data-mask="(00) 00000-0000" placeholder="(00) 00000-0000" required />
+                                <span asp-validation-for="contato.telefone" class="text-danger"></span>
+                            </div>
+                        }
+                        <div class="row">
+                            <label for="password">Senha:</label>
+                            <input type="password" asp-for="register.password" placeholder="Insira sua senha" />
+                            <span asp-validation-for="register.password" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            <label for="confirm">Confirme:</label>
+                            <input type="password" asp-for="register.confirm" placeholder="Confirme sua senha" />
+                            <span asp-validation-for="register.confirm" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 form-inline">
+                                <input type="checkbox" asp-for="register.termo" class="form-check-input" />
+                            </div>
+                            <div class="col-10">
+                                <label for="register.termo" class="check-description m-0 pl-3 pt-1">
+                                    Ao marcar este campo,
+                                    declaro
+                                    estar de
+                                    acordo com os  <a href="/assets/docs/TermodeUsoAltruista2020.pdf" class="primary-color" target="_blank" title="Clique aqui para ler os termos de uso">termos</a> de uso da plataforma.
+                                </label>
+                            </div>
+                            <span asp-validation-for="register.termo" class="text-danger"></span>
+                        </div>
+                        <p class="text-center m-0"><input class="btn" type="submit" value="CRIE SEU LOGIN" /></p>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="credits pt-xl-5 pb-xl-3 pt-lg-3 pb-lg-3 pb-5 pt-5">
+                        <a href="https://www.leega.com.br/" target="_blank"><span class="leega_gray"></span></a><a href="https://estudio86.com.br/" target="_blank"><span class="e86_gray"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

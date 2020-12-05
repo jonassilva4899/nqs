@@ -1,0 +1,68 @@
+<div class="select-teams">
+    <img
+        *ngIf="tipoSelecionado === 'time' && (timeSelecionado.value && timeSelecionado.value.logo)"
+        class="avatar mr-0"
+        [ngClass]="{'cursor-pointer': timeSelecionado.value.id}"
+        [src]="timeSelecionado.value.logo | encodeWhiteSpace"
+        (click)="irParaPaginaDoTime(timeSelecionado.value)"
+    >
+
+    <img
+        *ngIf="tipoSelecionado === 'time' && (!timeSelecionado || !timeSelecionado.value || !timeSelecionado.value.logo)"
+        class="avatar mr-0"
+        [ngClass]="{'cursor-pointer': timeSelecionado.value.id}"
+        [src]="'assets/images/logos/placeholder_times.svg'"
+        (click)="irParaPaginaDoTime(timeSelecionado.value)"
+    >
+
+    <div *ngIf="tipoSelecionado === 'grupo'" class="avatar fuse-black-fg border mr-0">
+        {{ nomeDoGrupoComoAvatar(timeSelecionado.value) }}
+    </div>
+
+    <mat-form-field class="mat-form-field--xs" appearance="outline">
+        <mat-label *ngIf="isLoading.buscar">Carregando times...</mat-label>
+        <mat-label *ngIf="!isLoading.buscar">
+            {{
+                exibirGrupos ?
+                (timeSelecionado.value ? timeSelecionado.value.nome : 'Times ou Grupos') :
+                (timeSelecionado.value ? timeSelecionado.value.nome : 'Times')
+            }}
+        </mat-label>
+        <mat-spinner *ngIf="isLoading.buscar" matSuffix class="spinner" diameter="16"></mat-spinner>
+
+        <mat-select [formControl]="timeSelecionado" (openedChange)="openedChange($event)">
+            <mat-option disabled *ngIf="exibirGrupos">Selecione um Time ou Grupo</mat-option>
+            <mat-option disabled *ngIf="!exibirGrupos">Selecione um Time</mat-option>
+            <mat-option value="" *ngIf="exibirOpcaoOrganizacao">
+                {{ organizacaoSelecionada.nome }} (Todos)
+            </mat-option>
+            <mat-optgroup label="Times" (click)="timesOpen = !timesOpen">
+                <mat-icon class="pl-4 s-16">
+                    {{ timesOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}
+                </mat-icon>
+
+                <ng-container *ngIf="timesOpen">
+                    <mat-option *ngFor="let time of listaTimes" [value]="time">
+                        {{ time.nome }}
+                    </mat-option>
+                </ng-container>
+            </mat-optgroup>
+
+            <mat-optgroup
+                *ngIf="exibirGrupos"
+                label="Grupos"
+                (click)="gruposOpen = !gruposOpen"
+            >
+                <mat-icon class="pl-4 s-16">
+                    {{ gruposOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}
+                </mat-icon>
+                <ng-container *ngIf="gruposOpen">
+                    <mat-option value="">Todos</mat-option>
+                    <mat-option *ngFor="let grupo of listaGrupos" [value]="grupo">
+                        {{ grupo.nome }}
+                    </mat-option>
+                </ng-container>
+            </mat-optgroup>
+        </mat-select>
+    </mat-form-field>
+</div>

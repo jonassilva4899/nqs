@@ -1,0 +1,14 @@
+﻿{
+  "Id": "5e7ed33b-9b08-4b3f-a102-5f0154958f77",
+  "Nome": "Jenkins",
+  "Foto": "C:\\Fotos",
+  "FuncaoPrincipal": "Administrador",
+  "Telefone": "999999999",
+  "Email": "jenkins@cadmus.com.br",
+  "Status": 1,
+  "DataCriacao": "2020-01-22",
+  "ResponsavelCriacao": "8d74e2b3-081d-4f1f-b265-396de177d26b",
+  "DataEdicao": "2020-01-22",
+  "ResponsavelEdicao": "8d74e2b3-081d-4f1f-b265-396de177d26b",
+  "IdOrganizacao": "b39ca892-a8c3-42a1-a8cc-b0381f37e2d8"
+}

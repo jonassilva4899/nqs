@@ -1,0 +1,39 @@
+<div class="fieldset mb-32">
+    <h2 class="legend">JIRA do {{ configuracao.time }}</h2>
+    <div class="box-software">
+        <figure class="box-software__logo">
+            <img src="../../../../../assets/images/logos/jira-software-logo-gradient-blue.svg" alt="Jira Software">
+        </figure>
+        <div class="box-software__body">
+            <ng-container *ngIf="configuracao.dominio; else elseConfig">
+                <h3 class="box-software__title">Domínio:</h3>
+                <p class="box-software__info">
+                    <a [href]="configuracao.dominio" target="_blank">
+                        {{ configuracao.dominio }}
+                    </a>
+                </p>
+                <time class="box-software__date">Conectado em {{ configuracao.data | date:'dd/MM/yyyy' }}</time>
+            </ng-container>
+            <ng-template #elseConfig>
+                <p class="box-software__info">Nenhuma conta vínculada.</p>
+            </ng-template>
+        </div>
+        <div class="box-sofware__action">
+            <button
+                class="w-116"
+                mat-raised-button
+                color="primary"
+                *ngIf="configuracao.dominio">
+                Conectado
+            </button>
+            <button
+                class="w-116"
+                mat-stroked-button
+                color="primary"
+                *ngIf="!configuracao.dominio"
+                (click)="adicionaConexaoJira()">
+                Conectar
+            </button>
+        </div>
+    </div>
+</div>

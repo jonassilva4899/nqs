@@ -1,0 +1,186 @@
+﻿@model Leega.Dtos.Pessoa
+
+<br />
+<form asp-controller="cadastro" asp-action="altruista" method="post">
+    <div class="container background-color3">
+        <div class="row">
+            <div class="col-sm-12 py-3">
+                <h4 class="title">Cadastro de Altruísta</h4>
+                <div class="row justify-content-sm-between">
+                    <div class="col-sm-12 pt-3">
+                        <p>Crie uma nova conta para se voluntariar, apoiar causas e ser um Altruísta.</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="container px-0 py-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="hidden" asp-for="tipo" value="F" />
+                                        <label for="cpf">CPF/CNPJ</label><span class="float-right"></span>
+                                        <input type="text" asp-for="cpfcnpj" data-mask="000.000.000-00" maxlength="14" placeholder="00.000.000-00">
+                                        <span asp-validation-for="cpfcnpj" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome Completo:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="nome" placeholder="Insira  aqui o seu nome">
+                                        <span asp-validation-for="nome" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="email">E-mail:</label>
+                                        <input type="text" asp-for="contato.email" placeholder="Insira um e-mail válido">
+                                        <span asp-validation-for="contato.email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="phone">Telefone:</label>
+                                        <input type="text" asp-for="telefone" data-mask="(00) 00000-0000" placeholder="(00) 00000-0000">
+                                        <span asp-validation-for="telefone" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="nascimento">Data de Nascimento:</label>
+                                        <input type="date" asp-for="nascimento" placeholder="00 / 00 / 0000">
+                                        <span asp-validation-for="nascimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="cep">CEP:</label>
+                                        <input type="text" asp-for="cep" data-mask="00000-000" placeholder="00000-000">
+                                        <span asp-validation-for="cep" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="endereco">Seu endereço:</label>
+                                        <input type="text" asp-for="endereco" placeholder="Seu endereço">
+                                        <span asp-validation-for="endereco" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="numero">Número:</label>
+                                        <input type="text" asp-for="numero" data-mask="00000" placeholder="0">
+                                        <span asp-validation-for="numero" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="bairro">Bairro:</label>
+                                        <input type="text" asp-for="bairro" placeholder="Insira o seu Bairro">
+                                        <span asp-validation-for="bairro" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="endereco">Cidade:</label>
+                                        <input type="text" asp-for="cidade" placeholder="Sua cidade">
+                                        <span asp-validation-for="cidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="uf">Estado:</label>
+                                        <input type="text" asp-for="uf" placeholder="Seu estado">
+                                        <span asp-validation-for="uf" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="endereco">País:</label>
+                                        <input type="text" asp-for="pais" placeholder="Seu país">
+                                        <span asp-validation-for="pais" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mt-3">
+                                    <p>
+                                        <h5 class="title">
+                                            Perfil
+                                        </h5>
+                                    </p>
+                                    <div class="form-group">
+                                        <label for="biografia">Biografia:</label>
+                                        <textarea name="biografia" id="biografia" rows="5"
+                                                  placeholder="Escreva a sua mini biografia"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <label for="biografia">Foto:</label>
+                                    <div class="input-group input-group-lg">
+                                        <div class="custom-file">
+                                            <input type="file" name="inputGroupFileAddon04"
+                                                   class="custom-file-input" id="inputGroupFileAddon04"
+                                                   accept="image/*"
+                                                   aria-describedby="inputGroupFileAddon04"><br>
+                                            <label class="custom-file-label"
+                                                   for="inputGroupFileAddon04">
+                                                Escolher arquivo no seu
+                                                computador
+                                            </label>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <div id="objetivos" class="col-sm-12 pl-sm-4 my-3">
+                                    <h5 class="title">
+                                        Qual seu tipo de Causa?
+                                    </h5>
+                                    <div class="row">
+                                        <div class="container pl-lg-4">
+                                            <div class="row">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/01.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/02.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/03.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/04.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/05.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/06.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/07.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/08.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/09.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/10.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/11.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/12.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/13.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/14.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/15.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/16.png" onclick="$(this).toggleClass('selected');">
+                                                <img class="cause-type-item" src="/assets/img/objetivos/17.png" onclick="$(this).toggleClass('selected');">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 my-3 pr-sm-0">
+                                    <!-- Default inline 1-->
+                                    <div class="custom-control d-flex align-items-center custom-checkbox custom-control-inline p-3">
+                                        <input class="cause-item-checkbox" type="checkbox" asp-for="anonimo" id="quero">
+                                        <label for="checkbox" class="check-title">
+                                            Quero ser
+                                            Anônimo
+                                        </label>
+                                        <p class="check-description m-0 pl-sm-3 pt-1">
+                                            A AltruS e as Causas vêem quem quer ajudar, mas não publica em seu nome.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 my-4">
+                                    <div class="form-group">
+                                        <button class="btn btn-whiteonblue" type="submit">CADASTRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

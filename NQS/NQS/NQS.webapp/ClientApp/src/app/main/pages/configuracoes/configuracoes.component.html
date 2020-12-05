@@ -1,0 +1,40 @@
+<div class="page-layout carded fullwidth" fusePerfectScrollbar>
+    <div class="center">
+        <div
+            class="container my-32 h-100-p"
+            fxLayout="column"
+            fxLayout.gt-sm="row wrap"
+            fxLayoutGap.gt-sm="3rem grid">
+
+            <div fxFlex="1 1 100%" fxFlex.gt-sm="1 1 40%">
+                <div class="item-card mb-24">
+                    <span class="logo-text h1" [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                        Configurações
+                    </span>
+                </div>
+                <div>
+                    <app-selecionar-tema></app-selecionar-tema>
+                    <app-selecionar-organizacao></app-selecionar-organizacao>
+                    <app-configurar-termometro
+                        *exibirParaNiveis="[NivelPermissao.GoobeeAdmin, NivelPermissao.OrganizationAdmin]"
+                    ></app-configurar-termometro>
+                </div>
+            </div>
+
+            <div class="d-none" fxFlex="1 1 100%" fxFlex.gt-sm="1 1 60%">
+                <div class="item-card mb-24">
+                    <span class="logo-text h1" [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                        Integrações
+                    </span>
+                </div>
+                <div>
+                    <app-integracao-jira
+                        *ngFor="let config of configJira"
+                        [configuracao]="config">
+                    </app-integracao-jira>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

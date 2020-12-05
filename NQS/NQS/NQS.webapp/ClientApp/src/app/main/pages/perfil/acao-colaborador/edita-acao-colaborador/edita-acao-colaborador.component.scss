@@ -1,0 +1,20 @@
+.sm-dialog--form {
+    height: 75vh!important;
+    overflow-y: scroll!important;
+    width: calc(80vw - 24px)!important;
+  }
+
+  @media (max-width: 767px) {
+    .sm-dialog--form {
+      height: 75vh!important;
+      overflow-y: scroll!important;
+      width: calc(100vw - 24px)!important;
+      padding: 5px!important;
+    }
+  }
+
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

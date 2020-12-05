@@ -1,0 +1,27 @@
+<mat-form-field
+    appearance="outline"
+    class="size-width"
+    [ngClass]="{'pointer-events-none': isLoading.todosClientes || hasError.todosClientes}">
+    <mat-label *ngIf="!isLoading.todosClientes && !hasError.todosClientes">{{ placeholder }}</mat-label>
+    <mat-label *ngIf="isLoading.todosClientes">Carregando clientes...</mat-label>
+    <mat-label *ngIf="hasError.todosClientes">Falha ao carregar clientes.</mat-label>
+    <input
+        maxlength="100"
+        matInput
+        [placeholder]="placeholder"
+        [attr.aria-label]="placeholder"
+        [matAutocomplete]="auto"
+        [formControl]="ngControl.control"
+        (blur)="atribuirCliente()"
+        (ngModelChange)="filtraClientes($event)">
+    <mat-icon matSuffix>assignment_ind</mat-icon>
+    <mat-hint
+        *ngIf="!isLoading.todosClientes && (!todosClientes.length || (ngControl.value && !ngControl.value.nome))">
+        Cliente não encontrado. Será criado um novo cliente com o nome "{{ ngControl.value }}"
+    </mat-hint>
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let cliente of todosClientes" [value]="cliente">
+            <span>{{ cliente.nome }}</span>
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>

@@ -1,0 +1,160 @@
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+::ng-deep {
+    .has-enps {
+        .home-col-2 {
+            .scrollbar {
+                max-height: 915px;
+            }
+        }
+    }
+
+    .sem-time {
+        .home-col-2 {
+            .scrollbar {
+                max-height: 750px;
+            }
+        }
+    }
+
+    .home-col-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+
+        @media(max-width: 991px) {
+            order: 1;
+            grid-column-start: span 2;
+        }
+
+        @media(max-width: 479px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .home-col-2 {
+        @media(max-width: 991px) {
+            order: 3;
+            grid-column-start: span 2;
+        }
+    }
+
+    .home-col-4 {
+        @media(min-width: 480px) {
+            grid-column-start: span 2;
+        }
+
+        .item {
+            height: auto;
+        }
+    }
+
+    .home-col-5 {
+        .item {
+            display: flex;
+            height: 100%;
+
+            > :not(.item-head) {
+                flex: 1 1 auto;
+
+                ::ng-deep {
+                    .mat-card {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .mat-card-content {
+                            display: flex;
+                            flex: 1 1 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home-col-3, .home-col-7 {
+        grid-column-start: span 2;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+
+        @media (max-width: 991px) {
+            order: 2;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 479px) {
+            grid-template-columns: 1fr;
+        }
+
+        .item {
+            display: flex;
+            height: 100%;
+
+            > :not(.item-head) {
+                flex: 1 1 auto;
+
+                ::ng-deep {
+                    .mat-card {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .mat-card-content {
+                            flex: 1 1 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home-col-6 {
+        .item {
+            &.full {
+                display: flex;
+                height: 100%;
+
+                .item-head {
+                    flex: 0 0 auto;
+                }
+
+                app-team-mood-card {
+                    flex: 1 1 100%;
+                    display: flex;
+                    width: 100%;
+
+                    .mat-card {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+
+                        .mat-card-content {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home-col-7 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.item {
+    flex-direction: column;
+}

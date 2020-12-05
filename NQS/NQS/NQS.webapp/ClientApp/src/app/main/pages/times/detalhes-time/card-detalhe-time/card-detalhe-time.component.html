@@ -1,0 +1,70 @@
+<mat-card class="card-time pl-24 pr-24">
+    <ng-container *ngIf="receberDetalheTime">
+        <button
+            *exibirParaNiveis="[
+                NivelPermissao.GoobeeAdmin,
+                NivelPermissao.OrganizationAdmin,
+                NivelPermissao.AgileCoach
+            ]; ouSeTeamLeader: [idTimeRota]"
+            mat-mini-fab
+            matTooltip="Editar Time"
+            matTooltipPosition="above"
+            color="primary"
+            class="btn--xs btn-editar-time"
+            aria-label="Editar Time"
+            (click)="editarTime()">
+            <mat-icon color="white">edit</mat-icon>
+        </button>
+    </ng-container>
+    <div fxLayoutAlign="center center" class="mt-4">
+        <ng-container *ngIf="receberDetalheTime?.logo === ''; else elseTemplate">
+            <img mat-card-image src="assets/images/logos/placeholder_times.svg" class="circulo">
+        </ng-container>
+        <ng-template #elseTemplate>
+            <span [ngStyle]="{'background-image': 'url(' + receberDetalheTime?.logo + ')'}"
+                class="img-preview ml-12 circulo"></span>
+        </ng-template>
+    </div>
+    <mat-card-content>
+        <div fxLayoutAlign="center center">
+            <mat-card-title class="nome-time mt-8">
+                {{receberDetalheTime?.nome}}
+            </mat-card-title>
+        </div>
+
+        <div *ngIf="receberDetalheTime && receberDetalheTime.proposito" fxLayoutAlign="start center" class="mt-4">
+            <mat-card-title class="subtitulos">
+                <span class="titulo-span">Propósitos: </span>
+                <span class="detalhes">{{ receberDetalheTime.proposito }}</span>
+            </mat-card-title>
+        </div>
+
+        <div *ngIf="receberDetalheTime && receberDetalheTime.valores" fxLayoutAlign="start center">
+            <mat-card-title class="subtitulos">
+                <span class="titulo-span">Valores: </span>
+                <span class="detalhes">{{ receberDetalheTime.valores }}</span>
+            </mat-card-title>
+        </div>
+
+        <div *ngIf="receberDetalheTime && receberDetalheTime.bioTime" fxLayoutAlign="start center">
+            <mat-card-title class="subtitulos">
+                <span class="titulo-span">Bio do Time: </span>
+                <span class="detalhes">{{ receberDetalheTime.bioTime }}</span>
+            </mat-card-title>
+        </div>
+
+        <div *ngIf="receberDetalheTime && receberDetalheTime.acordos" fxLayoutAlign="start center">
+            <mat-card-title class="subtitulos">
+                <span class="titulo-span">Acordos: </span>
+                <span class="detalhes">{{ receberDetalheTime.acordos }}</span>
+            </mat-card-title>
+        </div>
+
+        <div *ngIf="receberDetalheTime && receberDetalheTime.grupos.length" fxLayoutAlign="start center">
+            <mat-card-title class="subtitulos">
+                <span class="titulo-span">Grupos: </span>
+                <span class="detalhes">{{ retornarNomesDosGrupos(receberDetalheTime.grupos) }}</span>
+            </mat-card-title>
+        </div>
+    </mat-card-content>
+</mat-card>

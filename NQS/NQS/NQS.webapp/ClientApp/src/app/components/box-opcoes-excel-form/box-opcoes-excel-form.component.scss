@@ -1,0 +1,14 @@
+.field-upload {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    .file-name {
+        flex: 1 1 auto;
+    }
+
+    mat-label, .mat-error {
+        flex: 1 1 100%;
+    }
+}

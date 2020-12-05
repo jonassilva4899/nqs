@@ -1,0 +1,58 @@
+﻿@model List<Leega.Dtos.Campanha>
+
+@section Scripts
+{
+    <script src="@Url.Content("/assets/js/causes.js")"></script>
+}
+
+<div id="causes" style="height: fit-content;">
+    <div style="background:url(/assets/img/home_bg.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
+
+        <div class="container-fluid px-0 h-100 opaque80">
+            <div class="container py-5">
+                <div class="row">
+                    @*<div class="col-lg-5 col-xl-4">
+
+                        </div>*@
+                    <div class="col-lg-6 col-xl-5">
+                        @*<p class="text-white">Apresentamos causas certificadas para você ajudar com segurança. Conheça campanhas inspiradoras e ajude em poucos cliques.</p>*@
+                        <h3>
+                            <p class="text-white">NÚCLEO DA QUALIDADE E SEGURANÇA EM SAÚDE</p>
+                        </h3>
+                        <h9>
+                            <p class="text-white">
+                                Experiência em influenciar, criar, desenvolver e buscar mudanças sólidas , concretas e ferramentas em saúde
+                            </p>
+                        </h9>
+                        <p class="text-white">
+                            Serviços e soluções para sua empresa  maneira simples e capaz para qualidade de sua empresa
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid px-0 h-100 opaque80">
+            <a>
+                <img src="~/assets/img/icon1.PNG" />
+            </a>
+            <a>
+                <img src="~/assets/img/icon1.PNG" />
+            </a>
+            <a>
+                <img src="~/assets/img/icon1.PNG" />
+            </a>
+            <a>
+                <img src="~/assets/img/icon1.PNG" />
+            </a>
+            <a>
+                <img src="~/assets/img/icon1.PNG" />
+            </a>
+        </div>
+    </div>
+    @await Html.PartialAsync("Sobre.cshtml")
+    @await Html.PartialAsync("consultoria.cshtml")
+    @await Html.PartialAsync("healtTech.cshtml")
+    @await Html.PartialAsync("cursos.cshtml")
+    @await Html.PartialAsync("contato.cshtml")

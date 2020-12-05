@@ -1,0 +1,19 @@
+<div>
+   
+        <mat-grid-list cols="2" rowHeight="90px">
+            <div class="file-uploader" fxLayoutAlign="start center">
+                <input hidden type="file" #fileInput (change)="handleFileInput($event.target.files)"
+                    accept="image/*">
+                <mat-grid-tile rows="1" col="1">
+                    <button class="botaoImagem" mat-fab class="add-file-button" (click)="fileInput.click()"
+                        aria-label="Add file" [@animate]="{value:'*', params:{delay:'300ms',scale:'0.2'}}" rows="1">
+                        <mat-icon class="icon">person</mat-icon>
+                    </button>
+                <p class="texto-botao p-12">{{titulo || 'Foto de Perfil'}}</p>
+                </mat-grid-tile>
+                <mat-grid-tile rows="1" col="1">
+                    <span [ngStyle]="{'background-image': 'url(' + imageUrl + ')'}" class="img-preview ml-12 circulo"></span>
+                </mat-grid-tile>
+            </div>
+        </mat-grid-list>
+</div>

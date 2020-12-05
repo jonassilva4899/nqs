@@ -1,0 +1,7 @@
+    <cdk-virtual-scroll-viewport itemSize="50" minBufferPx="2400" maxBufferPx="2400" (scrolledIndexChange)="scrollIndex($event)">
+        <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" rowHeight="345px">
+            <mat-grid-tile *cdkVirtualFor="let pessoa of listaPessoas">
+                <app-card-pessoas [atributosPessoa]="pessoa" class="p-8 fadeIn"></app-card-pessoas>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </cdk-virtual-scroll-viewport>

@@ -1,0 +1,99 @@
+<h1 mat-dialog-title>Editar meus times</h1>
+
+<div mat-dialog-content>
+    <form class="mat-card borderNone p-0" fxLayout="column" fxLayoutAlign="start" name="form"
+        [formGroup]="incluirTimeForm">
+
+        <h3>Ingressar em um time:</h3>
+        <div
+            fxLayout="column"   
+            fxLayout.gt-xs="row"
+            fxFill
+            fxLayoutAlign.gt-xs="start center"
+            fxLayoutGap.gt-xs="1.5rem grid">
+            <mat-form-field fxFlex="100%" fxFlex.gt-xs="1 1 50%">
+                <mat-label *ngIf="!isLoading.meusTimes">Time</mat-label>
+                <mat-label *ngIf="isLoading.meusTimes">Buscando times...</mat-label>
+                <mat-select formControlName="time" required>
+                    <mat-option *ngIf="isLoading.meusTimes">Aguarde...</mat-option>
+                    <ng-container *ngFor="let time of todosTimes">
+                        <mat-option *ngIf="timeNovo(time)" [value]="time">{{ time.nome }}</mat-option>
+                    </ng-container>
+                </mat-select>
+                <mat-error>Campo obrigatório</mat-error>
+            </mat-form-field>
+            <mat-form-field fxFlex="100%" fxFlex.gt-xs="1 1 50%">
+                <mat-label>Função no time</mat-label>
+                <input matInput type="text" maxlength="100" formControlName="funcao" required>
+                <mat-error>Campo obrigatório</mat-error>
+            </mat-form-field>
+            <div fxFlex="100%" fxFlex.gt-xs="0" fxLayout fxLayoutAlign="end center">
+                <button
+                mat-raised-button
+                type="button"
+                color="primary"
+                (click)="salvarNovoTime(incluirTimeForm)">
+                Adicionar
+            </button>
+            </div>
+        </div>
+    </form>
+
+    <h3>Meus times:</h3>
+    <mat-table [dataSource]="meusTimes" fusePerfectScrollbar>
+        <ng-container matColumnDef="nomeTime">
+            <mat-header-cell *matHeaderCellDef>Time</mat-header-cell>
+            <mat-cell *matCellDef="let time"> {{ time.nome }} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="funcao">
+            <mat-header-cell *matHeaderCellDef>Função no time</mat-header-cell>
+            <mat-cell *matCellDef="let time; let i = index">
+                <span *ngIf="!isEditing.meusTimes[i]">
+                    {{ time.papel }}
+                </span>
+                <mat-form-field *ngIf="isEditing.meusTimes[i]" [ngStyle]="{'width': '100%'}">
+                    <input matInput type="text" maxlength="100" [formControl]="novoTimeFuncao">
+                </mat-form-field>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="acoes">
+            <mat-header-cell *matHeaderCellDef [ngStyle]="{'width': '10%'}">Ações</mat-header-cell>
+            <mat-cell *matCellDef="let time; let i = index">
+                <button *ngIf="!isEditing.meusTimes[i]" mat-icon-button color="primary" matTooltip="Editar minha função" aria-label="Editar minha função" (click)="editarFuncao(i)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button *ngIf="isEditing.meusTimes[i]" mat-icon-button color="success" matTooltip="Salvar minha função" aria-label="Salvar minha função" (click)="salvarFuncao(i)">
+                    <mat-icon>check</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" matTooltip="Sair do time" aria-label="Sair do time" (click)="sairDoTime(i)">
+                    <mat-icon>exit_to_app</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="colunasTabela"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: colunasTabela;"></mat-row>
+    </mat-table>
+
+    <p *ngIf="isLoading.meusTimes">Buscando times...</p>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+   <button
+        mat-raised-button
+        color="primary"
+        class="w-116 mr-16"
+        [disabled]="isLoading.salvar"
+        (click)="salvar()">
+        Salvar
+        <mat-progress-bar *ngIf="isLoading.salvar" mode="indeterminate"></mat-progress-bar>
+    </button>
+    <button
+        mat-stroked-button
+        color="primary"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+</div>

@@ -1,0 +1,117 @@
+<div
+    class="mb-16"
+    fxLayout="column"
+    fxLayout.gt-xs="row"
+    fxLayoutAlign.gt-xs="space-between center"
+>
+    <div>
+        <h1 mat-dialog-title>{{ competencia.nome }}</h1>
+        <h2 mat-dialog-subtitle class="mb-0 grey-400-fg font-size-16">Questões da competência</h2>
+    </div>
+    <div fxFlex.gt-xs="0 0 auto" class="text-right">
+        <button
+            mat-raised-button
+            color="primary"
+            type="button"
+            class="ml-auto"
+            (click)="abrirFormQuestao(Acao.Cadastro)"
+        >
+            Nova questão
+        </button>
+    </div>
+</div>
+
+<div mat-dialog-content>
+    <table mat-table [dataSource]="dataSource" matSort multiTemplateDataRows class="table--hover w-100-p">
+        <ng-container matColumnDef="tituloQuestao">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="p-12">Questão</th>
+            <td mat-cell *matCellDef="let row" class="p-12">
+                {{ row.tituloQuestao }}
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="text-center p-12 w-124">Ações</th>
+            <td mat-cell *matCellDef="let row; let i = dataIndex;" class="text-center p-12">
+                <mat-icon
+                    class="icon-fab-button edit-color-icon ml-12"
+                    matTooltip="Editar"
+                    (click)="abrirFormQuestao(Acao.Edicao, row)"
+                >
+                    edit
+                </mat-icon>
+                <mat-icon
+                    *ngIf="!isLoading.apagar[i]"
+                    matTooltip="Apagar"
+                    class="icon-fab-button ml-12"
+                    color="warn"
+                    (click)="apagarQuestaoCompetencia(row, i, $event)"
+                >
+                    delete
+                </mat-icon>
+                <span *ngIf="isLoading.apagar[i]" class="d-inline-flex ml-12">
+                    <mat-progress-spinner mode="indeterminate" diameter="24"></mat-progress-spinner>
+                </span>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let row" [attr.colspan]="displayedColumns.length">
+                <div class="element-detail" [@detailExpand]="row === expandedElement ? 'expanded' : 'collapsed'">
+                    <div>
+                        <b class="temp-color-fervendo d-block">Fervendo:</b>
+                        <p class="mt-0">
+                            {{ retornaDescricaoTemperatura(row, TemperaturaTermometroEnum.Fervendo) }}
+                        </p>
+                    </div>
+                    <div>
+                        <b class="temp-color-quente d-block">Quente:</b>
+                        <p class="mt-0">
+                            {{ retornaDescricaoTemperatura(row, TemperaturaTermometroEnum.Quente) }}
+                        </p>
+                    </div>
+                    <div>
+                        <b class="temp-color-morno d-block">Morno:</b>
+                        <p class="mt-0">
+                            {{ retornaDescricaoTemperatura(row, TemperaturaTermometroEnum.Morno) }}
+                        </p>
+                    </div>
+                    <div>
+                        <b class="temp-color-frio d-block">Frio:</b>
+                        <p class="mt-0">
+                            {{ retornaDescricaoTemperatura(row, TemperaturaTermometroEnum.Frio) }}
+                        </p>
+                    </div>
+                    <div>
+                        <b class="temp-color-congelado d-block">Congelado:</b>
+                        <p class="mt-0">
+                            {{ retornaDescricaoTemperatura(row, TemperaturaTermometroEnum.Congelado) }}
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr
+            mat-row
+            *matRowDef="let row; columns: displayedColumns;"
+            [class.expanded-row]="expandedElement === row"
+            (click)="expandedElement = expandedElement === row ? null : row">
+        </tr>
+        <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+    </table>
+
+    <p class="text-center" *ngIf="!isLoading.listaQuestoes && !listaQuestoes.length">Nenhuma questão cadastrada.</p>
+    <p class="text-center" *ngIf="isLoading.listaQuestoes">Buscando questões...</p>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        type="button"
+        class="w-116"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+</div>

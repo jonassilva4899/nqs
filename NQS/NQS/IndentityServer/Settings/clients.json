@@ -1,0 +1,24 @@
+[
+    {
+        "ClientId": "clientAPI1",
+        "AllowedGrantTypes": [ "client_credentials" ],
+        "ClientSecrets": [
+            {
+                "Value": "goobeeteams-secret",
+                "Description": "goobeeteams secret"
+            }
+        ],
+        "AllowedScopes": [ "goobeeteams" ]
+    },
+    {
+        "ClientId": "goobeeteamsClient",
+        "AllowedGrantTypes": [ "password" ],
+        "ClientSecrets": [
+            {
+                "Value": "goobeeteams-secret",
+                "Description": "goobeeteams secret"
+            }
+        ],
+        "AllowedScopes": [ "goobeeteams" ]
+    }
+]

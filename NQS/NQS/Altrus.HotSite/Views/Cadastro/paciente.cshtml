@@ -1,0 +1,347 @@
+﻿@model Leega.Dtos.Paciente
+
+<br />
+<form asp-controller="cadastro" asp-action="altruista" method="post">
+    <div class="container background-color3">
+        <div class="row">
+            <div class="col-sm-12 py-3">
+                <h4 class="title">Cadastro de Paciente - Simplificado</h4>
+                <div class="row justify-content-sm-between">
+
+                    <div class="col-sm-12">
+                        <div class="container px-0 py-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="cpf">Documento de Identificação</label><span class="float-right"></span>
+                                        <input type="text" asp-for="DocumentoIdentificacao" maxlength="150" placeholder="Informe o documento de identificação">
+                                        <span asp-validation-for="DocumentoIdentificacao" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome Completo:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeCompleto" placeholder="Informe o nome do paciente">
+                                        <span asp-validation-for="NomeCompleto" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome Genitor:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeGenitor" placeholder="Informe o nome do genitor">
+                                        <span asp-validation-for="NomeGenitor" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="nascimento">Data de Nascimento:</label>
+                                        <input type="date" asp-for="DataNascimento" placeholder="dd/mm/yy">
+                                        <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 my-4">
+                                    <div class="form-group">
+                                        <button class="btn btn-whiteonblue" type="submit">CADASTRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container background-color3">
+        <div class="row">
+            <div class="col-sm-12 py-3">
+                <h4 class="title">Cadastro de Paciente - Completo</h4>
+                <div class="row justify-content-sm-between">
+
+                    <div class="col-sm-12">
+                        <div class="container px-0 py-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="CartaoSus">Cartão Sus</label><span class="float-right"></span>
+                                        <input type="text" asp-for="CartaoSus" maxlength="150" placeholder="Informe o número do Cartão Sus">
+                                        <span asp-validation-for="CartaoSus" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Apelido:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Apelido" placeholder="Como o paciente deseja ser chamado">
+                                        <span asp-validation-for="Apelido" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Rg:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Rg" placeholder="Informe o Rg do paciente">
+                                        <span asp-validation-for="Rg" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome Genitor:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeGenitor2" placeholder="Informe o nome do genitor">
+                                        <span asp-validation-for="NomeGenitor2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Naturalidade:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="Naturalidade" placeholder="Informe a Naturalidade do paciente">*@
+                                        <select id="Naturalidade" name="Naturalidade">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                        </select>
+                                        <span asp-validation-for="Naturalidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Raça:</label><span class="float-right"></span>
+                                        @*    <input type="" asp-for="Raca" placeholder="Informe a raça do paciente">
+                                            <span asp-validation-for="Raca" class="text-danger"></span>*@
+                                        <select id="Raca" name="Raca">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Branca">Branca</option>
+                                            <option value="Preta">Preta</option>
+                                            <option value="Parda">Parda</option>
+                                            <option value="Amarela">Amarela</option>
+                                            <option value="Indigena">Indígena</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Sexo:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="Sexo" placeholder="Informe o sexo do paciente">*@
+                                        <select id="Sexo" name="Sexo">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Branca">Feminino</option>
+                                            <option value="Preta">Masculino</option>
+                                        </select>
+                                        <span asp-validation-for="Sexo" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nacionalidade:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="Nacionalidade" placeholder="Informe a Nacionalidade do paciente">*@
+                                        <select id="Nacionalidade" name="Nacionalidade">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="BRA">Brasileiro</option>
+                                            <option value="Outro">Outra</option>
+                                        </select>
+                                        <span asp-validation-for="Nacionalidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Escolaridade:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="Escolaridade" placeholder="Informe a Escolaridade do paciente">*@
+                                        <select id="Escolaridade" name="Escolaridade">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="1">Ensino Médio Incompleto</option>
+                                            <option value="2">Ensino Médio Completo</option>
+                                            <option value="3">Ensino Superior Incompleto</option>
+                                            <option value="4">Ensino Superior Completo</option>
+                                            <option value="5">Pós Graduação Incompleto</option>
+                                            <option value="6">Pós Graduação Completa</option>
+                                            <option value="7">Mestrado</option>
+                                            <option value="8">Doutorado</option>
+                                        </select>
+                                        <span asp-validation-for="Escolaridade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Situação Familiar:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="SituacaoFamiliar" placeholder="Informe a Situacao Familiar do paciente">*@
+                                        <select id="SituacaoFamiliar" name="SituacaoFamiliar">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Solteiro">Solteiro</option>
+                                            <option value="Casado">Casado</option>
+                                            <option value="Divorciado">Divorciado</option>
+                                            <option value="União Estável">União Estável</option>
+                                            <option value="Viúvo">Viúvo</option>
+                                        </select>
+                                        <span asp-validation-for="SituacaoFamiliar" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Endereço:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Endereco" placeholder="Informe o Endereco do paciente">
+                                        <span asp-validation-for="Endereco" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Celular:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Celular" placeholder="Informe o Celular do paciente">
+                                        <span asp-validation-for="Celular" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Profissão:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Profissao" placeholder="Informe a Profissão do paciente">
+                                        <span asp-validation-for="Profissao" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">E-mail:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Email" placeholder="Informe o e-mail do paciente">
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome do contato de emergência:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeContatoEmergencia" placeholder="Informe o nome do Contato Emergência do paciente">
+                                        <span asp-validation-for="NomeContatoEmergencia" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Telefone do contato de emergência:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="TelefoneEmergencia" placeholder="Informe o telefone do Contato Emergência do paciente">
+                                        <span asp-validation-for="TelefoneEmergencia" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Convênio:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="Convenio" placeholder="Informe o convênio paciente">*@
+                                        <select id="Convenio" name="Convenio">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Bradesco">Bradesco</option>
+                                            <option value="Sulamerica">Sulamerica</option>
+                                            <option value="Unimed">Unimed</option>
+                                        </select>
+                                        <span asp-validation-for="Convenio" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Especialidade:</label><span class="float-right"></span>
+                                        <select id="Especialidade" name="Especialidade">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Clínico">Clínico</option>
+                                            <option value="Pediatra">Pediatra</option>
+                                            <option value="Ortopedista">Ortopedista</option>
+                                            <option value="Cardiologista">Cardiologista</option>
+                                        </select>
+                                        <span asp-validation-for="Especialidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Atendimento Prioritário:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="AtendimentoPrioritario" placeholder="Atendimento Prioritario">*@
+                                        <select id="AtendimentoPrioritario" name="AtendimentoPrioritario">
+                                            <option value="Nao">Não</option>
+                                            <option value="Sim">Sim</option>
+                                        </select>
+                                        <span asp-validation-for="AtendimentoPrioritario" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Motivo do Atendimento:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="MotivoAtendimento" placeholder="Informe o motivo do atendimento">*@
+                                        <select id="AtendimentoPrioritario" name="AtendimentoPrioritario">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Rotina">Rotina</option>
+                                            <option value="Emergencia">Emergência</option>
+                                            <option value="Retorno">Retorno</option>
+                                            <option value="Exame">Exame</option>
+                                        </select>
+                                        <span asp-validation-for="MotivoAtendimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Impressão:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="Impressao" placeholder="Impressao">*@
+                                        <select id="Impressao" name="Impressao">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="FAA">FAA</option>
+                                            <option value="RAAT">RAAT/CAT/REMICAT</option>
+                                            <option value="ETIQUETA">ETIQUETA</option>
+                                            <option value="DECLARACAO DE HORAS">DECLARAÇÃO DE HORAS</option>
+                                        </select>
+                                        <span asp-validation-for="Impressao" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Procedência:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="Procedencia" placeholder="Informe a procedência do paciente">*@
+                                        <select id="Procedencia" name="Procedencia">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Meios Proprios">Meios Próprios</option>
+                                            <option value="Familiares">Familiares</option>
+                                            <option value="Bombeiros">Bombeiros</option>
+                                            <option value="Samu">Samu</option>
+                                        </select>
+                                        <span asp-validation-for="Procedencia" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Origem:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="OrigemAtendimento" placeholder="OrigemAtendimento">*@
+                                        <select id="OrigemAtendimento" name="OrigemAtendimento">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Residencia">Residência</option>
+                                            <option value="Morador">Morador de área livre</option>
+                                            <option value="Hospital">Hospital</option>
+                                            <option value="Outros">Outros</option>
+                                        </select>
+                                        <span asp-validation-for="OrigemAtendimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Desfecho do Atendimento:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="DesfechoAtendimento" placeholder="Informe o desfecho do atendimento">*@
+                                        <select id="DesfechoAtendimento" name="DesfechoAtendimento">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Transferencia Hospitalar">Transfêrencia Hospitalar</option>
+                                            <option value="Alta Hospitalar">Alta Hospitalar</option>
+                                            <option value="Evasao">Evasão</option>
+                                            <option value="Obito">Óbito</option>
+                                        </select>
+                                        <span asp-validation-for="DesfechoAtendimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 my-1">
+                                    <div class="form-group">                                        
+                                        <button class="btn btn-whiteonblue" type="submit">CADASTRAR</button>
+                                        <button class="btn btn-whiteonblue" type="submit">IMPRIMIR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

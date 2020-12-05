@@ -1,0 +1,61 @@
+<mat-icon class="close-icon" (click)="fechar()">close</mat-icon>
+
+<form class="mat-card sm-dialog--form borderNone pl-4" fxLayout="column" fxLayoutAlign="start" name="form"
+    [formGroup]="editarAcaoForm" [@animate]="{value:'*', params:{delay:'500ms',scale:'0.2'}}">
+
+    <div class="h2 mb-24">Editar Ação</div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Nome da Ação</mat-label>
+            <input matInput formControlName="nomeAcao" required>
+            <mat-icon matSuffix class="secondary-text">comment</mat-icon>
+            <mat-error>Nome da ação é obrigatório.</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field fxFlex="100" appearance="outline">
+            <textarea formControlName="detalheAcao" required rows="6" matInput placeholder="Detalhe da Ação"></textarea>
+            <mat-error>Descrição da ação é obrigatório.</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Responsável pela Ação</mat-label>
+            <mat-select formControlName="responsavel" required>
+                <mat-option *ngFor="let membros of this.listaMembros$ | async" [value]="membros.idMembro">{{membros.nomeMembro}}
+                </mat-option>
+            </mat-select>
+            <mat-error>Responsável pela ação é obrigatório.</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field appearance="outline" class="pr-sm-8" fxFlex="50">
+            <mat-label>Data da Ação</mat-label>
+            <input matInput [matDatepicker]="inicioDatePicker" formControlName="data" required>
+            <mat-datepicker-toggle matSuffix [for]="inicioDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #inicioDatePicker color="primary"></mat-datepicker>
+            <mat-error>Data da ação é obrigatória.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="50">
+            <mat-label>Estado da Ação</mat-label>
+            <mat-select formControlName="status" required>
+                <mat-option *ngFor="let estado of listaEstadosAcao" [value]="estado.valor">{{estado.estado}}
+                </mat-option>
+            </mat-select>
+            <mat-error>Estado da ação é obrigatório.</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <button mat-raised-button fxFlex="20" color="primary" [disabled]="progressBarEstado"
+            (click)="editarAcao()">
+            Salvar
+            <mat-progress-bar mode="indeterminate" *ngIf="progressBarEstado"></mat-progress-bar>
+        </button>
+    </div>
+</form>

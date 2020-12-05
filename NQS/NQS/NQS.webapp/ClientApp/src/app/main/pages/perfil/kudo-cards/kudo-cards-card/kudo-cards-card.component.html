@@ -1,0 +1,29 @@
+<mat-card class="mat-card--flex">
+    <button
+        class="btn-float-add"
+        mat-mini-fab
+        *ngIf="!visaoTime"
+        matTooltip="Enviar KudoCard"
+        (click)="novoKudoCard()">
+        <mat-icon class="icon">add</mat-icon>
+    </button>
+    <mat-card-content fxLayout="row" fxLayoutAlign="center center">
+        <ng-container *ngIf="!isLoading.kudoCardsNumeros">
+            <div class="divisor" *ngIf="!visaoTime">
+                <h2 class="font-big m-0">{{ kudoCardsNumeros.enviados }}</h2>
+                <mat-card-subtitle>Enviados</mat-card-subtitle>
+            </div>
+            <div class="divisor">
+                <h2 class="font-big m-0">{{ kudoCardsNumeros.recebidos }}</h2>
+                <mat-card-subtitle>Recebidos</mat-card-subtitle>
+            </div>
+        </ng-container>
+
+        <div *ngIf="isLoading.kudoCardsNumeros" class="local-loading">
+            <mat-spinner color="primary" diameter="48"></mat-spinner>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="mat-card-actions--border-top" fxLayoutAlign="flex-end center" (click)="visualizarKudoCards()">
+        <button mat-button>Detalhes</button>
+    </mat-card-actions>
+</mat-card>

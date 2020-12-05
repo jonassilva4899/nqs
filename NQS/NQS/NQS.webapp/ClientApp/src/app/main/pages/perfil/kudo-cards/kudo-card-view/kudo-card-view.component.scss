@@ -1,0 +1,19 @@
+img {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+.mensagem {
+    width: 100%;
+    max-width: 600px;
+    white-space: pre-wrap;
+
+    @media (min-width: 600px) {
+        min-width: 600px;
+    }
+}
+
+.overflow-ellipsis {
+    max-width: 200px;
+}

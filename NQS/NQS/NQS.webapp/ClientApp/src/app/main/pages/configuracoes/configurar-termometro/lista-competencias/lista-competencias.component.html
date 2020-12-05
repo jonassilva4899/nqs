@@ -1,0 +1,98 @@
+<div
+    class="mb-16"
+    fxLayout="column"
+    fxLayout.gt-xs="row"
+    fxLayoutAlign.gt-xs="space-between center"
+>
+    <h1 class="mb-0" mat-dialog-title>Competências</h1>
+    <div fxFlex.gt-xs="0 0 auto" class="text-right">
+        <button
+            mat-raised-button
+            color="primary"
+            type="button"
+            class="ml-16"
+            (click)="abrirFormCompetencia(Acao.Cadastro)"
+        >
+            Nova competência
+        </button>
+    </div>
+</div>
+
+<div mat-dialog-content>
+    <table mat-table [dataSource]="dataSource" matSort multiTemplateDataRows class="table--hover w-100-p">
+        <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="p-12">Competência</th>
+            <td mat-cell *matCellDef="let row" class="p-12">
+                {{ row.nome }}
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="text-center p-12 w-124">Ações</th>
+            <td mat-cell *matCellDef="let row; let i = dataIndex;" class="text-center p-12">
+                <mat-icon
+                    class="icon-fab-button"
+                    matTooltip="Perguntas"
+                    (click)="abrirListaQuestoesCompetencia(row)"
+                >
+                    help_outline
+                </mat-icon>
+                <mat-icon
+                    class="icon-fab-button edit-color-icon ml-12"
+                    matTooltip="Editar"
+                    (click)="abrirFormCompetencia(Acao.Edicao, row)"
+                >
+                    edit
+                </mat-icon>
+                <mat-icon
+                    *ngIf="!isLoading.apagar[i]"
+                    matTooltip="Apagar"
+                    class="icon-fab-button ml-12"
+                    color="warn"
+                    (click)="apagarCompetencia(row, i, $event)"
+                >
+                    delete
+                </mat-icon>
+                <span *ngIf="isLoading.apagar[i]" class="d-inline-flex ml-12">
+                    <mat-progress-spinner mode="indeterminate" diameter="24"></mat-progress-spinner>
+                </span>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let row" [attr.colspan]="displayedColumns.length">
+                <div class="element-detail" [@detailExpand]="row === expandedElement ? 'expanded' : 'collapsed'">
+                    <b>Descrição:</b>
+                    <p>{{ row.descricao ? row.descricao : 'Nenhuma descrição inserida.' }}</p>
+
+                    <b class="mb-8 d-block">Práticas Ágeis:</b>
+                    <ul class="list list--bullet list--primary ">
+                        <li *ngFor="let pratica of row.praticasAgeis">{{ pratica.nomePraticaAgil }}</li>
+                    </ul>
+                </div>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr
+            mat-row
+            *matRowDef="let row; columns: displayedColumns;"
+            [class.expanded-row]="expandedElement === row"
+            (click)="expandedElement = expandedElement === row ? null : row">
+        </tr>
+        <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+    </table>
+
+    <p class="text-center" *ngIf="!isLoading.listaCompetencias && !listaCompetencias.length">Nenhuma competência cadastrada.</p>
+    <p class="text-center" *ngIf="isLoading.listaCompetencias">Buscando competências...</p>
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        type="button"
+        class="w-116"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+</div>

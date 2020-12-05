@@ -1,0 +1,55 @@
+<div class="theme-options-panel" fusePerfectScrollbar>
+
+    <div class="header">
+
+        <span class="title">Configurações</span>
+
+        <button mat-icon-button class="close-button" (click)="toggleSidebarOpen('themeOptionsPanel')">
+            <mat-icon>close</mat-icon>
+        </button>
+
+    </div>
+
+    <form [formGroup]="form">
+        <!-- COLOR THEME -->
+        <div class="group">
+
+            <h2>Tema</h2>
+
+            <mat-radio-group fxLayout="column" fxLayoutAlign="start start" formControlName="colorTheme">
+                <mat-radio-button class="mb-12" value="theme-default">Leega Light</mat-radio-button>
+                <mat-radio-button class="mb-12" value="theme-pink-dark">Leega Dark</mat-radio-button>
+            </mat-radio-group>
+
+        </div>
+
+        <!--<div class="group">
+            <h2>Organização</h2>
+
+            <mat-form-field>
+                <mat-select (selectionChange)="trocarOrganizacao()" [formControl]="organizacao">
+                    <mat-option *ngFor="let org of (listaOrganizacao$ | async)" [value]="org?.id">{{org?.nome}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <button
+                *exibirParaNiveis="[NivelPermissao.GoobeeAdmin, NivelPermissao.OrganizationAdmin]"
+                mat-stroked-button
+                class="mat-stroked-button mat-primary"
+                (click)="adicionaEditOrg(true)">
+                Editar
+            </button>
+        </div>-->
+    </form>
+
+    <!--<div class="group organizacao mt-8">
+        <button
+            *exibirParaNiveis="[NivelPermissao.GoobeeAdmin]"
+            mat-button
+            class="primary btn-org"
+            (click)="adicionaEditOrg(false)">
+            Nova organização
+        </button>
+    </div>-->
+
+</div>

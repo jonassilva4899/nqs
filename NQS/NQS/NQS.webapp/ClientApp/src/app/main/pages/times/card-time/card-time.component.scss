@@ -1,0 +1,132 @@
+:host {
+    width: 100%;
+    height: auto;
+
+    mat-card {
+        border-radius: 8px;
+        margin: 0px 10px 0px 10px;
+        .card-divider {
+            margin-left: 16px;
+            margin-right: 16px;
+            position: absolute;
+            bottom: 45px;
+            border-top: 1.5px solid rgba(252, 252, 252, 0.32);
+            width: 88%;
+
+            border-radius: 50px;
+        }
+    }
+    .card-time-lista {
+        .lista {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 20px;
+        }
+        &.content {
+            width: 100%;
+            font-size: 14px;
+
+            li {
+                margin-top: 4px;
+                font-size: 13px;
+            }
+
+            span {
+                color: #ea9124;
+            }
+        }
+
+        .icon-lista {
+            font-size: 15px;
+            display: inline;
+        }
+    }
+    .card-time-progresso {
+        .mat-progress-bar {
+            border-radius: 50px;
+            height: 20px;
+        }
+        .progress-bar-number {
+            position: absolute;
+            top: 150px;
+            margin-left: 5%;
+        }
+        h4 {
+            margin-bottom: 3px;
+            margin-block-start: 0.1em;
+            font-size: 12px;
+        }
+        .content {
+            width: 90%;
+        }
+    }
+    .circulo img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .circulo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        max-width: 70px;
+        max-height: 70px;
+        min-width: 70px;
+        min-height: 70px;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #fff;
+    }
+    .nome-time {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .content-image {
+        text-align: center;
+    }
+
+    .card-icone-botao {
+        font-size: 15px;
+        margin-top: 4px;
+    }
+    .card-button-times {
+        font-size: 13px;
+    }
+
+    .btn-time-desativado {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: gray !important;
+    }
+
+    .btn-time-praticas-pend {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        left: 1rem;
+        background-color: #ea9124 !important;
+    }
+
+    .img-time-desativado {
+        -webkit-filter: grayscale(100%) !important;
+        filter: grayscale(100%) !important;
+        filter: gray !important;
+    }
+
+    .btn--medium {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .icon--medium {
+        font-size: 2rem !important;
+        width: 2rem;
+    }
+}

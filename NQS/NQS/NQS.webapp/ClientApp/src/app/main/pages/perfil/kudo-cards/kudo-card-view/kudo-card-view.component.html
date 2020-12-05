@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>
+    {{ kudoCardDados.destinatario }}
+    {{ kudoCardDados.remetente }}
+</h1>
+
+<div mat-dialog-content>
+    <p class="mensagem">{{ kudoCardDados.mensagemBoxKudoCard }}</p>
+    <img
+        *ngIf="kudoCard"
+        [src]="kudoCard.imagem"
+        [alt]="kudoCard.nome"
+        [title]="kudoCard.nome">
+</div>
+
+<div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+    <button
+        mat-stroked-button
+        color="primary"
+        class="w-116"
+        (click)="dialogRef.close()">
+        Fechar
+    </button>
+</div>

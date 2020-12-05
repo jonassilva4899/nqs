@@ -1,0 +1,9 @@
+{
+  "Id": "f162dab8-405e-4dc2-ae60-67480a2148a0",
+  "Titulo": "Mensagem De Boas Vindas",
+  "Mensagem": "Teste de Mensagem",
+  "Tipo": "Notificacao",
+  "DataCriacao": "2020-10-10 00:00:00.0000000",
+  "IdOrganizacao": "f162dab8-405e-4dc2-ae60-67480a2148ab",
+  "Status": true
+}

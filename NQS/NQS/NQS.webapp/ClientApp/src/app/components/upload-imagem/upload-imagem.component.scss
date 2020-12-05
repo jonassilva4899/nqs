@@ -1,0 +1,25 @@
+.circulo img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.circulo{
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    max-width: 90px;
+    max-height: 90px;    
+    min-width: 90px;
+    min-height: 90px;
+    overflow: hidden;
+    position: relative;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+.borderNone{
+    box-shadow: none !important;
+  }

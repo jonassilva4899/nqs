@@ -1,0 +1,114 @@
+﻿@model Leega.HotSite.Models.Causa
+
+@section Scripts
+{
+    <script src="@Url.Content("/assets/js/causes.js")"></script>
+}
+
+<section id="causes">
+    <form id="filtrocausa" asp-action="causas" asp-controller="home" method="post">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-sm-12 mb-3">
+                    <h4 class="title">
+                        Encontre sua causa
+                    </h4>
+                </div>
+            </div>
+            <div class="row align-items-baseline">
+                <div class="col-3 mb-3">
+                    <input type="text" asp-for="campanha" placeholder="Nome da causa" aria-label="Search">
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="dropdown dropright">
+                        <button class="btn btn-whiteonblue dropdown-toggle" id="buttonEstado" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estados</button>
+                        <div class="dropdown-menu" aria-labelledby="buttonEstado">
+                            <ul class="overflow-auto" style="max-height:200px;">
+                                @for (var item = 0; item < Model.estado.Count; item++)
+                {
+                                <input type="hidden" asp-for="@Model.estado[item].id" />
+                                <input type="hidden" asp-for="@Model.estado[item].uf" />
+                                <input type="hidden" asp-for="@Model.estado[item].nome" />
+                                <div class="dropdown-item">
+                                    <input type="checkbox" asp-for="@Model.estado[item].selecionado" />
+                                    <label asp-for="@Model.estado[item].selecionado">@Model.estado[item].uf</label>
+                                </div>
+                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="dropdown dropright">
+                        <button class="btn btn-whiteonblue dropdown-toggle" id="buttonCategoria" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</button>
+                        <div class="dropdown-menu" aria-labelledby="buttonCategoria">
+                            <ul class="overflow-auto" style="max-height:200px;">
+                                @for (var item = 0; item < Model.tiposcausa.Count; item++)
+                {
+                                <input type="hidden" asp-for="@Model.tiposcausa[item].id" />
+                                <input type="hidden" asp-for="@Model.tiposcausa[item].imagem" />
+                                <input type="hidden" asp-for="@Model.tiposcausa[item].descricao" />
+                                <div class="dropdown-item">
+                                    <input type="checkbox" asp-for="@Model.tiposcausa[item].selecionado" />
+                                    <label asp-for="@Model.tiposcausa[item].selecionado">@Model.tiposcausa[item].id - @Model.tiposcausa[item].descricao</label>
+                                </div>
+                 }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <button class="btn__causa--filter">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div id="causes-list" class="container">
+        <div id="cause-item-container" class="row">
+            @foreach (var causa in Model.campanhas)
+            {
+            <div class="col-lg-3 col-sm-6 my-3 owl-item">
+                <!-- dont remove owl-item class -->
+                <div id="causa_@causa.id" class="cause-item-box cause-box-gray" data-campanhaid="@causa.id" data-nome="@causa.nome" data-beneficiario="@causa.beneficiario" data-valorminimo="@causa.valorminimo">
+                    <div class="cause-item-box-wrap">
+                        <div class="cause-item-column h-100">
+                            <span class="box__span">nova</span>
+                            <div class="cause-item-img-box">
+                                @if (causa.imagem != null)
+                                    {
+                                <img class="cause-item-img img-fluid" src="https://altruswebassets.blob.core.windows.net/campanhas/@causa.imagem">
+                                    }
+                            </div>
+                            <div class="cause-item-info">
+                                <h5 class="cause-item-name">@causa.nome</h5>
+                            </div>
+                            <div class="cause-item-button">
+                                <a href="/causa/@causa.url" target="_blank"><span class="action__btn--view"></span></a>
+                                <a id="link-modal-cart" asp-action="index" asp-controller="basket" data-keyboard="false"><span class="action__btn--doar">DOAR!</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+
+@{ await Html.RenderPartialAsync("newsletter", new Leega.Dtos.Newsletter());}
+
+<section id="donate-buttons">
+    <!-- Action Buttons -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-lg-3">
+                <a asp-action="index" asp-controller="basket"><input id="btnDoar" data-keyboard="false" class="causas__btn_action doar" type="button" value="QUERO DOAR!"></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a asp-action="causas" asp-controller="home"><input type="button" class="causas__btn_action active" value="VER TODAS AS CAUSAS" /></a>
+            </div>
+        </div>
+    </div>
+</section>
+

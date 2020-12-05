@@ -1,0 +1,219 @@
+﻿@model Leega.Dtos.DoacaoPagamento
+<br />
+<form id="pagamento" asp-controller="pagamento" asp-action="index" method="post">
+    <div class="container background-color3">
+        <div class="row">
+            <div class="col-sm-12 py-3">
+                <h4 class="title">Pagamento</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <label>Id Doação</label>
+                    <input type="hidden" asp-for="doacaoid" value="@Model.doacao.id" readonly />
+                    <input type="text" asp-for="doacao.id" value="@Model.doacao.id" readonly />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <input type="hidden" asp-for="doacao.pessoa.tipo" />
+                    <label>Recebedor</label>
+                    <input type="text" value="ALTRUS TECNOLOGIA SOCIAL LTDA" />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>CNPJ</label>
+                    <input type="text" value="28.852.786/0001-22" readonly />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Doador</label>
+                    <input type="hidden" asp-for="doacao.pessoa.id" />
+                    <input type="text" asp-for="doacao.pessoa.nome" readonly />
+                </div>
+            </div>
+            @if (Model.doacao.pessoa.tipo == "F")
+            {
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>CPF</label>
+                    <input type="text" asp-for="doacao.pessoa.cpfcnpj" value="@Model.doacao.pessoa.cpfcnpj" readonly data-inputmask-mask="999.999.999-99" />
+                </div>
+            </div>
+            }
+            else
+            {
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>CNPJ</label>
+                    <input type="text" asp-for="doacao.pessoa.cpfcnpj" value="@Model.doacao.pessoa.cpfcnpj" readonly data-inputmask-mask="99.999.999/9999-99" />
+                </div>
+            </div>
+            }
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><p>Veja aqui, quais causas você está apoiando</p></div>
+            </div>
+            <div class="row align-items-center border rounded my-2">
+                @for (var item = 0; item < Model.doacao.campanhas.Count; item++)
+                {
+                <div class="col-sm-2">
+                    <div class="cause-item-label">
+                        <input type="hidden" asp-for="@Model.doacao.campanhas[item].campanha.ong.cnpj" />
+                        <p class="cause-item-item-title m-0">@Convert.ToUInt64(Model.doacao.campanhas[item].campanha.ong.cnpj).ToString(@"00\.000\.000\/0000\-00")</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="cause-item-label">
+                        <p class="cause-item-item-title m-0">@Model.doacao.campanhas[item].campanha.ong.razaosocial</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="cause-item-label">
+                        <input type="hidden" asp-for="@Model.doacao.campanhas[item].campanhaid" />
+                        <input type="hidden" asp-for="@Model.doacao.campanhas[item].campanha.nome" />
+                        <input type="hidden" asp-for="@Model.doacao.campanhas[item].campanha.beneficiario" />
+                        <p class="cause-item-item-title m-0">@Model.doacao.campanhas[item].campanha.nome</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <input type="text" class="cause-item-item-price" asp-for="@Model.doacao.campanhas[item].valor" value="@Model.doacao.campanhas[item].valor" data-inputmask-alias="currency" readonly />
+                </div>
+                }
+                <div class="col-sm-8">
+                </div>
+                <div class="col-sm-2">
+                    <label>Valor total</label>
+                </div>
+                <div class="col-sm-2">
+                    <input type="hidden" asp-for="@Model.doacao.valor" value="@Model.doacao.valor" data-inputmask-alias="currency" />
+                    <input type="text" value="@Model.doacao.valortotal" data-inputmask-alias="currency" readonly />
+                </div>
+            </div>
+        </div>
+
+        <div class="container border rounded py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#tabCartao" data-toggle="tab" onclick="setTipoPagamento(1);">Cartão</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tabBoleto" data-toggle="tab" onclick="setTipoPagamento(2);">Boleto</a>
+                </li>
+            </ul>
+
+            <input type="hidden" asp-for="tipopagamentoid" value="1" />
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabCartao">
+                    <div class="container">
+                        <div class="row py-3">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="cpf">Número do Cartão</label>
+                                    <input type="text" asp-for="dadospagamento.numero" required data-inputmask-alias="card" data-inputmask-placeholder="00000000000000" />
+                                    @Html.ValidationMessageFor(model => Model.dadospagamento.numero)
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">Nome impresso no Cartão</label>
+                                    <input type="text" asp-for="dadospagamento.nome" required />
+                                    @Html.ValidationMessageFor(model => Model.dadospagamento.nome)
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="email">Validade</label>
+                                    <input type="text" asp-for="dadospagamento.validade" required data-inputmask-mask="99/9999" data-inputmask-placeholder="00/0000" />
+                                    @Html.ValidationMessageFor(model => Model.dadospagamento.validade)
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="name">CVV</label>
+                                    <input type="text" asp-for="dadospagamento.codigo" required data-inputmask-alias="cvv" data-inputmask-placeholder="000" />
+                                    @Html.ValidationMessageFor(model => Model.dadospagamento.codigo)
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="name">Parcelas</label>
+                                    <input type="text" asp-for="doacao.recorrencia" required data-inputmask-alias="numeric" readonly />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tabBoleto">
+                    <div class="container">
+                        <div class="row py-3">
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="email">Vencimento</label>
+                                    <input type="text" asp-for="dadospagamento.vencimento" required data-inputmask-mask="99/9999" data-inputmask-placeholder="00/0000" />
+                                    @Html.ValidationMessageFor(model => Model.dadospagamento.vencimento)
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="name">Parcelas</label>
+                                    <input type="text" asp-for="doacao.recorrencia" required data-inputmask-alias="numeric" readonly />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center py-3">
+            <div class="container">
+                <div class="col-sm-12 text-danger no-bullet">
+                    @Html.ValidationMessageFor(model => Model.dadospagamento.nome)
+                </div>
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-whiteonblue col-sm-3" value="CONTINUAR" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div id="alert" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pagamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Parabéns, Altruísta! Sua doação foi realizada com sucesso! Enviamos o recibo no seu e-mail cadastrado.</p>
+            </div>
+            <div class="modal-footer">
+                <a asp-action="dashboard" asp-controller="home" class="btn btn-whiteonblue">Fechar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function setTipoPagamento(id) {
+        $("#tipopagamentoid").val(id);
+    }
+</script>
+@if (Model.result.Success)
+{
+<script type="text/javascript">
+    $("#alert").modal();
+</script>
+}

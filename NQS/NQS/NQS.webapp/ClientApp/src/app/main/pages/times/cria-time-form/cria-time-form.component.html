@@ -1,0 +1,110 @@
+<form class="mat-card pl-4 gt-dialog--form borderNone" fxLayout="column" fxLayoutAlign="start" fxFlex="1 0 auto" name="form" [formGroup]="criarTimeForm" [@animate]="{value:'*', params:{delay:'500ms',scale:'0.2'}}">
+
+    <div class="h2 mb-24" *ngIf="!editar">Cadastrar Novo Time</div>
+    <div class="h2 mb-24" *ngIf="editar">Editar Time</div>
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto">
+
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="nome" required>
+            <mat-error>Campo Nome é obrigatório!</mat-error>
+            <mat-icon matSuffix class="disabled-text">domain</mat-icon>
+        </mat-form-field>
+
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto">
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Propósito</mat-label>
+            <textarea matInput rows="5" formControlName="proposito" #inputProposito maxlength="1000" required></textarea>
+            <span class="char-length-count">{{ 1000 - inputProposito.value.length }} caracteres restantes</span>
+            <mat-error>Campo Propósito é obrigatório.</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto">
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Valores</mat-label>
+            <textarea matInput rows="5" formControlName="valores" #inputValores maxlength="1000" required></textarea>
+            <span class="char-length-count">{{ 1000 - inputValores.value.length }} caracteres restantes</span>
+            <mat-error>Campo Valores é obrigatório</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-between" fxFlex="1 0 auto">
+
+        <mat-form-field class="d-none" appearance="outline" fxFlex="48">
+            <mat-label>Localização</mat-label>
+            <input matInput formControlName="localizacao">
+            <mat-icon matSuffix class="secondary-text">location_city</mat-icon>
+            <mat-error>Campo Localização é obrigatório!</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="48">
+            <mat-label>Grupos</mat-label>
+            <mat-chip-list #chipList aria-label="Grupos">
+                <mat-chip
+                    class="color-chip"
+                    *ngFor="let tag of tagsInseridas"
+                    [selectable]="true"
+                    [removable]="true"
+                    (removed)="removerTag(tag)">
+                    {{ tag.nome }}
+                    <mat-icon matChipRemove>cancel</mat-icon>
+                </mat-chip>
+                <input
+                    #inserirTag
+                    maxlength="20"
+                    formControlName="grupos"
+                    [matChipInputFor]="chipList"
+                    [matAutocomplete]="auto"
+                    [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                    [matChipInputAddOnBlur]="true"
+                    (matChipInputTokenEnd)="adicionarTagInput($event, inserirTag)">
+            </mat-chip-list>
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="adicionarTagSelect($event, inserirTag)">
+                <mat-option *ngFor="let tag of tagsNaoAdicionadas()" [value]="tag">
+                    {{ tag.nome }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+        <span class="mat-error" *ngIf="chipList.errorState">Insira pelo menos 1 grupo</span>
+
+        <mat-form-field appearance="outline" fxFlex="48">
+            <mat-label>Capacity do Time</mat-label>
+            <input matInput type="number" min="0" formControlName="capacity" autocomplete="off" />
+        </mat-form-field>
+
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto">
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Bio do Time</mat-label>
+            <textarea matInput formControlName="bioTime" #inputBioTime rows="5" maxlength="1000" placeholder="Escreva sobre o time"></textarea>
+            <span class="char-length-count">{{ 1000 - inputBioTime.value.length }} caracteres restantes</span>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto">
+        <mat-form-field appearance="outline" fxFlex="100">
+            <mat-label>Acordos do Time</mat-label>
+            <textarea matInput formControlName="acordos" #inputAcordos rows="5" maxlength="1000" placeholder="Acordos"></textarea>
+            <span class="char-length-count">{{ 1000 - inputAcordos.value.length }} caracteres restantes</span>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start">
+        <mat-slide-toggle fxFlex="48" formControlName="ativo" class="mr-24 pl-12">
+            Ativo
+        </mat-slide-toggle>
+    </div>
+
+    <app-upload-imagem [imageUrl]="imageUrl" (respostaImagemBase64)="receberImagemBase64($event)"></app-upload-imagem>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <button mat-raised-button color="primary" class="w-100" (click)="criarTime()" [disabled]="esperaReqFlag">
+            Salvar
+            <mat-progress-bar *ngIf="esperaReqFlag" mode="indeterminate"></mat-progress-bar>
+        </button>
+    </div>
+</form>

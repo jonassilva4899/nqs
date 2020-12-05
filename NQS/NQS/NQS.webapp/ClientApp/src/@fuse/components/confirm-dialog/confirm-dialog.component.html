@@ -1,0 +1,19 @@
+<h1 matDialogTitle>{{ title }}</h1>
+<div mat-dialog-content>{{ message }}</div>
+<div mat-dialog-actions class="pt-24 pb-16">
+    <button
+        class="min-w mr-16"
+        [ngClass]="confirmButtonClass"
+        mat-raised-button
+        (click)="dialogRef.close(true)"
+    >
+        {{ confirmButtonText }}
+    </button>
+    <button
+        class="min-w"
+        mat-button
+        (click)="dialogRef.close(false)"
+    >
+        {{ cancelButtonText }}
+    </button>
+</div>

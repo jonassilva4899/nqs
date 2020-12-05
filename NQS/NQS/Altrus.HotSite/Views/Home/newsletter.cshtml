@@ -1,0 +1,81 @@
+﻿@model Leega.Dtos.Newsletter
+
+@{
+    Layout = "";
+}
+
+<section id="newsletter">
+    <div class="container">
+        <div class="row d-flex align-items-center align-items-xl-start justify-content-sm-end justify-content-xl-start">
+            <div class="col-xl-3 col-lg-5 col-sm-5 mb-4 mb-sm-0">
+                <h2>
+                    <strong>APOIE</strong> A<br>
+                    NOSSA <strong>CAUSA</strong>
+                </h2>
+                <p>Receba a nossa Newsletter</p>
+            </div>
+            <div class="col-xl-9 col-lg-7 col-sm-7">
+                <form id="formnewsletter" name="formnewsletter">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-4 my-3">
+                            <label for="nome">Nome:</label>
+                            <input type="text" asp-for="nome" placeholder="Insira seu nome" />
+                            <span asp-validation-for="nome" class="text-danger" />
+                        </div>
+                        <div class="col-xl-4 my-3">
+                            <label for="email">E-mail:</label>
+                            <input type="text" asp-for="email" placeholder="Insira o seu melhor e-mail" />
+                            <span asp-validation-for="email" class="text-danger" />
+                        </div>
+                        <div class="col-xl-4 my-3">
+                            <input type="button" class="btn btn-whiteonblue" value="CADASTRE-SE" onclick="addnewsletter();">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="alertNewsletter" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Newsletter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Sua email foi adicionado na nossa newsletter.</p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-secondary" data-dismiss="modal">Fechar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function addnewsletter() {
+        var e = $("#formnewsletter");
+
+        if ($(e).valid()) {
+            $.ajax({
+                url: '/home/newsletter',
+                type: "post",
+                data: {
+                    nome: $("#nome").val(),
+                    email: $("#email").val()
+                },
+                success: function (data) {
+                    if (data.result.success) {
+                        $("#nome").val("");
+                        $("#email").val("");
+
+                        $("#alertNewsletter").modal();
+                    }
+                }
+            });
+        }
+        return false;
+    }
+</script>

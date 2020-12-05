@@ -1,0 +1,18 @@
+<div class="p-36">
+    <div mat-dialog-content>
+        <div fxLayout="column">
+            <mat-card-title>{{this.notificacaoDetalhe.titulo}}</mat-card-title>
+            <p>{{this.notificacaoDetalhe.detalhes}}</p>
+        </div>
+    </div>
+
+    <div mat-dialog-actions fxLayoutAlign="end" class="mt-16">
+        <button mat-raised-button color="primary" (click)="dialogRef.close(true)">
+            Remover
+        </button>
+
+        <button mat-stroked-button class="ml-16" color="primary" (click)="dialogRef.close()">
+            Cancelar
+        </button>
+    </div>
+</div>

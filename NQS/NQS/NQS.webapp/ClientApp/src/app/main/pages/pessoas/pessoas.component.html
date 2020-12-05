@@ -1,0 +1,89 @@
+<div class="page-layout blank p-24" fusePerfectScrollbar>
+    <form
+        class="header pl-8"
+        fxLayout="row"
+        fxLayout.lt-md="column"
+        fxLayoutAlign="start center"
+        fxLayout.gt-sm="row"
+        fxLayoutAlign.gt-sm="start center"
+        [formGroup]="filtros"
+    >
+
+        <mat-form-field appearance="outline" fxFlex="20" fxFlex.lt-md="1 1 auto" class="mat-form-field--xs p-8 filtro">
+            <mat-label>Filtro</mat-label>
+            <input matInput type="text" formControlName="nomeColaborador">
+            <mat-icon matSuffix class="secondary-text">search</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="16" fxFlex.lt-md="1 1 auto" class="mat-form-field--xs p-8 filtro">
+            <mat-label>Habilidades</mat-label>
+            <input matInput type="text" formControlName="habilidade" [matAutocomplete]="auto">
+            <mat-icon matSuffix class="secondary-text">search</mat-icon>
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let hab of this.listaHabilidade" [value]="hab.nomeHabilidade">
+                    {{ hab.nomeHabilidade }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="12" fxFlex.lt-md="100" class="mat-form-field--xs p-8 filtro">
+            <mat-label>Clientes</mat-label>
+            <mat-select formControlName="idCliente">
+                <mat-option [value]="">Todos Clientes</mat-option>
+                <mat-option *ngFor="let cliente of this.listaClientes$ | async" [value]="cliente.id">
+                    {{ cliente.nome }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="12" fxFlex.lt-md="100" class="mat-form-field--xs p-8 filtro">
+            <mat-label>Responsável</mat-label>
+            <mat-select formControlName="idResponsavel">
+                <mat-option [value]="">Todos Responsáveis</mat-option>
+                <mat-option *ngFor="let resp of this.listaResponsaveis$ | async" [value]="resp.id">
+                    {{ resp.nome }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="12" fxFlex.lt-md="100" class="mat-form-field--xs p-8 filtro">
+            <mat-label>Situação</mat-label>
+            <mat-select formControlName="status">
+                <mat-option [value]="">Todos</mat-option>
+                <mat-option [value]="true">Ativo</mat-option>
+                <mat-option [value]="false">Inativo</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <button
+            *exibirParaNiveis="[
+                NivelPermissao.GoobeeAdmin,
+                NivelPermissao.OrganizationAdmin,
+                NivelPermissao.AgileCoach,
+                NivelPermissao.TeamLeader,
+                NivelPermissao.TeamMember
+              ];"
+            type="button"
+            mat-stroked-button
+            class="btn-adicionar-time adicionar-time"
+            (click)="adicionarPessoa()">
+            <mat-icon class="icon">add </mat-icon>Nova Pessoa
+        </button>
+    </form>
+
+    <app-lista-pessoas [hidden]="isLoading.listaPessoas" [listaPessoas]="listaPessoas" [filtroPessoas]="filtros.value"></app-lista-pessoas>
+
+    <div *ngIf="isLoading.listaPessoas" class="local-loading">
+        <mat-spinner color="primary" diameter="48"></mat-spinner>
+    </div>
+</div>
+
+
+
+
+<section>
+    <div class="example-label">Stroked</div>
+    <div class="example-button-row">     
+      <a mat-stroked-button [routerLink]="['/teste']">Link</a>
+    </div>
+  </section>

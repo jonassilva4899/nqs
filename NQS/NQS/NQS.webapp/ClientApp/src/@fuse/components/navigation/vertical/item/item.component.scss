@@ -1,0 +1,29 @@
+:host {
+    .nav-link {
+            height: 64px;
+            .nav-link-title {
+                margin-left: 10px;                
+                font-size: 15px;
+            }  
+        
+    }
+    .nav-link-icon{
+        font-size: 30px!important;
+    }
+    .folded:not(.unfolded) & {
+        .nav-link {
+
+            > .nav-link-title,
+            > .nav-link-badge {
+                opacity: 0;
+                transition: opacity 200ms ease;
+               
+            }
+            height: 64px;
+            
+        }
+        .nav-link-icon{
+            font-size: 30px!important;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+<mat-toolbar class="p-0 mat-elevation-z1">
+
+    <div fxFlex fxFill fxLayout="row" fxLayoutAlign="start center">
+
+        <div fxFlex="1 1 auto" fxLayout="row" fxLayoutAlign="start center">
+
+            <button mat-icon-button class="navbar-toggle-button" *ngIf="!hiddenNavbar && !rightNavbar"
+                (click)="toggleSidebarOpen('navbar')" fxHide.gt-md>
+                <mat-icon class="secondary-text">menu</mat-icon>
+            </button>
+
+            <div class="logo" fxLayout="row" fxLayoutAlign="start center">
+                <!--<img class="logo-icon" src="assets/images/logos/download.png" *ngIf="showPositive">
+                <img class="logo-icon" src="assets/images/logos/download.png" *ngIf="!showPositive">-->
+            </div>
+
+        </div>
+
+        <div *ngIf="toolbarOptions" fxFlex="1 1 auto" fxLayout="row" fxLayoutAlign="start center">
+            <h1 class="pr-16">{{ toolbarOptions.title }}</h1>
+        </div>
+
+        <ng-container *ngIf="(toolbarOptions && !toolbarOptions.hideUserOptions) || !toolbarOptions">
+            <!--<app-selecionar-time class="mr-32" fxFlex="25" fxLayout="row" fxLayoutAlign="start center" [fxHide]="true" [fxShow.gt-xs]="true"></app-selecionar-time>-->
+
+            <div class="" fxFlex="0 0 auto" fxLayout="row" fxLayoutAlign="start center">
+
+
+                <button mat-button [matMenuTriggerFor]="userMenu" class="user-button">
+                    <div fxLayout="row" fxLayoutAlign="center center">
+                        <img
+                            *ngIf="usuario && usuario.foto"
+                            class="avatar mr-0 mr-sm-16"
+                            [title]="usuario?.nome"
+                            src="{{ usuario.foto | encodeWhiteSpace }}"
+                        >
+                        <img
+                            *ngIf="!usuario || !usuario.foto"
+                            class="avatar mr-0 mr-sm-16"
+                            [title]="usuario?.nome"
+                            src="assets/images/logos/goobee_masculino.png"
+                        >
+                        <span class="username mr-12" fxHide fxShow.gt-sm>{{ usuario?.nome }}</span>
+                        <mat-icon class="s-16" fxHide.xs>keyboard_arrow_down</mat-icon>
+                    </div>
+                </button>
+
+                <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+
+                    <button mat-menu-item (click)="irParaMeuPerfil()">
+                        <mat-icon>person_outline</mat-icon>
+                        <span>Meu Perfil</span>
+                    </button>
+
+                    <button mat-menu-item (click)="logout()">
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>Sair</span>
+                    </button>
+
+                </mat-menu>
+            </div>
+
+            <app-notification class="quick-panel-toggle-button" (click)="toggleSidebarOpen('quickPanel')">
+            </app-notification>
+        </ng-container>
+
+    </div>
+
+</mat-toolbar>

@@ -1,0 +1,55 @@
+<div class="container flex-start personal-mapping">
+    <div class="item-card title-left">
+        <span class="logo-text h1">Personal Mapping</span>
+    </div>
+    <div class="container personal-mapping__list">
+        <div class="row">
+            <ng-container *ngIf="!isLoading.personalMappings; else elseLoading">
+                <ng-container *ngIf="idsTimes">
+                    <ng-container
+                        *exibirParaNiveis="[
+                            NivelPermissao.GoobeeAdmin,
+                            NivelPermissao.OrganizationAdmin,
+                            NivelPermissao.AgileCoach
+                        ]; ouSeTeamLeader: idsTimes; ouSeMesmaPessoa: idPessoa; else elsePermissao">
+                        <mat-card
+                            class="cursor-pointer"
+                            *ngFor="let mapping of personalMappings; let i = index"
+                            (click)="abrirFormPersonalMapping(Acao.Edicao, mapping)">
+                            <h4 class="card-title card-title--xs">{{ mapping.titulo }}</h4>
+                            <mat-icon class="close-icon" (click)="remover($event, mapping, i)">close</mat-icon>
+                            <mat-card-content>
+                                <ul class="list list--bullet list--primary">
+                                    <li *ngFor="let item of mapping.itens">{{ item.nomeItem }}</li>
+                                </ul>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="mat-card--add cursor-pointer" (click)="abrirFormPersonalMapping(Acao.Cadastro)">
+                            <mat-card-content>
+                                <mat-icon>add</mat-icon>
+                            </mat-card-content>
+                        </mat-card>
+                    </ng-container>
+                    <ng-template #elsePermissao>
+                        <mat-card class="w-100-p" *ngIf="!personalMappings.length; else elseVazio">
+                            <mat-card-content>Nenhum personal mapping criado.</mat-card-content>
+                        </mat-card>
+                        <ng-template #elseVazio>
+                            <mat-card *ngFor="let mapping of personalMappings; let i = index">
+                                <h4 class="card-title card-title--xs">{{ mapping.titulo }}</h4>
+                                <mat-card-content>
+                                    <ul class="list list--bullet list--primary">
+                                        <li *ngFor="let item of mapping.itens">{{ item.nomeItem }}</li>
+                                    </ul>
+                                </mat-card-content>
+                            </mat-card>
+                        </ng-template>
+                    </ng-template>
+                </ng-container>
+            </ng-container>
+            <ng-template #elseLoading>
+                <mat-card class="personal-mapping__skeleton"></mat-card>
+            </ng-template>
+        </div>
+    </div>
+</div>

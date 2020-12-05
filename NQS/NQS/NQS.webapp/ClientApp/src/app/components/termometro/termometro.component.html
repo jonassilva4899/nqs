@@ -1,0 +1,10 @@
+<div class="termometer-wrapper" fxFlex="1 1 auto">
+    <div id="termometer">
+        <div
+            id="temperature"
+            [ngStyle]="{'height': (temperatura * 10) + '%'}"
+            [attr.data-value]="(temperatura * 10) + '°C'"
+        ></div>
+        <div id="graduations"></div>
+    </div>
+</div>
