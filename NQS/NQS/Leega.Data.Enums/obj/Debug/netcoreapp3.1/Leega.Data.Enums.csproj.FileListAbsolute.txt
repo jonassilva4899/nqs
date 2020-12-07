@@ -31,3 +31,12 @@ C:\leega\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.Assem
 C:\leega\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.csproj.CoreCompileInputs.cache
 C:\leega\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.dll
 C:\leega\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.pdb
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\bin\Debug\netcoreapp3.1\Leega.Data.Enums.deps.json
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\bin\Debug\netcoreapp3.1\Leega.Data.Enums.dll
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\bin\Debug\netcoreapp3.1\Leega.Data.Enums.pdb
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.csprojAssemblyReference.cache
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.AssemblyInfoInputs.cache
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.AssemblyInfo.cs
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.csproj.CoreCompileInputs.cache
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.dll
+C:\nqs_2020\nqs\NQS\NQS\Leega.Data.Enums\obj\Debug\netcoreapp3.1\Leega.Data.Enums.pdb

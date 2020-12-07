@@ -11,6 +11,7 @@ namespace Leega.DataMySql.Tests.Tests
     {
         protected static ClienteTest _clienteTest;
         protected static UsuarioTests _usuarioTests;
+        protected static PacienteTests _pacienteTests;
 
         static ProgramBase()
         {
@@ -19,6 +20,7 @@ namespace Leega.DataMySql.Tests.Tests
 
             _clienteTest = IoC.BootStrapper.Resolve<ClienteTest>();
             _usuarioTests = IoC.BootStrapper.Resolve<UsuarioTests>();
+            _pacienteTests = IoC.BootStrapper.Resolve<PacienteTests>();
         }
     }
 }

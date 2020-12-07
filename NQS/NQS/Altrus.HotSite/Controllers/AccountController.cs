@@ -110,7 +110,7 @@ namespace Leega.UI.Controllers
                     {
                         return Redirect(model.returnUrl);
                     }
-                    return RedirectToAction("altruista", "cadastro");
+                    return RedirectToAction("paciente", "cadastro");
                 }
                 else
                 {

@@ -16,11 +16,13 @@ namespace Leega.IoC
             services.AddTransient<IUsuarioMySqlRepository, UsuarioMySqlRepository>();
             services.AddTransient<IOrganizacaoMySqlRepository, OrganizacaoMySqlRepository>();
             services.AddTransient<IPessoaMySqlRepository, PessoaMySqlRepository>();
+            services.AddTransient<IPacienteMySqlRepository, PacienteMySqlRepository>();
 
             // Aplication
             services.AddTransient<IUsuarioMySqlService, UsuarioMySqlService>();
             services.AddTransient<ILoginMySqlService, LoginMySqlService>();
             services.AddTransient<IPessoaMySqlService, PessoaMySqlService>();
+            services.AddTransient<IPacienteMySqlService, PacienteMySqlService>();
         }
 
         public static T GetService<T>()

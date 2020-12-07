@@ -82,3 +82,15 @@ C:\leega\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CoreComp
 C:\leega\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CopyComplete
 C:\leega\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.dll
 C:\leega\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.pdb
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Domain.deps.json
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Domain.dll
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Domain.pdb
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Entity.dll
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Entity.pdb
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csprojAssemblyReference.cache
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.AssemblyInfoInputs.cache
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.AssemblyInfo.cs
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CoreCompileInputs.cache
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CopyComplete
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.dll
+C:\nqs_2020\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.pdb

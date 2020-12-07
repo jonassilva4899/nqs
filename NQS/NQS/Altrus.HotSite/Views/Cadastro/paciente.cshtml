@@ -1,7 +1,7 @@
 ﻿@model Leega.Dtos.Paciente
 
 <br />
-<form asp-controller="cadastro" asp-action="altruista" method="post">
+<form asp-controller="cadastro" asp-action="paciente" method="post">
     <div class="container background-color3">
         <div class="row">
             <div class="col-sm-12 py-3">
@@ -253,8 +253,8 @@
                                         <label for="name">Atendimento Prioritário:</label><span class="float-right"></span>
                                         @*<input type="text" asp-for="AtendimentoPrioritario" placeholder="Atendimento Prioritario">*@
                                         <select id="AtendimentoPrioritario" name="AtendimentoPrioritario">
-                                            <option value="Nao">Não</option>
-                                            <option value="Sim">Sim</option>
+                                            <option value="false">Não</option>
+                                            <option value="true">Sim</option>
                                         </select>
                                         <span asp-validation-for="AtendimentoPrioritario" class="text-danger"></span>
                                     </div>
@@ -263,7 +263,7 @@
                                     <div class="form-group">
                                         <label for="name">Motivo do Atendimento:</label><span class="float-right"></span>
                                         @*<input type="text" asp-for="MotivoAtendimento" placeholder="Informe o motivo do atendimento">*@
-                                        <select id="AtendimentoPrioritario" name="AtendimentoPrioritario">
+                                        <select id="MotivoAtendimento" name="MotivoAtendimento">
                                             <option value="">Selecione uma opção</option>
                                             <option value="Rotina">Rotina</option>
                                             <option value="Emergencia">Emergência</option>

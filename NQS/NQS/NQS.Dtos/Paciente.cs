@@ -53,19 +53,19 @@ namespace Leega.Dtos
 
         public string Email { get; set; }
 
-        public Convenio Convenio { get; set; }
+        public string Convenio { get; set; }
 
-        public Especialidade Especialidade { get; set; }
+        public string Especialidade { get; set; }
 
         public bool AtendimentoPrioritario { get; set; }
 
-        public MotivoAtendimento MotivoAtendimento { get; set; }
+        public string MotivoAtendimento { get; set; }
 
-        public Impressao Impressao { get; set; }
+        public string Impressao { get; set; }
 
-        public Procedencia Procedencia { get; set; }
+        public string Procedencia { get; set; }
 
-        public OrigemAtendimento OrigemAtendimento { get; set; }
+        public string OrigemAtendimento { get; set; }
 
         public string DesfechoAtendimento { get; set; }
     }

@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Leega.DataMySql\Leega.DataMySql.csproj" />
     <ProjectReference Include="..\NQS.Dtos\Leega.Dtos.csproj" />
   </ItemGroup>
 

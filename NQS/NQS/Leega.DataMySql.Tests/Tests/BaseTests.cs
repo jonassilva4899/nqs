@@ -13,6 +13,9 @@ namespace Leega.DataMySql.Tests.Tests
         protected static IClienteMySqlRepository _clienteMySqlRepository;
         protected static IUsuarioMySqlService _usuarioMySqlService;
         protected static IPessoaMySqlService _pessoaMySqlService;
+        //protected static IPacienteMySqlRepository _PacienteMySqlRepository;
+        protected static IPacienteMySqlService _PacienteMySqlService;
+
 
         static BaseTests()
         {
@@ -22,6 +25,8 @@ namespace Leega.DataMySql.Tests.Tests
             _clienteMySqlRepository = IoC.BootStrapper.Resolve<IClienteMySqlRepository>();
             _usuarioMySqlService = IoC.BootStrapper.Resolve<IUsuarioMySqlService>();
             _pessoaMySqlService = IoC.BootStrapper.Resolve<IPessoaMySqlService>();
+            _pessoaMySqlService = IoC.BootStrapper.Resolve<IPessoaMySqlService>();
+            _PacienteMySqlService = IoC.BootStrapper.Resolve<IPacienteMySqlService>();
         }
     }
 }

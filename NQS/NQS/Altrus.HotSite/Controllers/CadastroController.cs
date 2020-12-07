@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using RestSharp;
 
 namespace Leega.UI.Controllers
 {
@@ -75,6 +76,34 @@ namespace Leega.UI.Controllers
 
         public IActionResult Paciente()
         {
+            ViewBag.State = false;
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Paciente(Leega.Dtos.Paciente model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            
+            StringContent content = new StringContent(JsonSerializer.Serialize(model, typeof(Leega.Dtos.Paciente)), Encoding.UTF8, "application/json");
+
+
+            //RestClient restClient = new RestClient("https://localhost:44391");
+            //RestRequest request = new RestRequest("Paciente/Adicionar", Method.POST);
+            
+
+            ////request.AddParameter("application/json", model, ParameterType.RequestBody);
+
+
+            ////request.AddParameter("application/json", content, ParameterType.RequestBody);
+            //var response = await restClient.ExecuteAsync(request);
+            //var content1 = response.Content;
+
+
+            HttpResponseMessage httpResponse = await apiClient.PostAsync("Paciente/Adicionar", content);
             ViewBag.State = false;
             return View();
         }

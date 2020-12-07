@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "BwLpkbnkJbJnK0QhbHrEO2HDlJWOoTdUJ6EeMzcRlABpkFXTycf2kpvNXFGdH9onT1goFKYZfXr/T8oK0pdYCQ==",
+  "dgSpecHash": "i5y/eUKY8OmO7CJyIbfH5Jzh7Fs1A+Az82jnzTFHyMNx0Jw7Vi1snQ0lgWnSRMuPUy3PFeAoJx6E64nDLocFjA==",
   "success": true,
-  "projectFilePath": "C:\\gitgubnqs\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+  "projectFilePath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Francisco Corte\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\Francisco Corte\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Francisco Corte\\.nuget\\packages\\qrcoder\\1.3.9\\qrcoder.1.3.9.nupkg.sha512",
-    "C:\\Users\\Francisco Corte\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+    "C:\\Users\\gustavo.luna\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\gustavo.luna\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\gustavo.luna\\.nuget\\packages\\qrcoder\\1.3.9\\qrcoder.1.3.9.nupkg.sha512",
+    "C:\\Users\\gustavo.luna\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

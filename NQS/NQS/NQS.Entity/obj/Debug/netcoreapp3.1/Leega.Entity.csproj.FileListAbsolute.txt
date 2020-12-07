@@ -82,3 +82,15 @@ C:\leega\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.dll
 C:\leega\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.pdb
 C:\leega\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.genruntimeconfig.cache
 C:\leega\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.csprojAssemblyReference.cache
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\bin\Debug\netcoreapp3.1\Leega.Entity.deps.json
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\bin\Debug\netcoreapp3.1\Leega.Entity.runtimeconfig.json
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\bin\Debug\netcoreapp3.1\Leega.Entity.runtimeconfig.dev.json
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\bin\Debug\netcoreapp3.1\Leega.Entity.dll
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\bin\Debug\netcoreapp3.1\Leega.Entity.pdb
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.csprojAssemblyReference.cache
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.AssemblyInfoInputs.cache
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.AssemblyInfo.cs
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.csproj.CoreCompileInputs.cache
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.dll
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.pdb
+C:\nqs_2020\nqs\NQS\NQS\NQS.Entity\obj\Debug\netcoreapp3.1\Leega.Entity.genruntimeconfig.cache
