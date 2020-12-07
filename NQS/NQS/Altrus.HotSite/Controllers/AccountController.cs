@@ -302,7 +302,7 @@ namespace Leega.UI.Controllers
 
             HttpContext.Session.Clear();
 
-            return RedirectToAction("index", "home");
+            return RedirectToAction("login", "account");
         }
 
         private Leega.Dtos.Pessoa ObterLoginPessoa(Guid idPessoa)
