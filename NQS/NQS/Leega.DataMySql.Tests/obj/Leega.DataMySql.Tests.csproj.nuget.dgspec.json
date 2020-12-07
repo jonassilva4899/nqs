@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj": {}
+    "C:\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj": {}
   },
   "projects": {
-    "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
+    "C:\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj",
+        "projectUniqueName": "C:\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj",
         "projectName": "Leega.Application",
-        "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj",
-        "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-        "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\obj\\",
+        "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\nqs\\NQS\\NQS\\Leega.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,14 +28,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
               },
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
               },
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj"
+              "C:\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj"
               }
             }
           }
@@ -81,20 +78,17 @@
         }
       }
     },
-    "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
+    "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
+        "projectUniqueName": "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
         "projectName": "Leega.Data.Enums",
-        "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
-        "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-        "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\obj\\",
+        "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -138,20 +132,17 @@
         }
       }
     },
-    "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj": {
+    "C:\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj",
+        "projectUniqueName": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj",
         "projectName": "Leega.DataMySql.Tests",
-        "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj",
-        "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-        "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\obj\\",
+        "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,14 +156,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
               },
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
               },
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj"
               }
             }
           }
@@ -215,20 +206,17 @@
         }
       }
     },
-    "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+    "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
+        "projectUniqueName": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
         "projectName": "Leega.DataMySql",
-        "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
-        "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-        "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\obj\\",
+        "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -242,8 +230,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
               }
             }
           }
@@ -290,20 +278,17 @@
         }
       }
     },
-    "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj": {
+    "C:\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
+        "projectUniqueName": "C:\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
         "projectName": "Leega.IoC",
-        "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
-        "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-        "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\obj\\",
+        "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\nqs\\NQS\\NQS\\Leega.IoC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -317,11 +302,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
               },
-              "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
-                "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+              "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+                "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
               }
             }
           }
@@ -364,20 +349,17 @@
         }
       }
     },
-    "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
+    "C:\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+        "projectUniqueName": "C:\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
         "projectName": "Leega.Util",
-        "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
-        "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-        "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\obj\\",
+        "projectPath": "C:\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+        "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+        "outputPath": "C:\\nqs\\NQS\\NQS\\NQS.Util\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

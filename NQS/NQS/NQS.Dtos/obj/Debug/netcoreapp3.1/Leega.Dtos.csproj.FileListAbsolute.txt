@@ -94,3 +94,15 @@ C:\nqs_2020\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.csproj.CoreC
 C:\nqs_2020\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.csproj.CopyComplete
 C:\nqs_2020\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.dll
 C:\nqs_2020\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.pdb
+C:\nqs\NQS\NQS\NQS.Dtos\bin\Debug\netcoreapp3.1\Leega.Dtos.deps.json
+C:\nqs\NQS\NQS\NQS.Dtos\bin\Debug\netcoreapp3.1\Leega.Dtos.dll
+C:\nqs\NQS\NQS\NQS.Dtos\bin\Debug\netcoreapp3.1\Leega.Dtos.pdb
+C:\nqs\NQS\NQS\NQS.Dtos\bin\Debug\netcoreapp3.1\Leega.Util.dll
+C:\nqs\NQS\NQS\NQS.Dtos\bin\Debug\netcoreapp3.1\Leega.Util.pdb
+C:\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.csprojAssemblyReference.cache
+C:\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.AssemblyInfoInputs.cache
+C:\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.AssemblyInfo.cs
+C:\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.csproj.CoreCompileInputs.cache
+C:\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.csproj.CopyComplete
+C:\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.dll
+C:\nqs\NQS\NQS\NQS.Dtos\obj\Debug\netcoreapp3.1\Leega.Dtos.pdb

@@ -181,7 +181,6 @@ namespace Leega.Api
                 //Repositories
                 services.AddTransient<IPessoaRepository, PessoaRepository>();
                 services.AddTransient<ITimeRepository, TimeRepository>();
-                services.AddTransient<INotificacaoUsuarioRepository, NotificacaoUsuarioRepository>();
                 services.AddTransient<IUsuarioRepository, UsuarioRepository>();
                 services.AddTransient<IClienteRepository, ClienteRepository>();
                 services.AddTransient<IOrganizacaoRepository, OrganizacaoRepository>();

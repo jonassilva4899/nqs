@@ -70,3 +70,12 @@ C:\nqs_2020\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.AssemblyInfo
 C:\nqs_2020\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.csproj.CoreCompileInputs.cache
 C:\nqs_2020\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.dll
 C:\nqs_2020\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.pdb
+C:\nqs\NQS\NQS\NQS.Util\bin\Debug\netcoreapp3.1\Leega.Util.deps.json
+C:\nqs\NQS\NQS\NQS.Util\bin\Debug\netcoreapp3.1\Leega.Util.dll
+C:\nqs\NQS\NQS\NQS.Util\bin\Debug\netcoreapp3.1\Leega.Util.pdb
+C:\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.csprojAssemblyReference.cache
+C:\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.AssemblyInfoInputs.cache
+C:\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.AssemblyInfo.cs
+C:\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.csproj.CoreCompileInputs.cache
+C:\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.dll
+C:\nqs\NQS\NQS\NQS.Util\obj\Debug\netcoreapp3.1\Leega.Util.pdb
