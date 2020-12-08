@@ -192,23 +192,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gustavo.luna\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Francisco Corte\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
+      "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
       "projectName": "Leega.Dtos",
-      "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
-      "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-      "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Dtos\\obj\\",
+      "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
+      "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+      "outputPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Dtos\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -222,8 +218,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
-              "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj"
             }
           }
         }

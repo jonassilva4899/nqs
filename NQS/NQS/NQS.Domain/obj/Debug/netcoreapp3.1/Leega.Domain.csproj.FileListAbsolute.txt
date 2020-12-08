@@ -106,3 +106,15 @@ C:\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CoreCompil
 C:\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CopyComplete
 C:\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.dll
 C:\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.pdb
+C:\git\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Domain.deps.json
+C:\git\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Domain.dll
+C:\git\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Domain.pdb
+C:\git\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Entity.dll
+C:\git\nqs\NQS\NQS\NQS.Domain\bin\Debug\netcoreapp3.1\Leega.Entity.pdb
+C:\git\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csprojAssemblyReference.cache
+C:\git\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.AssemblyInfoInputs.cache
+C:\git\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.AssemblyInfo.cs
+C:\git\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CoreCompileInputs.cache
+C:\git\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.csproj.CopyComplete
+C:\git\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.dll
+C:\git\nqs\NQS\NQS\NQS.Domain\obj\Debug\netcoreapp3.1\Leega.Domain.pdb

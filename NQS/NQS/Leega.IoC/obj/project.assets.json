@@ -7361,11 +7361,12 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
+      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7460,23 +7461,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gustavo.luna\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Francisco Corte\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
+      "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
       "projectName": "Leega.IoC",
-      "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
-      "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
-      "outputPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.IoC\\obj\\",
+      "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
+      "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
+      "outputPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7490,11 +7487,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
-              "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
             },
-            "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
-              "projectPath": "C:\\nqs_2020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
             }
           }
         }
