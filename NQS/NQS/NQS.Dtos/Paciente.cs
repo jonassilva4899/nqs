@@ -28,7 +28,7 @@ namespace Leega.Dtos
         [DataType(DataType.Date, ErrorMessage = "Informe a data de nascimento")]
         public Nullable<DateTime> DataNascimento { get; set; }
 
-
+        public string Id { get; set; }
 
         public string CartaoSus { get; set; }
         public string Apelido { get; set; }

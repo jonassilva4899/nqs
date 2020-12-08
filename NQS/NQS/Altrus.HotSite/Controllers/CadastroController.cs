@@ -45,10 +45,8 @@ namespace Leega.UI.Controllers
 
             return View(model);
         }
-        public IActionResult Embaixador()
-        {
-            return View();
-        }
+        
+
         [HttpPost]
         public IActionResult Embaixador(Leega.Dtos.Pessoa model)
         {
@@ -78,6 +76,43 @@ namespace Leega.UI.Controllers
         {
             ViewBag.State = false;
             return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> PacienteEditar(Guid id)
+        {
+
+            HttpResponseMessage httpResponse = await apiClient.GetAsync("/paciente/Obter/"+ id);
+
+            var content = await httpResponse.Content.ReadAsStringAsync();
+
+            Leega.Dtos.Paciente model = JsonSerializer.Deserialize<Leega.Dtos.Paciente>(content, new JsonSerializerOptions() { IgnoreNullValues = false, PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+
+
+            ViewBag.State = false;
+            return View(model);
+        }
+
+        public async Task<IActionResult> PacienteListaAsync()
+        {
+
+            //Models.Paciente model = new Models.Paciente();
+
+            //HttpResponseMessage httpResponse = await apiClient.GetAsync("/paciente/ListarPacientes");
+
+
+
+            HttpResponseMessage httpResponse = await apiClient.GetAsync("/paciente/ListarPacientes");
+
+            var content = await httpResponse.Content.ReadAsStringAsync();
+
+            List<Leega.Dtos.Paciente> model = JsonSerializer.Deserialize<List<Leega.Dtos.Paciente>>(content, new JsonSerializerOptions() { IgnoreNullValues = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+
+
+            //List<Leega.Dtos.Estados> model = JsonSerializer.Deserialize<List<Leega.Dtos.Estados>>(content, new JsonSerializerOptions() { IgnoreNullValues = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+
+            ViewBag.State = false;
+            return View(model);
         }
 
         [HttpPost]

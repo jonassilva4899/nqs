@@ -2756,3 +2756,5 @@ C:\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.csproj.CopyComple
 C:\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.dll
 C:\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.pdb
 C:\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.genruntimeconfig.cache
+C:\nqs_2020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\pacienteLista.cshtml.g.cs
+C:\nqs_2020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\pacienteEditar.cshtml.g.cs
