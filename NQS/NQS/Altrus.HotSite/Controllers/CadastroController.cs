@@ -93,7 +93,7 @@ namespace Leega.UI.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> PacienteListaAsync()
+        public async Task<IActionResult> PacienteLista()
         {
 
             //Models.Paciente model = new Models.Paciente();
@@ -122,7 +122,7 @@ namespace Leega.UI.Controllers
             {
                 return View(model);
             }
-            
+            model.Id = Guid.NewGuid().ToString();
             StringContent content = new StringContent(JsonSerializer.Serialize(model, typeof(Leega.Dtos.Paciente)), Encoding.UTF8, "application/json");
 
 

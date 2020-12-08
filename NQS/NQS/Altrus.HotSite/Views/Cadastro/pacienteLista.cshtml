@@ -44,8 +44,7 @@
                                 <th>Nome Completo</th>
                                 <th>Documento Identificador</th>
                                 <th>Data Nascimento</th>
-                                <th>Celular</th>
-                                <th></th>
+                                <th>Celular</th>                                
                             </tr>
                         </thead>
                         <tbody>
@@ -55,13 +54,7 @@
                                     <td><a  data-value="@item.Id" id="actionId" onclick="Clickfn('@item.Id')">@item.NomeCompleto</a></td>
                                     <td>@item.DocumentoIdentificacao</td>
                                     <td>@item.DataNascimento</td>
-                                    <td>@item.Celular</td>
-                                    <td>@item.Celular</td>
-                                    |
-                                    <td>
-                                        <a data-value="@item.Id"
-                                           href="javascript:void(0)" class="btnEdit">Edit</a>
-                                    </td>
+                                    <td>@item.Celular</td>                                                                       
                                 </tr>
                             }
                         </tbody>
