@@ -36,5 +36,43 @@ namespace Leega.DataMySql.Repositories.Interfaces
             string sql = @"select * from paciente where Id = @Id";
             return base.Obter(sql, obj);
         }
+
+
+        void IPacienteMySqlRepository.Atualizar(PacienteMySql obj)
+        {
+            string sql = @"UPDATE nqs.paciente
+                            SET                            
+                            DocumentoIdentificacao = @DocumentoIdentificacao,
+                            NomeCompleto = @NomeCompleto,
+                            NomeGenitor = @NomeGenitor,
+                            DataNascimento = @DataNascimento,
+                            CartaoSus = @CartaoSus,
+                            Apelido = @Apelido,
+                            Rg = @Rg,
+                            NomeGenitor2 = @NomeGenitor2,
+                            Naturalidade = @Naturalidade,
+                            Raca = @Raca,
+                            Sexo = @Sexo,
+                            Nacionalidade = @Nacionalidade,
+                            Escolaridade = @Escolaridade,
+                            SituacaoFamiliar = @SituacaoFamiliar,
+                            Endereco = @Endereco,
+                            Celular = @Celular,
+                            Profissao = @Profissao,
+                            TelefoneEmergencia = @TelefoneEmergencia,
+                            NomeContatoEmergencia = @NomeContatoEmergencia,
+                            Email = @Email,
+                            Convenio = @Convenio,
+                            Especialidade = @Especialidade,
+                            AtendimentoPrioritario = @AtendimentoPrioritario,
+                            MotivoAtendimento = @MotivoAtendimento,
+                            Impressao = @Impressao,
+                            Procedencia = @Procedencia,                            
+                            OrigemAtendimento = @OrigemAtendimento,
+                            DesfechoAtendimento = @DesfechoAtendimento
+                            WHERE Id = @Id;";
+
+            base.Atualizar(sql, obj);
+        }
     }
 }

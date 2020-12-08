@@ -32,6 +32,10 @@ namespace Leega.Application.Services
             _PacienteMySqlRepository.Adicionar(obj);
         }
 
+        public void Atualizar(PacienteMySql obj)
+        {
+            _PacienteMySqlRepository.Atualizar(obj);
+        }
 
         public async Task<List<PacienteMySqlViewModel>> ListarTodos()
         {
@@ -74,6 +78,46 @@ namespace Leega.Application.Services
 
             return retorno;
         }
-        
+
+        public async Task<PacienteMySqlViewModel> Obter(Guid id)
+        {
+            
+            PacienteMySql busca = _PacienteMySqlRepository.ListarTodos().Where(x => x.Id == id.ToString("D")).FirstOrDefault();
+            
+            PacienteMySqlViewModel retorno = new PacienteMySqlViewModel();
+
+            retorno.Id = busca.Id;
+            retorno.NomeCompleto = busca.NomeCompleto;
+            retorno.Apelido = busca.Apelido;
+            retorno.AtendimentoPrioritario = busca.AtendimentoPrioritario;
+            retorno.Email = busca.Email;
+            retorno.CartaoSus = busca.CartaoSus;
+            retorno.Celular = busca.Celular;
+            retorno.Convenio = busca.Convenio;
+            retorno.DataNascimento = busca.DataNascimento;
+            retorno.DesfechoAtendimento = busca.DesfechoAtendimento;
+            retorno.DocumentoIdentificacao = busca.DocumentoIdentificacao;
+            retorno.Endereco = busca.Endereco;
+            retorno.Escolaridade = busca.Escolaridade;
+            retorno.Especialidade = busca.Especialidade;
+            retorno.Impressao = busca.Impressao;
+            retorno.MotivoAtendimento = busca.MotivoAtendimento;
+            retorno.Nacionalidade = busca.Nacionalidade;
+            retorno.Naturalidade = busca.Naturalidade;
+            retorno.NomeContatoEmergencia = busca.NomeContatoEmergencia;
+            retorno.NomeGenitor = busca.NomeGenitor;
+            retorno.NomeGenitor2 = busca.NomeGenitor2;
+            retorno.OrigemAtendimento = busca.OrigemAtendimento;
+            retorno.Procedencia = busca.Procedencia;
+            retorno.Profissao = busca.Profissao;
+            retorno.Raca = busca.Raca;
+            retorno.Rg = busca.Rg;
+            retorno.Sexo = busca.Sexo;
+            retorno.SituacaoFamiliar = busca.SituacaoFamiliar;
+            retorno.TelefoneEmergencia = busca.TelefoneEmergencia;
+
+
+            return retorno;
+        }
     }
 }

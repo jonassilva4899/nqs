@@ -2491,3 +2491,936 @@ A instrução foi finalizada.
 ===> 2020-12-07 16:07:33.434 -03:00 [Debug] "POST" requests are not supported
 ===> 2020-12-07 16:07:33.437 -03:00 [Debug] Request did not match any routes
 ===> 2020-12-07 16:07:33.439 -03:00 [Information] Request finished in 44.4809ms 404 
+===> 2020-12-07 21:14:40.316 -03:00 [Information] Starting web host
+===> 2020-12-07 21:14:40.436 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 21:14:40.461 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 21:14:40.467 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 21:14:40.471 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 21:14:40.475 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 21:14:40.485 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 21:14:40.489 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 21:14:40.489 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 21:14:40.489 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 21:14:40.495 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 21:14:40.533 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 21:14:40.536 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 21:14:40.537 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 21:14:40.541 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 21:14:40.544 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 21:14:40.547 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 21:14:40.548 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 21:14:40.594 -03:00 [Error] Startup::Configure
+===> 2020-12-07 21:14:40.717 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 21:14:40.728 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 21:14:40.783 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 21:14:59.577 -03:00 [Warning] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:14:59.727 -03:00 [Warning] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:14:59.819 -03:00 [Warning] An exception occurred while trying to perform the migration.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:14:59.820 -03:00 [Warning] Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:14:59.843 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: localhost@goobeeteams'
+===> 2020-12-07 21:14:59.844 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 21:14:59.844 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 21:14:59.857 -03:00 [Debug] Execution loop BackgroundServerProcess:5025b16f has started in 7,7697 ms
+===> 2020-12-07 21:14:59.928 -03:00 [Error] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:14:59.929 -03:00 [Debug] Execution loop BackgroundServerProcess:5025b16f caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:14:59.929 -03:00 [Debug] Execution loop BackgroundServerProcess:5025b16f will be retried in 00:00:15...
+===> 2020-12-07 21:15:00.019 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 21:15:27.354 -03:00 [Information] Starting web host
+===> 2020-12-07 21:15:27.446 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 21:15:27.466 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 21:15:27.468 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 21:15:27.468 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 21:15:27.469 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 21:15:27.473 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 21:15:27.476 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 21:15:27.476 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 21:15:27.476 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 21:15:27.483 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 21:15:27.510 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 21:15:27.513 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 21:15:27.514 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 21:15:27.517 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 21:15:27.520 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 21:15:27.525 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 21:15:27.526 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 21:15:27.549 -03:00 [Error] Startup::Configure
+===> 2020-12-07 21:15:27.623 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 21:15:27.634 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 21:15:27.667 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 21:15:46.372 -03:00 [Warning] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:15:46.481 -03:00 [Warning] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:15:46.561 -03:00 [Warning] An exception occurred while trying to perform the migration.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:15:46.563 -03:00 [Warning] Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:15:46.584 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: localhost@goobeeteams'
+===> 2020-12-07 21:15:46.584 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 21:15:46.584 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 21:15:46.602 -03:00 [Debug] Execution loop BackgroundServerProcess:2dde84fc has started in 11,4997 ms
+===> 2020-12-07 21:15:46.668 -03:00 [Error] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:15:46.669 -03:00 [Debug] Execution loop BackgroundServerProcess:2dde84fc caught an exception and will be retried in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+===> 2020-12-07 21:15:46.670 -03:00 [Debug] Execution loop BackgroundServerProcess:2dde84fc will be retried in 00:00:15...
+===> 2020-12-07 21:15:46.735 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 21:16:48.634 -03:00 [Information] Starting web host
+===> 2020-12-07 21:16:48.728 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 21:16:48.747 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 21:16:48.749 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 21:16:48.749 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 21:16:48.750 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 21:16:48.754 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 21:16:48.757 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 21:16:48.757 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 21:16:48.757 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 21:16:48.763 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 21:16:48.784 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 21:16:48.786 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 21:16:48.787 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 21:16:48.790 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 21:16:48.793 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 21:16:48.796 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 21:16:48.797 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 21:16:48.840 -03:00 [Error] Startup::Configure
+===> 2020-12-07 21:16:48.913 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 21:16:48.924 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 21:16:48.954 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 21:16:51.019 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-07 21:16:51.040 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-07 21:16:51.041 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 21:16:51.041 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 21:16:51.081 -03:00 [Debug] Execution loop BackgroundServerProcess:361d2665 has started in 34,7656 ms
+===> 2020-12-07 21:16:51.173 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 21:16:51.342 -03:00 [Information] Server ws-sup024:22268:4c6f3a06 successfully announced in 257,6949 ms
+===> 2020-12-07 21:16:51.347 -03:00 [Debug] Execution loop ServerHeartbeatProcess:a86e1c3c has started in 4,0828 ms
+===> 2020-12-07 21:16:51.347 -03:00 [Information] Server ws-sup024:22268:4c6f3a06 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-07 21:16:51.374 -03:00 [Debug] Execution loop ServerWatchdog:20f90ac4 has started in 26,8465 ms
+===> 2020-12-07 21:16:51.374 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:8393c0dc has started in 26,4919 ms
+===> 2020-12-07 21:16:51.384 -03:00 [Debug] Execution loop CountersAggregator:c81b80d6 has started in 8,7139 ms
+===> 2020-12-07 21:16:51.385 -03:00 [Debug] Execution loop ExpirationManager:d604e4d1 has started in 12,6436 ms
+===> 2020-12-07 21:16:51.389 -03:00 [Debug] Execution loop Worker:000f137c has started in 12,954 ms
+===> 2020-12-07 21:16:51.389 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-07 21:16:51.390 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-07 21:16:51.392 -03:00 [Information] Server ws-sup024:22268:4c6f3a06 all the dispatchers started
+===> 2020-12-07 21:16:51.397 -03:00 [Debug] Execution loop DelayedJobScheduler:b021ccc6 has started in 10,5524 ms
+===> 2020-12-07 21:16:51.401 -03:00 [Debug] Execution loop RecurringJobScheduler:aa3b0f88 has started in 10,6345 ms
+===> 2020-12-07 21:16:51.405 -03:00 [Information] 1 servers were removed due to timeout
+===> 2020-12-07 21:16:51.511 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-07 21:16:51.524 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-07 21:16:51.532 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-07 21:16:51.537 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-07 21:16:53.108 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-07 21:16:53.146 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-07 21:16:53.181 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-07 21:16:53.184 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-07 21:16:53.269 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 21:16:53.387 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-07 21:16:53.418 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-07 21:16:53.419 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 21:16:53.419 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 21:16:53.419 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 21:16:53.419 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 21:16:53.419 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-07 21:16:53.421 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 21:16:53.421 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 21:16:53.427 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-07 21:16:53.455 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 31.5146ms
+===> 2020-12-07 21:16:53.459 -03:00 [Information] Request finished in 279.1034ms 200 text/html
+===> 2020-12-07 21:16:54.425 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-07 21:16:54.436 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 21:16:54.439 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 21:16:54.454 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-07 21:16:54.455 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 21:16:54.456 -03:00 [Information] Request finished in 31.4187ms 404 
+===> 2020-12-07 21:16:59.141 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/Paciente/ListarPacientes application/json 
+===> 2020-12-07 21:16:59.146 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 21:16:59.146 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes/{id?}"'
+===> 2020-12-07 21:16:59.173 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes(System.Nullable`1[System.Guid])" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-07 21:16:59.173 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 21:16:59.174 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 21:16:59.174 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 21:16:59.174 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 21:16:59.174 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 21:16:59.174 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 21:16:59.196 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 21:16:59.201 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Nullable`1[System.Guid]"' ...
+===> 2020-12-07 21:16:59.205 -03:00 [Debug] Could not find a value in the request with name '""' for binding parameter '"id"' of type '"System.Nullable`1[System.Guid]"'.
+===> 2020-12-07 21:16:59.205 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Nullable`1[System.Guid]"'.
+===> 2020-12-07 21:16:59.205 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Nullable`1[System.Guid]"'.
+===> 2020-12-07 21:16:59.206 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Nullable`1[System.Guid]"' ...
+===> 2020-12-07 21:16:59.207 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Nullable`1[System.Guid]"'.
+===> 2020-12-07 22:12:35.552 -03:00 [Information] Starting web host
+===> 2020-12-07 22:12:35.655 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 22:12:35.679 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 22:12:35.683 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 22:12:35.684 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 22:12:35.685 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 22:12:35.692 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 22:12:35.695 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 22:12:35.696 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 22:12:35.696 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 22:12:35.702 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 22:12:35.729 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:12:35.731 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 22:12:35.733 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:12:35.738 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 22:12:35.741 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 22:12:35.744 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 22:12:35.745 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 22:12:35.799 -03:00 [Error] Startup::Configure
+===> 2020-12-07 22:12:35.898 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 22:12:35.908 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 22:12:35.957 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 22:12:37.177 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-07 22:12:37.211 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-07 22:12:37.211 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 22:12:37.211 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 22:12:37.247 -03:00 [Debug] Execution loop BackgroundServerProcess:399503cb has started in 13,0319 ms
+===> 2020-12-07 22:12:37.377 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 22:12:37.535 -03:00 [Information] Server ws-sup024:19040:9d672a29 successfully announced in 284,8995 ms
+===> 2020-12-07 22:12:37.541 -03:00 [Debug] Execution loop ServerHeartbeatProcess:1689675e has started in 4,8595 ms
+===> 2020-12-07 22:12:37.541 -03:00 [Information] Server ws-sup024:19040:9d672a29 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-07 22:12:37.546 -03:00 [Debug] Execution loop ServerWatchdog:7354e0f0 has started in 4,3006 ms
+===> 2020-12-07 22:12:37.549 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:b0d4a5a9 has started in 6,8125 ms
+===> 2020-12-07 22:12:37.554 -03:00 [Debug] Execution loop ExpirationManager:674062f1 has started in 7,5046 ms
+===> 2020-12-07 22:12:37.557 -03:00 [Debug] Execution loop CountersAggregator:677a1cea has started in 6,6866 ms
+===> 2020-12-07 22:12:37.558 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-07 22:12:37.558 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-07 22:12:37.563 -03:00 [Debug] Execution loop Worker:65084d13 has started in 9,3227 ms
+===> 2020-12-07 22:12:37.567 -03:00 [Information] Server ws-sup024:19040:9d672a29 all the dispatchers started
+===> 2020-12-07 22:12:37.569 -03:00 [Debug] Execution loop DelayedJobScheduler:5ef3f476 has started in 10,6122 ms
+===> 2020-12-07 22:12:37.572 -03:00 [Debug] Execution loop RecurringJobScheduler:409a01b0 has started in 8,5904 ms
+===> 2020-12-07 22:12:37.587 -03:00 [Information] 1 servers were removed due to timeout
+===> 2020-12-07 22:12:37.805 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-07 22:12:37.815 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-07 22:12:37.822 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-07 22:12:37.837 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-07 22:12:40.679 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-07 22:12:40.721 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-07 22:12:40.756 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-07 22:12:40.759 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-07 22:12:40.830 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:12:40.932 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-07 22:12:40.960 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-07 22:12:40.961 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:12:40.961 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:12:40.961 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:12:40.962 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:12:40.962 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-07 22:12:40.963 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:12:40.964 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:12:40.970 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-07 22:12:41.000 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 34.42ms
+===> 2020-12-07 22:12:41.004 -03:00 [Information] Request finished in 248.7382ms 200 text/html
+===> 2020-12-07 22:12:42.004 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-07 22:12:42.010 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:12:42.011 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:12:42.032 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-07 22:12:42.033 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:12:42.036 -03:00 [Information] Request finished in 34.1217ms 404 
+===> 2020-12-07 22:13:07.676 -03:00 [Debug] Server ws-sup024:19040:9d672a29 heartbeat successfully sent
+===> 2020-12-07 22:13:15.893 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/Paciente/Obter/44bdef4e-acb7-4fde-87d1-c59c105b0489 application/json 
+===> 2020-12-07 22:13:15.896 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:13:15.896 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-07 22:13:15.925 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-07 22:13:15.925 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:13:15.925 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:13:15.925 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:13:15.925 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:13:15.925 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:13:15.925 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:13:15.946 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:13:15.952 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-07 22:13:15.956 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-07 22:13:15.958 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:13:15.958 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:13:15.958 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-07 22:13:15.960 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:14:15.141 -03:00 [Information] Starting web host
+===> 2020-12-07 22:14:15.236 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 22:14:15.258 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 22:14:15.262 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 22:14:15.262 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 22:14:15.263 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 22:14:15.270 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 22:14:15.274 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 22:14:15.274 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 22:14:15.274 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 22:14:15.282 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 22:14:15.307 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:14:15.310 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 22:14:15.311 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:14:15.314 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 22:14:15.318 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 22:14:15.322 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 22:14:15.322 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 22:14:15.353 -03:00 [Error] Startup::Configure
+===> 2020-12-07 22:14:15.438 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 22:14:15.449 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 22:14:15.492 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 22:14:16.294 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-07 22:14:16.317 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-07 22:14:16.318 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 22:14:16.318 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 22:14:16.341 -03:00 [Debug] Execution loop BackgroundServerProcess:f0362346 has started in 13,7887 ms
+===> 2020-12-07 22:14:16.444 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 22:14:16.539 -03:00 [Information] Server ws-sup024:24960:0a30dd11 successfully announced in 195,3645 ms
+===> 2020-12-07 22:14:16.546 -03:00 [Information] Server ws-sup024:24960:0a30dd11 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-07 22:14:16.549 -03:00 [Debug] Execution loop ServerHeartbeatProcess:c69ec9ad has started in 8,2044 ms
+===> 2020-12-07 22:14:16.552 -03:00 [Debug] Execution loop ServerWatchdog:2d189b09 has started in 5,8623 ms
+===> 2020-12-07 22:14:16.555 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:ee711168 has started in 5,9751 ms
+===> 2020-12-07 22:14:16.558 -03:00 [Debug] Execution loop ExpirationManager:525b63e3 has started in 5,4967 ms
+===> 2020-12-07 22:14:16.561 -03:00 [Debug] Execution loop CountersAggregator:14b1344a has started in 5,6244 ms
+===> 2020-12-07 22:14:16.563 -03:00 [Debug] Execution loop Worker:4c3e3ec9 has started in 5,0695 ms
+===> 2020-12-07 22:14:16.564 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-07 22:14:16.564 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-07 22:14:16.572 -03:00 [Information] Server ws-sup024:24960:0a30dd11 all the dispatchers started
+===> 2020-12-07 22:14:16.600 -03:00 [Debug] Execution loop DelayedJobScheduler:5e17606e has started in 14,8433 ms
+===> 2020-12-07 22:14:16.602 -03:00 [Debug] Execution loop RecurringJobScheduler:276e3e71 has started in 30,3435 ms
+===> 2020-12-07 22:14:16.644 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-07 22:14:16.675 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-07 22:14:16.698 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-07 22:14:16.709 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-07 22:14:19.778 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-07 22:14:19.815 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-07 22:14:19.843 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-07 22:14:19.845 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-07 22:14:19.910 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:14:20.038 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-07 22:14:20.075 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-07 22:14:20.076 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:14:20.076 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:14:20.077 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:14:20.077 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:14:20.077 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-07 22:14:20.080 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:14:20.080 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:14:20.089 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-07 22:14:20.127 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 44.9986ms
+===> 2020-12-07 22:14:20.131 -03:00 [Information] Request finished in 288.8303ms 200 text/html
+===> 2020-12-07 22:14:21.015 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-07 22:14:21.024 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:14:21.032 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:14:21.057 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-07 22:14:21.058 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:14:21.060 -03:00 [Information] Request finished in 46.3513ms 404 
+===> 2020-12-07 22:14:29.228 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/Paciente/Obter/44bdef4e-acb7-4fde-87d1-c59c105b0489 application/json 
+===> 2020-12-07 22:14:29.231 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:14:29.231 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-07 22:14:29.267 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-07 22:14:29.267 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:14:29.267 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:14:29.267 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:14:29.267 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:14:29.267 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:14:29.267 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:14:29.291 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:14:29.297 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-07 22:14:29.302 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-07 22:14:29.302 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:14:29.302 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:14:29.303 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-07 22:14:29.304 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:14:31.099 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-07 22:14:31.100 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-07 22:14:31.101 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-07 22:14:31.101 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-07 22:14:31.101 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-07 22:14:31.102 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-07 22:14:31.120 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 1852.5655ms
+===> 2020-12-07 22:14:31.120 -03:00 [Information] Request finished in 1892.3774ms 200 application/json; charset=utf-8
+===> 2020-12-07 22:14:46.576 -03:00 [Debug] Server ws-sup024:24960:0a30dd11 heartbeat successfully sent
+===> 2020-12-07 22:15:16.580 -03:00 [Debug] Server ws-sup024:24960:0a30dd11 heartbeat successfully sent
+===> 2020-12-07 22:15:46.582 -03:00 [Debug] Server ws-sup024:24960:0a30dd11 heartbeat successfully sent
+===> 2020-12-07 22:16:16.659 -03:00 [Debug] Server ws-sup024:24960:0a30dd11 heartbeat successfully sent
+===> 2020-12-07 22:16:46.661 -03:00 [Debug] Server ws-sup024:24960:0a30dd11 heartbeat successfully sent
+===> 2020-12-07 22:29:02.052 -03:00 [Information] Starting web host
+===> 2020-12-07 22:29:02.158 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 22:29:02.179 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 22:29:02.183 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 22:29:02.184 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 22:29:02.186 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 22:29:02.193 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 22:29:02.197 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 22:29:02.197 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 22:29:02.197 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 22:29:02.203 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 22:29:02.227 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:29:02.229 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 22:29:02.231 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:29:02.242 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 22:29:02.245 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 22:29:02.248 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 22:29:02.249 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 22:29:02.284 -03:00 [Error] Startup::Configure
+===> 2020-12-07 22:29:02.389 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 22:29:02.408 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 22:29:02.518 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 22:29:03.240 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-07 22:29:03.263 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-07 22:29:03.264 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 22:29:03.264 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 22:29:03.281 -03:00 [Debug] Execution loop BackgroundServerProcess:013891ef has started in 11,8104 ms
+===> 2020-12-07 22:29:03.380 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 22:29:03.489 -03:00 [Information] Server ws-sup024:21692:0cf6b516 successfully announced in 205,3954 ms
+===> 2020-12-07 22:29:03.497 -03:00 [Debug] Execution loop ServerHeartbeatProcess:37861af4 has started in 6,8845 ms
+===> 2020-12-07 22:29:03.500 -03:00 [Information] Server ws-sup024:21692:0cf6b516 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-07 22:29:03.504 -03:00 [Debug] Execution loop ServerWatchdog:9171e607 has started in 4,5396 ms
+===> 2020-12-07 22:29:03.511 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:d15bc969 has started in 9,4823 ms
+===> 2020-12-07 22:29:03.517 -03:00 [Information] 2 servers were removed due to timeout
+===> 2020-12-07 22:29:03.517 -03:00 [Debug] Execution loop ExpirationManager:efb9acad has started in 9,102 ms
+===> 2020-12-07 22:29:03.542 -03:00 [Debug] Execution loop CountersAggregator:0ea6ac4f has started in 29,3191 ms
+===> 2020-12-07 22:29:03.547 -03:00 [Debug] Execution loop Worker:4247d24b has started in 33,4157 ms
+===> 2020-12-07 22:29:03.547 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-07 22:29:03.547 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-07 22:29:03.563 -03:00 [Debug] Execution loop DelayedJobScheduler:74f2cc92 has started in 45,9269 ms
+===> 2020-12-07 22:29:03.563 -03:00 [Information] Server ws-sup024:21692:0cf6b516 all the dispatchers started
+===> 2020-12-07 22:29:03.570 -03:00 [Debug] Execution loop RecurringJobScheduler:aff48ec5 has started in 9,3558 ms
+===> 2020-12-07 22:29:03.632 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-07 22:29:03.661 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-07 22:29:03.686 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-07 22:29:03.705 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-07 22:29:06.426 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-07 22:29:06.471 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-07 22:29:06.506 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-07 22:29:06.508 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-07 22:29:06.568 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:29:06.669 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-07 22:29:06.698 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-07 22:29:06.699 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:29:06.699 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:29:06.699 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:29:06.700 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:29:06.700 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-07 22:29:06.701 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:29:06.702 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:29:06.710 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-07 22:29:06.738 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 34.0756ms
+===> 2020-12-07 22:29:06.743 -03:00 [Information] Request finished in 238.9766ms 200 text/html
+===> 2020-12-07 22:29:07.502 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-07 22:29:07.503 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:29:07.507 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:29:07.528 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-07 22:29:07.529 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:29:07.533 -03:00 [Information] Request finished in 31.1755ms 404 
+===> 2020-12-07 22:29:10.958 -03:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44391/Paciente/Obter/44bdef4e-acb7-4fde-87d1-c59c105b0489 application/json 841
+===> 2020-12-07 22:29:10.969 -03:00 [Debug] The request has an origin header: '"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"'.
+===> 2020-12-07 22:29:10.969 -03:00 [Information] CORS policy execution successful.
+===> 2020-12-07 22:29:10.972 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:29:10.972 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-07 22:29:10.976 -03:00 [Debug] Action '"Leega.Api.Controllers.PacienteController.Obter (Leega.Api)"' with id '"ff8ec8b6-0317-46a1-8b50-f6b2d517f649"' did not match the constraint '"Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint"'
+===> 2020-12-07 22:29:10.978 -03:00 [Debug] No actions matched the current request. Route values: ["id=44bdef4e-acb7-4fde-87d1-c59c105b0489"]
+===> 2020-12-07 22:29:10.978 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:29:10.978 -03:00 [Debug] "PUT" requests are not supported
+===> 2020-12-07 22:29:10.991 -03:00 [Information] Request did not specify a service API version, but multiple candidate actions were found. Candidate actions: "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)"
+===> 2020-12-07 22:29:10.998 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-07 22:29:10.999 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-07 22:29:11.000 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-07 22:29:11.000 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-07 22:29:11.000 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-07 22:29:11.001 -03:00 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'.
+===> 2020-12-07 22:29:11.020 -03:00 [Information] Request finished in 63.2403ms 405 application/json; charset=utf-8
+===> 2020-12-07 22:29:23.285 -03:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44391/Paciente/Atualizar/44bdef4e-acb7-4fde-87d1-c59c105b0489 application/json 841
+===> 2020-12-07 22:29:23.287 -03:00 [Debug] The request has an origin header: '"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"'.
+===> 2020-12-07 22:29:23.288 -03:00 [Information] CORS policy execution successful.
+===> 2020-12-07 22:29:23.288 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:29:23.288 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:29:23.289 -03:00 [Debug] "PUT" requests are not supported
+===> 2020-12-07 22:29:23.289 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:29:23.290 -03:00 [Information] Request finished in 5.3536ms 404 
+===> 2020-12-07 22:29:32.452 -03:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44391/Paciente/Atualizar application/json 841
+===> 2020-12-07 22:29:32.453 -03:00 [Debug] The request has an origin header: '"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"'.
+===> 2020-12-07 22:29:32.454 -03:00 [Information] CORS policy execution successful.
+===> 2020-12-07 22:29:32.454 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:29:32.455 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Atualizar"'
+===> 2020-12-07 22:29:32.466 -03:00 [Information] Route matched with "{action = \"Atualizar\", controller = \"Paciente\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Atualizar(Leega.DataMySql.Entity.PacienteMySql)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-07 22:29:32.466 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:29:32.466 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:29:32.467 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:29:32.467 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:29:32.467 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:29:32.467 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:29:32.492 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:29:32.496 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-07 22:29:32.499 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' using the name '""' in request data ...
+===> 2020-12-07 22:29:32.500 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json"'.
+===> 2020-12-07 22:29:32.500 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json"'.
+===> 2020-12-07 22:29:32.538 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:29:32.538 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:29:32.538 -03:00 [Debug] Attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-07 22:29:32.545 -03:00 [Debug] Done attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:29:33.506 -03:00 [Debug] Server ws-sup024:21692:0cf6b516 heartbeat successfully sent
+===> 2020-12-07 22:29:34.811 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-07 22:29:34.812 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-07 22:29:34.812 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-07 22:29:34.812 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-07 22:29:34.812 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+===> 2020-12-07 22:29:34.812 -03:00 [Information] Executing ObjectResult, writing value of type '"System.String"'.
+===> 2020-12-07 22:29:34.815 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Atualizar (Leega.Api)" in 2347.7931ms
+===> 2020-12-07 22:29:34.816 -03:00 [Information] Request finished in 2363.6289ms 500 text/plain; charset=utf-8
+===> 2020-12-07 22:30:03.575 -03:00 [Debug] Server ws-sup024:21692:0cf6b516 heartbeat successfully sent
+===> 2020-12-07 22:30:33.578 -03:00 [Debug] Server ws-sup024:21692:0cf6b516 heartbeat successfully sent
+===> 2020-12-07 22:31:00.239 -03:00 [Information] Starting web host
+===> 2020-12-07 22:31:00.331 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 22:31:00.351 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 22:31:00.353 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 22:31:00.354 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 22:31:00.354 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 22:31:00.358 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 22:31:00.360 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 22:31:00.360 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 22:31:00.360 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 22:31:00.366 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 22:31:00.389 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:31:00.391 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 22:31:00.392 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:31:00.395 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 22:31:00.397 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 22:31:00.401 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 22:31:00.401 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 22:31:00.444 -03:00 [Error] Startup::Configure
+===> 2020-12-07 22:31:00.521 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 22:31:00.530 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 22:31:00.561 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 22:31:01.480 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-07 22:31:01.502 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-07 22:31:01.502 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 22:31:01.502 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 22:31:01.523 -03:00 [Debug] Execution loop BackgroundServerProcess:9d0593c7 has started in 13,4604 ms
+===> 2020-12-07 22:31:01.617 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 22:31:01.740 -03:00 [Information] Server ws-sup024:7488:0df6a865 successfully announced in 213,2214 ms
+===> 2020-12-07 22:31:01.755 -03:00 [Information] Server ws-sup024:7488:0df6a865 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-07 22:31:01.761 -03:00 [Debug] Execution loop ServerHeartbeatProcess:da250b95 has started in 20,128 ms
+===> 2020-12-07 22:31:01.765 -03:00 [Debug] Execution loop ServerWatchdog:fe8926e1 has started in 9,942 ms
+===> 2020-12-07 22:31:01.770 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:2bc06f6a has started in 7,5558 ms
+===> 2020-12-07 22:31:01.777 -03:00 [Debug] Execution loop ExpirationManager:138b4c83 has started in 9,3444 ms
+===> 2020-12-07 22:31:01.778 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-07 22:31:01.788 -03:00 [Debug] Execution loop Worker:21b46c70 has started in 7,9854 ms
+===> 2020-12-07 22:31:01.793 -03:00 [Debug] Execution loop CountersAggregator:c9174493 has started in 19,6034 ms
+===> 2020-12-07 22:31:01.793 -03:00 [Information] Server ws-sup024:7488:0df6a865 all the dispatchers started
+===> 2020-12-07 22:31:01.798 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-07 22:31:01.799 -03:00 [Debug] Execution loop RecurringJobScheduler:4e6b5bee has started in 5,7195 ms
+===> 2020-12-07 22:31:01.803 -03:00 [Debug] Execution loop DelayedJobScheduler:0572f690 has started in 21,7583 ms
+===> 2020-12-07 22:31:01.839 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-07 22:31:01.893 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-07 22:31:01.899 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-07 22:31:01.904 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-07 22:31:04.816 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-07 22:31:04.850 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-07 22:31:04.880 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-07 22:31:04.882 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-07 22:31:04.942 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:31:05.045 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-07 22:31:05.073 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-07 22:31:05.074 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:05.075 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:31:05.075 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:31:05.075 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:05.075 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-07 22:31:05.076 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:31:05.077 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:31:05.082 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-07 22:31:05.109 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 30.0111ms
+===> 2020-12-07 22:31:05.113 -03:00 [Information] Request finished in 233.8593ms 200 text/html
+===> 2020-12-07 22:31:05.862 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-07 22:31:05.864 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:31:05.866 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:31:05.887 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-07 22:31:05.888 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:31:05.892 -03:00 [Information] Request finished in 29.8807ms 404 
+===> 2020-12-07 22:31:09.632 -03:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44391/Paciente/Atualizar application/json 841
+===> 2020-12-07 22:31:09.634 -03:00 [Debug] The request has an origin header: '"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"'.
+===> 2020-12-07 22:31:09.635 -03:00 [Information] CORS policy execution successful.
+===> 2020-12-07 22:31:09.638 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:31:09.638 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Atualizar"'
+===> 2020-12-07 22:31:09.648 -03:00 [Information] Route matched with "{action = \"Atualizar\", controller = \"Paciente\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Atualizar(Leega.DataMySql.Entity.PacienteMySql)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-07 22:31:09.648 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:09.648 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:31:09.648 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:31:09.648 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:09.649 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:31:09.649 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:31:09.661 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:31:09.666 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-07 22:31:09.670 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' using the name '""' in request data ...
+===> 2020-12-07 22:31:09.671 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json"'.
+===> 2020-12-07 22:31:09.671 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json"'.
+===> 2020-12-07 22:31:09.723 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:31:09.723 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:31:09.723 -03:00 [Debug] Attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-07 22:31:09.728 -03:00 [Debug] Done attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:31:12.232 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-07 22:31:12.234 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-07 22:31:12.234 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-07 22:31:12.234 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-07 22:31:12.234 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+===> 2020-12-07 22:31:12.234 -03:00 [Information] Executing ObjectResult, writing value of type '"System.String"'.
+===> 2020-12-07 22:31:12.237 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Atualizar (Leega.Api)" in 2588.7648ms
+===> 2020-12-07 22:31:12.238 -03:00 [Information] Request finished in 2607.3079ms 500 text/plain; charset=utf-8
+===> 2020-12-07 22:31:39.016 -03:00 [Information] Starting web host
+===> 2020-12-07 22:31:39.103 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-07 22:31:39.124 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-07 22:31:39.126 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-07 22:31:39.126 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-07 22:31:39.126 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-07 22:31:39.130 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-07 22:31:39.133 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-07 22:31:39.133 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-07 22:31:39.133 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-07 22:31:39.139 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-07 22:31:39.164 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:31:39.167 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-07 22:31:39.169 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-07 22:31:39.173 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-07 22:31:39.175 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-07 22:31:39.194 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-07 22:31:39.195 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-07 22:31:39.226 -03:00 [Error] Startup::Configure
+===> 2020-12-07 22:31:39.318 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-07 22:31:39.329 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-07 22:31:39.357 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-07 22:31:40.455 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-07 22:31:40.478 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-07 22:31:40.478 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-07 22:31:40.479 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-07 22:31:40.500 -03:00 [Debug] Execution loop BackgroundServerProcess:7572b763 has started in 14,6815 ms
+===> 2020-12-07 22:31:40.591 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-07 22:31:40.720 -03:00 [Information] Server ws-sup024:21704:0e181bcd successfully announced in 217,3321 ms
+===> 2020-12-07 22:31:40.727 -03:00 [Debug] Execution loop ServerHeartbeatProcess:6efe1470 has started in 5,6736 ms
+===> 2020-12-07 22:31:40.728 -03:00 [Information] Server ws-sup024:21704:0e181bcd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-07 22:31:40.734 -03:00 [Debug] Execution loop ServerWatchdog:1d2cfb4c has started in 5,1822 ms
+===> 2020-12-07 22:31:40.737 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:fda60fdb has started in 5,6387 ms
+===> 2020-12-07 22:31:40.763 -03:00 [Debug] Execution loop ExpirationManager:48472ae4 has started in 27,8137 ms
+===> 2020-12-07 22:31:40.764 -03:00 [Debug] Execution loop CountersAggregator:ea06b36a has started in 25,9227 ms
+===> 2020-12-07 22:31:40.767 -03:00 [Debug] Execution loop Worker:505abb1a has started in 27,5914 ms
+===> 2020-12-07 22:31:40.768 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-07 22:31:40.770 -03:00 [Debug] Execution loop DelayedJobScheduler:7319a5a6 has started in 6,4923 ms
+===> 2020-12-07 22:31:40.771 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-07 22:31:40.773 -03:00 [Information] Server ws-sup024:21704:0e181bcd all the dispatchers started
+===> 2020-12-07 22:31:40.775 -03:00 [Debug] Execution loop RecurringJobScheduler:9cfa78b5 has started in 6,5584 ms
+===> 2020-12-07 22:31:40.826 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-07 22:31:40.850 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-07 22:31:40.866 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-07 22:31:40.876 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-07 22:31:43.343 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-07 22:31:43.407 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-07 22:31:43.434 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-07 22:31:43.436 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-07 22:31:43.491 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:31:43.599 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-07 22:31:43.633 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-07 22:31:43.634 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:43.634 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:31:43.634 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:31:43.634 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:43.635 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-07 22:31:43.636 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:31:43.636 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-07 22:31:43.643 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-07 22:31:43.667 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 28.7499ms
+===> 2020-12-07 22:31:43.672 -03:00 [Information] Request finished in 238.5163ms 200 text/html
+===> 2020-12-07 22:31:44.425 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-07 22:31:44.432 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:31:44.432 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:31:44.450 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-07 22:31:44.451 -03:00 [Debug] Request did not match any routes
+===> 2020-12-07 22:31:44.454 -03:00 [Information] Request finished in 28.6496ms 404 
+===> 2020-12-07 22:31:48.497 -03:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44391/Paciente/Atualizar application/json 841
+===> 2020-12-07 22:31:48.499 -03:00 [Debug] The request has an origin header: '"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"'.
+===> 2020-12-07 22:31:48.499 -03:00 [Information] CORS policy execution successful.
+===> 2020-12-07 22:31:48.502 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:31:48.502 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Atualizar"'
+===> 2020-12-07 22:31:48.516 -03:00 [Information] Route matched with "{action = \"Atualizar\", controller = \"Paciente\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Atualizar(Leega.DataMySql.Entity.PacienteMySql)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-07 22:31:48.516 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:48.516 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:31:48.516 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:31:48.516 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:31:48.516 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:31:48.516 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:31:48.529 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:31:48.533 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-07 22:31:48.537 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' using the name '""' in request data ...
+===> 2020-12-07 22:31:48.538 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json"'.
+===> 2020-12-07 22:31:48.538 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json"'.
+===> 2020-12-07 22:31:48.576 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:31:48.576 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:31:48.576 -03:00 [Debug] Attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-07 22:31:48.580 -03:00 [Debug] Done attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-07 22:31:50.693 -03:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+===> 2020-12-07 22:31:50.694 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Atualizar (Leega.Api)" in 2177.3004ms
+===> 2020-12-07 22:31:50.695 -03:00 [Information] Request finished in 2198.558ms 200 
+===> 2020-12-07 22:32:10.824 -03:00 [Debug] Server ws-sup024:21704:0e181bcd heartbeat successfully sent
+===> 2020-12-07 22:32:19.021 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/Paciente/Obter/44bdef4e-acb7-4fde-87d1-c59c105b0489  
+===> 2020-12-07 22:32:19.022 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-07 22:32:19.022 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-07 22:32:19.035 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-07 22:32:19.035 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-07 22:32:19.035 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-07 22:32:19.035 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:32:19.035 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-07 22:32:19.035 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-07 22:32:19.035 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:32:19.036 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-07 22:32:19.036 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-07 22:32:19.037 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-07 22:32:19.037 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:32:19.037 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:32:19.037 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-07 22:32:19.038 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-07 22:32:19.502 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-07 22:32:19.504 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-07 22:32:19.504 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-07 22:32:19.504 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-07 22:32:19.504 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-07 22:32:19.505 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-07 22:32:19.518 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 483.0246ms
+===> 2020-12-07 22:32:19.519 -03:00 [Information] Request finished in 497.9778ms 200 application/json; charset=utf-8
+===> 2020-12-07 22:32:40.903 -03:00 [Debug] Server ws-sup024:21704:0e181bcd heartbeat successfully sent
+===> 2020-12-07 22:33:10.905 -03:00 [Debug] Server ws-sup024:21704:0e181bcd heartbeat successfully sent
+===> 2020-12-07 22:33:40.908 -03:00 [Debug] Server ws-sup024:21704:0e181bcd heartbeat successfully sent

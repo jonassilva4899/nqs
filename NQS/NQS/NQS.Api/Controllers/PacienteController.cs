@@ -56,13 +56,50 @@ namespace Leega.Api.Controllers
             }
         }
 
-        
-        [HttpGet("ListarPacientes/{id?}")]
-        public async Task<IActionResult> ListarPacientes(Guid? id)
-        {
-            var pessoasAtivas = await _pacienteMySqlService.ListarUsuariosAtivos(idPessoa, _idOrganizacao);
 
-            return Ok(pessoasAtivas);
+        [HttpPut, Route("Atualizar")]
+        //public async Task<IActionResult> Adicionar([FromBody] PacienteMySql objpaciente)
+        public IActionResult Atualizar([FromBody] PacienteMySql objpaciente)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            if (objpaciente == null)
+                return BadRequest();
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest();
+                }
+
+
+                _pacienteMySqlService.Atualizar(objpaciente);
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
+
+        [HttpGet("ListarPacientes")]
+        public async Task<IActionResult> ListarPacientes()
+        {
+            var pacientes = await _pacienteMySqlService.ListarTodos();
+
+            return Ok(pacientes);
+        }
+
+        [HttpGet("Obter/{id?}")]
+        public async Task<IActionResult> Obter(Guid id)
+        {
+            var pacientes = await _pacienteMySqlService.Obter(id);
+
+            return Ok(pacientes);
+        }
+
     }
 }
