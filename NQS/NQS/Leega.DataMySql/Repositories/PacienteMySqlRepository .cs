@@ -24,5 +24,17 @@ namespace Leega.DataMySql.Repositories.Interfaces
 
             base.Adicionar(sql, obj);
         }
+
+        public IEnumerable<PacienteMySql> ListarTodos()
+        {
+            string sql = @"select * from paciente";
+            return base.Listar<PacienteMySql>(sql);
+        }
+
+        public PacienteMySql Obter(PacienteMySql obj)
+        {
+            string sql = @"select * from paciente where Id = @Id";
+            return base.Obter(sql, obj);
+        }
     }
 }

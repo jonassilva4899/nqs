@@ -21,7 +21,7 @@ namespace Leega.Application.Services
           IPacienteMySqlRepository pacienteMySqlRepository)
         {
             _config = config;
-            _PacienteMySqlRepository = pacienteMySqlRepository;            
+            _PacienteMySqlRepository = pacienteMySqlRepository;
         }
 
 
@@ -31,6 +31,49 @@ namespace Leega.Application.Services
 
             _PacienteMySqlRepository.Adicionar(obj);
         }
-     
+
+
+        public async Task<List<PacienteMySqlViewModel>> ListarTodos()
+        {
+            // pesquisar pessoas por organização
+            IEnumerable<PacienteMySql> busca = _PacienteMySqlRepository.ListarTodos();
+
+            // objeto view model para retorno
+            List<PacienteMySqlViewModel> retorno = busca.Select(item => new PacienteMySqlViewModel
+            {
+                Id = item.Id,
+                NomeCompleto = item.NomeCompleto,
+                Apelido = item.Apelido,
+                AtendimentoPrioritario = item.AtendimentoPrioritario,
+                Email = item.Email,
+                CartaoSus = item.CartaoSus,
+                Celular = item.Celular,
+                Convenio = item.Convenio,
+                DataNascimento = item.DataNascimento,
+                DesfechoAtendimento = item.DesfechoAtendimento,
+                DocumentoIdentificacao = item.DocumentoIdentificacao,
+                Endereco = item.Endereco,
+                Escolaridade = item.Escolaridade,
+                Especialidade = item.Especialidade,
+                Impressao = item.Impressao,
+                MotivoAtendimento = item.MotivoAtendimento,
+                Nacionalidade = item.Nacionalidade,
+                Naturalidade = item.Naturalidade,
+                NomeContatoEmergencia = item.NomeContatoEmergencia,
+                NomeGenitor = item.NomeGenitor,
+                NomeGenitor2 = item.NomeGenitor2,
+                OrigemAtendimento = item.OrigemAtendimento,
+                Procedencia = item.Procedencia,
+                Profissao = item.Profissao,
+                Raca = item.Raca,
+                Rg = item.Rg,
+                Sexo = item.Sexo,
+                SituacaoFamiliar = item.SituacaoFamiliar,
+                TelefoneEmergencia = item.TelefoneEmergencia
+            }).ToList();
+
+            return retorno;
+        }
+        
     }
 }

@@ -21,6 +21,8 @@ namespace Leega.DataMySql.Repositories
             base.Adicionar(sql, obj);
         }
 
+        //SELECT id, NomeCompleto, DocumentoIdentificacao, celular FROM nqs.paciente;
+
         public async Task<PessoaMySql> BuscarPorEmail(string email)
         {
             // buscar pessoas

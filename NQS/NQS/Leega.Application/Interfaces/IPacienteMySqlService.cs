@@ -10,5 +10,8 @@ namespace Leega.Application.Interfaces
     public interface IPacienteMySqlService
     {
         void Adicionar(PacienteMySql obj);
+        IEnumerable<PacienteMySql> ListarTodos();
+
+        PacienteMySql Obter(PacienteMySql obj);
     }
 }

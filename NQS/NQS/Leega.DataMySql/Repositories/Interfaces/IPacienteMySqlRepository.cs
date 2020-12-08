@@ -9,5 +9,9 @@ namespace Leega.DataMySql.Repositories.Interfaces
     public interface IPacienteMySqlRepository
     {
         void Adicionar(PacienteMySql obj);
+
+        IEnumerable<PacienteMySql> ListarTodos();
+
+        PacienteMySql Obter(PacienteMySql obj);
     }
 }

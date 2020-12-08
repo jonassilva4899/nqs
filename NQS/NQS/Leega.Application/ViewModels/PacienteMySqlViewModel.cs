@@ -15,15 +15,15 @@ namespace Leega.Application.ViewModels
         public string Rg { get; set; }
         public string NomeGenitor2 { get; set; }
 
-        public int Naturalidade { get; set; }
-        public int Raca { get; set; }
-        public int Sexo { get; set; }
+        public string Naturalidade { get; set; }
+        public string Raca { get; set; }
+        public string Sexo { get; set; }
 
-        public int Nacionalidade { get; set; }
+        public string Nacionalidade { get; set; }
 
-        public int Escolaridade { get; set; }
+        public string Escolaridade { get; set; }
 
-        public int SituacaoFamiliar { get; set; }
+        public string SituacaoFamiliar { get; set; }
 
         public string Endereco { get; set; }
         public string Celular { get; set; }
@@ -33,19 +33,19 @@ namespace Leega.Application.ViewModels
 
         public string Email { get; set; }
 
-        public int Convenio { get; set; }
+        public string Convenio { get; set; }
 
-        public int Especialidade { get; set; }
+        public string Especialidade { get; set; }
 
         public bool AtendimentoPrioritario { get; set; }
 
-        public int MotivoAtendimento { get; set; }
+        public string MotivoAtendimento { get; set; }
 
-        public int Impressao { get; set; }
+        public string Impressao { get; set; }
 
-        public int Procedencia { get; set; }
+        public string Procedencia { get; set; }
 
-        public int OrigemAtendimento { get; set; }
+        public string OrigemAtendimento { get; set; }
 
         public string DesfechoAtendimento { get; set; }
     }

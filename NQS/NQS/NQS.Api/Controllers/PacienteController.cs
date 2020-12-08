@@ -27,7 +27,6 @@ namespace Leega.Api.Controllers
         {
             return View();
         }
-
         
         [HttpPost, Route("Adicionar")]
         //public async Task<IActionResult> Adicionar([FromBody] PacienteMySql objpaciente)
@@ -55,6 +54,15 @@ namespace Leega.Api.Controllers
             {
                 return StatusCode(500, e.Message);
             }
+        }
+
+        
+        [HttpGet("ListarPacientes/{id?}")]
+        public async Task<IActionResult> ListarPacientes(Guid? id)
+        {
+            var pessoasAtivas = await _pacienteMySqlService.ListarUsuariosAtivos(idPessoa, _idOrganizacao);
+
+            return Ok(pessoasAtivas);
         }
     }
 }
