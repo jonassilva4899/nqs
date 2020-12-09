@@ -172,7 +172,27 @@ namespace Leega.UI.Controllers
 
             HttpResponseMessage httpResponse = await apiClient.PostAsync("Paciente/Adicionar", content);
             ViewBag.State = false;
+            //return View();
+
+            return RedirectToAction("PacienteEditar", "Cadastro", new { id = model.Id});
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PacienteEditar(Leega.Dtos.Paciente model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            //model.Id = Guid.NewGuid().ToString();
+            StringContent content = new StringContent(JsonSerializer.Serialize(model, typeof(Leega.Dtos.Paciente)), Encoding.UTF8, "application/json");
+
+            HttpResponseMessage httpResponse = await apiClient.PutAsync("Paciente/Atualizar", content);
+            ViewBag.State = false;
+                
             return View();
+
+            //return RedirectToAction("PacienteEditar", "Cadastro", new { id = model.Id });
         }
     }
 }

@@ -5,12 +5,12 @@
 <br />
 
 <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <title>NQS</title>
     <style>
         .pagination {
-            display: inline-block;
-            float: left;
+            display: flex;
+            justify-content: center;
         }
 
             .pagination a {
@@ -19,34 +19,15 @@
                 padding: 8px 16px;
                 text-decoration: none;                                
             }
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
     </style>
 
 </head>
 
-<form asp-controller="cadastro" asp-action="pacienteObter" method="post">
-    @*<table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Nome Completo</th>
-                    <th>Documento Identificador</th>
-                    <th>Data Nascimento</th>
-                    <th>Celular</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                <tr>
-                    <td >@item.NomeCompleto</td>
-                    <td>@item.DocumentoIdentificacao</td>
-                    <td>@item.DataNascimento</td>
-                    <td>@item.Celular</td>
-                    </tr>
-
-                }
-            </tbody>
-        </table>*@
-
+<form asp-controller="cadastro" asp-action="pacienteObter" method="post">    
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-primary list-panel" id="list-panel">
@@ -56,7 +37,7 @@
 
                 <div class="panel-body">
                     <div class="col-sm-12 py-3">
-                        <h4 class="title">Cadastro de Paciente</h4>
+                        <h4 class="title">Pacientes</h4>
                         <div class="row justify-content-sm-between">
                         </div>
                     </div>
@@ -76,7 +57,7 @@
                                 <tr>
                                     <td><a data-value="@item.Id" id="actionId" onclick="Clickfn('@item.Id')">@item.NomeCompleto</a></td>
                                     <td>@item.DocumentoIdentificacao</td>
-                                    <td>@item.DataNascimento</td>
+                                    <td>@item.DataNascimento.ToString().Substring(0,10)</td>
                                     <td>@item.Celular</td>
                                 </tr>
                             }
@@ -92,7 +73,7 @@
         </div>
     </div>
     <div class="pagination" >
-        <div></div>
+        
         @for (int i = 1; i <= Model.PageCount; i++)
         {
             @if (i != Model.CurrentPageIndex)
@@ -101,7 +82,7 @@
             }
             else
             {
-                @i
+                <a class="active">@i</a>                
             }
         }
     </div>

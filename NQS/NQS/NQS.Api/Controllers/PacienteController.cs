@@ -57,8 +57,7 @@ namespace Leega.Api.Controllers
         }
 
 
-        [HttpPut, Route("Atualizar")]
-        //public async Task<IActionResult> Adicionar([FromBody] PacienteMySql objpaciente)
+        [HttpPut, Route("Atualizar")]        
         public IActionResult Atualizar([FromBody] PacienteMySql objpaciente)
         {
             if (!ModelState.IsValid)

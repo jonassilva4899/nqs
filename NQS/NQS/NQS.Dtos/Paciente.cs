@@ -25,6 +25,7 @@ namespace Leega.Dtos
         public string NomeGenitor { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Campo obrigatório")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         [DataType(DataType.Date, ErrorMessage = "Informe a data de nascimento")]
         public Nullable<DateTime> DataNascimento { get; set; }
 
