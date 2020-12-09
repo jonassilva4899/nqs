@@ -5,7 +5,21 @@
 <br />
 
 <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>NQS</title>
+    <style>
+        .pagination {
+            display: inline-block;
+            float: left;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;                                
+            }
+    </style>
 
 </head>
 
@@ -77,41 +91,33 @@
             </div>
         </div>
     </div>
-    <table id="assets-data-table" class="table-borderless" style="width:95%" align="center" cellpadding="0" cellspacing="0">
-        <thead>
-            <tr style="background:blue">
-                @for (int i = 1; i <= Model.PageCount; i++)
-                {
-
-                    @if (i != Model.CurrentPageIndex)
-                    {
-                        <th>
-                            <a href="javascript:PagerClick(@i);">@i</a>
-                        </th>
-                    }
-                    else
-                    {
-                        <th>
-                            @i
-                        </th>
-                    }
-
-                }
-            </tr>
-        </thead>
-    </table>
+    <div class="pagination" >
+        <div></div>
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            @if (i != Model.CurrentPageIndex)
+            {
+                <a href="javascript:PagerClick(@i);">@i</a>
+            }
+            else
+            {
+                @i
+            }
+        }
+    </div>
+    <br />
 
 
 </form>
 <script>
         function Clickfn(id) {
-            
+
         var url = '@Url.Action("PacienteEditar", "Cadastro", new {id = -1})'; //Generate URL string using razor
         window.location.href = url.replace('-1', id); //replace ID value
     }
 
-    function PagerClick(index) {        
-        
+    function PagerClick(index) {
+
         var url = '@Url.Action("PacienteLista", "Cadastro", new { currentPage = -1})'; //Generate URL string using razor
         window.location.href = url.replace('-1', index); //replace ID value
     }
