@@ -68,5 +68,6 @@ namespace Leega.Dtos
         public string OrigemAtendimento { get; set; }
 
         public string DesfechoAtendimento { get; set; }
+
     }
 }
