@@ -5694,19 +5694,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Francisco Corte\\.nuget\\packages\\": {}
+    "C:\\Users\\gustavo.luna\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nqs\\NQS\\NQS\\Altrus.HotSite\\Leega.UI.csproj",
+      "projectUniqueName": "C:\\nsq_08122020\\nqs\\NQS\\NQS\\Altrus.HotSite\\Leega.UI.csproj",
       "projectName": "Leega.UI",
-      "projectPath": "C:\\nqs\\NQS\\NQS\\Altrus.HotSite\\Leega.UI.csproj",
-      "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
-      "outputPath": "C:\\nqs\\NQS\\NQS\\Altrus.HotSite\\obj\\",
+      "projectPath": "C:\\nsq_08122020\\nqs\\NQS\\NQS\\Altrus.HotSite\\Leega.UI.csproj",
+      "packagesPath": "C:\\Users\\gustavo.luna\\.nuget\\packages\\",
+      "outputPath": "C:\\nsq_08122020\\nqs\\NQS\\NQS\\Altrus.HotSite\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gustavo.luna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5720,11 +5724,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
-              "projectPath": "C:\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+            "C:\\nsq_08122020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+              "projectPath": "C:\\nsq_08122020\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
             },
-            "C:\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj": {
-              "projectPath": "C:\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj"
+            "C:\\nsq_08122020\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj": {
+              "projectPath": "C:\\nsq_08122020\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj"
             }
           }
         }
