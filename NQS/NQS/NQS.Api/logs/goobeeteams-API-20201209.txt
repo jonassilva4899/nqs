@@ -142,3 +142,7 @@ A instrução foi finalizada.
 ===> 2020-12-09 22:30:23.807 -03:00 [Debug] Server lp2104:26992:0fcde466 heartbeat successfully sent
 ===> 2020-12-09 22:30:53.987 -03:00 [Debug] Server lp2104:26992:0fcde466 heartbeat successfully sent
 ===> 2020-12-09 22:31:24.172 -03:00 [Debug] Server lp2104:26992:0fcde466 heartbeat successfully sent
+===> 2020-12-09 22:31:54.315 -03:00 [Debug] Server lp2104:26992:0fcde466 heartbeat successfully sent
+===> 2020-12-09 22:32:24.493 -03:00 [Debug] Server lp2104:26992:0fcde466 heartbeat successfully sent
+===> 2020-12-09 22:32:53.772 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-09 22:32:54.507 -03:00 [Debug] Server lp2104:26992:0fcde466 heartbeat successfully sent
