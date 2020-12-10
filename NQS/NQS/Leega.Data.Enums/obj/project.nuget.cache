@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0shPbNIVPdZVmUbFxyiamPaNjJgrY6sJg+UnKbRj+/Tz0fUmMs/Zf+ipO2d1k1oz9cDEMaAzAMmUnWsDpCbwVg==",
+  "dgSpecHash": "N1OfReSq2IHt447Rub0jEYcll0W1w1JG6zlArB2p1GPKFMW12eujn+4StDSeM39L56Naoasiad3ngBSUoULQ5w==",
   "success": true,
-  "projectFilePath": "C:\\nsq_08122020\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
+  "projectFilePath": "C:\\github\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

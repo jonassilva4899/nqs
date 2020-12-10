@@ -78,3 +78,15 @@ C:\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.csproj.Co
 C:\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.csproj.CopyComplete
 C:\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.dll
 C:\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.pdb
+C:\github\nqs\NQS\NQS\Leega.DataMySql\bin\Debug\netcoreapp3.1\Leega.DataMySql.deps.json
+C:\github\nqs\NQS\NQS\Leega.DataMySql\bin\Debug\netcoreapp3.1\Leega.DataMySql.dll
+C:\github\nqs\NQS\NQS\Leega.DataMySql\bin\Debug\netcoreapp3.1\Leega.DataMySql.pdb
+C:\github\nqs\NQS\NQS\Leega.DataMySql\bin\Debug\netcoreapp3.1\Leega.Data.Enums.dll
+C:\github\nqs\NQS\NQS\Leega.DataMySql\bin\Debug\netcoreapp3.1\Leega.Data.Enums.pdb
+C:\github\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.csprojAssemblyReference.cache
+C:\github\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.AssemblyInfoInputs.cache
+C:\github\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.AssemblyInfo.cs
+C:\github\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.csproj.CoreCompileInputs.cache
+C:\github\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.csproj.CopyComplete
+C:\github\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.dll
+C:\github\nqs\NQS\NQS\Leega.DataMySql\obj\Debug\netcoreapp3.1\Leega.DataMySql.pdb
