@@ -628,11 +628,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
+      "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
       "projectName": "Leega.DataMySql",
-      "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
+      "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
       "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\obj\\",
+      "outputPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -649,8 +649,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\github\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.Data.Enums\\Leega.Data.Enums.csproj"
             }
           }
         }

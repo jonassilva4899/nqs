@@ -9959,11 +9959,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj",
+      "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj",
       "projectName": "Leega.Domain",
-      "projectPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj",
+      "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj",
       "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Domain\\obj\\",
+      "outputPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9980,8 +9980,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj"
             }
           }
         }

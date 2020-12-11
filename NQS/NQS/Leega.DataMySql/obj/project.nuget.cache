@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xr4Uut3ZccddMPo+c/jT7UdwwpMrBvkOAAiFypkZxh6s0ludtlvoRTjLn3rTL86jo8VYPhEoKEw+DgaVe+NSag==",
+  "dgSpecHash": "VbekjiyQJQS+T64zBhM1YzdFBBZkT/wS67orZrjsOE+ukp22SoiKIPuAOUIozQga2U3cK/Cevs+ZkhSKQL5jFg==",
   "success": true,
-  "projectFilePath": "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
+  "projectFilePath": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

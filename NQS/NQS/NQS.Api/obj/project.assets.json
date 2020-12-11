@@ -12796,11 +12796,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\nqs\\NQS\\NQS\\NQS.Api\\Leega.Api.csproj",
+      "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\NQS.Api\\Leega.Api.csproj",
       "projectName": "Leega.Api",
-      "projectPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Api\\Leega.Api.csproj",
+      "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Api\\Leega.Api.csproj",
       "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Api\\obj\\",
+      "outputPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12817,20 +12817,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\github\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
             },
-            "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
             },
-            "C:\\github\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj"
             },
-            "C:\\github\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Domain\\Leega.Domain.csproj"
             },
-            "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj"
             }
           }
         }

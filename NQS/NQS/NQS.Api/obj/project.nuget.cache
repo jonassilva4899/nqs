@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FnCzDwtfi2vDAwDgzfV/yBqMZJ63soWZ7bdr5Z54wm1KiPNRcEsGhnX449xGpd++FqfMdOH5biCV0isxmtwu+A==",
+  "dgSpecHash": "KggkYuNv0dunujmYBzwwluSakX+EncDOyqT2NsY125OcSQItAHdOo8zICYERYCO/2SHsp3M/K5AhxO8NWsZTlA==",
   "success": true,
-  "projectFilePath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Api\\Leega.Api.csproj",
+  "projectFilePath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Api\\Leega.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

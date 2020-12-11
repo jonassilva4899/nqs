@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {}
+    "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {}
   },
   "projects": {
-    "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {
+    "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj",
+        "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj",
         "projectName": "Leega.Entity",
-        "projectPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj",
+        "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\Leega.Entity.csproj",
         "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Entity\\obj\\",
+        "outputPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KejiNcyqKPpSbAu3G8zObs5SLiNpvyrYhOGclr3/ATiA4jx9R+Z8I1JtPbwbY1+f+3VufC7UxYoVePNhvF5mhw==",
+  "dgSpecHash": "MyBlVSeDlUq6WjFtZLQDISZQ6Z3zOQtc6tRRmcc1vRFJgdFVvlQ3GJaAjbWkXVmi4bb0Lflm0Li1H1IjH6G3Ww==",
   "success": true,
-  "projectFilePath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
+  "projectFilePath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Dtos\\Leega.Dtos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",

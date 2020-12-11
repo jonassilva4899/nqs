@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KJ7XEGbqPfDrwUDSJECmzC7nRkkSoXO2uyKMGK0ZCvEPI1Nx/kaGqUogyxm0Q/Iik9dezfdjaDH34sJbdGhiCA==",
+  "dgSpecHash": "4gshBqSQSN/+HshYQ+uG/k6umF4z379bluaRkdB5HUBC39MSOt0aVnzbvv6xI6SUKIK1mTMDWSRn7zIHrVLtfg==",
   "success": true,
-  "projectFilePath": "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj",
+  "projectFilePath": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql.Tests\\Leega.DataMySql.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

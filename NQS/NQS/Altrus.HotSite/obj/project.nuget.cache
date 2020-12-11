@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lPEDq4BSwlWvjmOGeZBeOz/DPf8P7Oa1Gc9nafW5USAgFhbWTzKuWQeiW/vRFvt9ByCPWCQPz3F0BtvMST9zWw==",
+  "dgSpecHash": "4pT052H3EGa5inL+enI9xJBQrewTyozdwaxSceR9RazW0nXhKA2S6mpgoQWICRceqkk3s0OD5c8SuUpsX/dPAQ==",
   "success": true,
-  "projectFilePath": "C:\\github\\nqs\\NQS\\NQS\\Altrus.HotSite\\Leega.UI.csproj",
+  "projectFilePath": "C:\\git\\nqs\\NQS\\NQS\\Altrus.HotSite\\Leega.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\Francisco Corte\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

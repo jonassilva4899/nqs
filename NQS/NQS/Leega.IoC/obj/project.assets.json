@@ -7466,11 +7466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
+      "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
       "projectName": "Leega.IoC",
-      "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
+      "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\Leega.IoC.csproj",
       "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.IoC\\obj\\",
+      "outputPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7487,11 +7487,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\github\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.Application\\Leega.Application.csproj"
             },
-            "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
-              "projectPath": "C:\\github\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
+            "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj": {
+              "projectPath": "C:\\git\\nqs\\NQS\\NQS\\Leega.DataMySql\\Leega.DataMySql.csproj"
             }
           }
         }

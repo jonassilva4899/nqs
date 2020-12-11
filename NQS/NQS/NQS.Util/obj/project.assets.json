@@ -179,11 +179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+      "projectUniqueName": "C:\\git\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
       "projectName": "Leega.Util",
-      "projectPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
+      "projectPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Util\\Leega.Util.csproj",
       "packagesPath": "C:\\Users\\Francisco Corte\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\nqs\\NQS\\NQS\\NQS.Util\\obj\\",
+      "outputPath": "C:\\git\\nqs\\NQS\\NQS\\NQS.Util\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Francisco Corte\\AppData\\Roaming\\NuGet\\NuGet.Config",
