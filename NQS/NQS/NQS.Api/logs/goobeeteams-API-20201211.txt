@@ -1,0 +1,1010 @@
+===> 2020-12-11 10:40:19.568 -03:00 [Information] Starting web host
+===> 2020-12-11 10:40:19.791 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 10:40:19.839 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 10:40:19.850 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 10:40:19.854 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 10:40:19.883 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 10:40:19.893 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 10:40:19.898 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 10:40:19.898 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 10:40:19.898 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 10:40:19.906 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 10:40:19.945 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 10:40:19.948 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 10:40:19.949 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 10:40:19.952 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 10:40:19.955 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 10:40:19.968 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 10:40:19.969 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 10:40:20.219 -03:00 [Error] Startup::Configure
+===> 2020-12-11 10:40:20.480 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 10:40:20.508 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 10:40:20.564 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 10:40:24.019 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 10:40:24.049 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 10:40:24.050 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 10:40:24.050 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 10:40:24.067 -03:00 [Debug] Execution loop BackgroundServerProcess:94053150 has started in 10,9298 ms
+===> 2020-12-11 10:40:24.259 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 10:40:25.096 -03:00 [Information] Server ws-sup024:25872:39661a90 successfully announced in 1026,3542 ms
+===> 2020-12-11 10:40:25.206 -03:00 [Information] Server ws-sup024:25872:39661a90 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 10:40:25.206 -03:00 [Debug] Execution loop ServerHeartbeatProcess:8e275f83 has started in 41,6137 ms
+===> 2020-12-11 10:40:25.219 -03:00 [Debug] Execution loop ServerWatchdog:b4a29586 has started in 13,1012 ms
+===> 2020-12-11 10:40:25.225 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:b4779efd has started in 15,0009 ms
+===> 2020-12-11 10:40:25.236 -03:00 [Debug] Execution loop ExpirationManager:01872a9d has started in 17,1814 ms
+===> 2020-12-11 10:40:25.242 -03:00 [Debug] Execution loop CountersAggregator:45f5f9c0 has started in 20,0566 ms
+===> 2020-12-11 10:40:25.250 -03:00 [Debug] Execution loop Worker:91f19fa3 has started in 27,5855 ms
+===> 2020-12-11 10:40:25.260 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 10:40:25.260 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 10:40:25.263 -03:00 [Debug] Execution loop DelayedJobScheduler:c3899ec6 has started in 26,212 ms
+===> 2020-12-11 10:40:25.274 -03:00 [Information] 1 servers were removed due to timeout
+===> 2020-12-11 10:40:25.296 -03:00 [Information] Server ws-sup024:25872:39661a90 all the dispatchers started
+===> 2020-12-11 10:40:25.310 -03:00 [Debug] Execution loop RecurringJobScheduler:fe755cf8 has started in 54,5371 ms
+===> 2020-12-11 10:40:25.463 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 10:40:25.658 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 10:40:25.680 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 10:40:25.707 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 10:40:31.921 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 10:40:32.001 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 10:40:32.040 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 10:40:32.042 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 10:40:32.118 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 10:40:32.237 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 10:40:32.268 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 10:40:32.269 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 10:40:32.269 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 10:40:32.269 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 10:40:32.269 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 10:40:32.270 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 10:40:32.271 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 10:40:32.271 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 10:40:32.276 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 10:40:32.308 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 32.2401ms
+===> 2020-12-11 10:40:32.313 -03:00 [Information] Request finished in 276.2148ms 200 text/html
+===> 2020-12-11 10:40:33.202 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 10:40:33.203 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 10:40:33.204 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 10:40:33.223 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 10:40:33.224 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 10:40:33.228 -03:00 [Information] Request finished in 26.3504ms 404 
+===> 2020-12-11 10:40:43.344 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-11 10:40:43.347 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 10:40:43.348 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-11 10:40:43.366 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-11 10:40:43.367 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 10:40:43.367 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 10:40:43.367 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 10:40:43.367 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 10:40:43.367 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 10:40:43.367 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 10:40:43.574 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 10:40:43.580 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 10:40:43.587 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-11 10:40:43.588 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 10:40:43.589 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 10:40:43.618 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 10:40:43.618 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 10:40:43.618 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 10:40:43.629 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 10:40:44.938 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-11 10:40:44.940 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-11 10:40:44.940 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-11 10:40:44.940 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-11 10:40:44.941 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-11 10:40:44.941 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-11 10:40:44.955 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 1587.387ms
+===> 2020-12-11 10:40:44.959 -03:00 [Information] Request finished in 1615.8099ms 200 application/json; charset=utf-8
+===> 2020-12-11 10:40:45.656 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-11 10:40:45.658 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 10:40:45.659 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 10:40:45.659 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-11 10:40:45.659 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 10:40:45.660 -03:00 [Information] Request finished in 3.8806ms 404 
+===> 2020-12-11 10:40:55.272 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:41:25.287 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:41:55.382 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:42:25.458 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:42:55.462 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:43:25.466 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:43:55.556 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:44:25.636 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:44:55.638 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:45:25.645 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:45:26.016 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 10:45:55.737 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:46:25.780 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:46:55.783 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:47:25.788 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:47:55.794 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:48:25.796 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:48:55.802 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:49:25.835 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:49:55.840 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:50:25.843 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:50:26.383 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 10:50:55.848 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:51:25.875 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:51:55.878 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:52:25.882 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:52:55.888 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:53:25.901 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:53:55.908 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:54:25.912 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:54:55.914 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:55:25.919 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:55:26.417 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 10:55:55.924 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:56:25.928 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:56:55.934 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:57:25.934 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:57:55.937 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:58:25.940 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:58:55.943 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:59:25.945 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 10:59:55.948 -03:00 [Debug] Server ws-sup024:25872:39661a90 heartbeat successfully sent
+===> 2020-12-11 11:01:33.627 -03:00 [Information] Starting web host
+===> 2020-12-11 11:01:33.766 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 11:01:33.795 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 11:01:33.802 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 11:01:33.803 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 11:01:33.806 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 11:01:33.816 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 11:01:33.821 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 11:01:33.821 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 11:01:33.821 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 11:01:33.828 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 11:01:33.862 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:01:33.864 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 11:01:33.865 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:01:33.869 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 11:01:33.873 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 11:01:33.879 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 11:01:33.879 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 11:01:33.925 -03:00 [Error] Startup::Configure
+===> 2020-12-11 11:01:34.037 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 11:01:34.049 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 11:01:34.099 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 11:01:35.476 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 11:01:35.511 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 11:01:35.511 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 11:01:35.511 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 11:01:35.545 -03:00 [Debug] Execution loop BackgroundServerProcess:a72c6a05 has started in 17,315 ms
+===> 2020-12-11 11:01:35.674 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 11:01:35.818 -03:00 [Information] Server ws-sup024:18996:c23f8012 successfully announced in 269,9965 ms
+===> 2020-12-11 11:01:35.826 -03:00 [Debug] Execution loop ServerHeartbeatProcess:18c09e9c has started in 6,2204 ms
+===> 2020-12-11 11:01:35.827 -03:00 [Information] Server ws-sup024:18996:c23f8012 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 11:01:35.841 -03:00 [Debug] Execution loop ServerWatchdog:4dc6b532 has started in 13,2522 ms
+===> 2020-12-11 11:01:35.845 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:ffdf9599 has started in 13,5869 ms
+===> 2020-12-11 11:01:35.858 -03:00 [Debug] Execution loop ExpirationManager:7fc114ca has started in 12,2443 ms
+===> 2020-12-11 11:01:35.859 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:01:35.870 -03:00 [Debug] Execution loop CountersAggregator:9cdab35b has started in 11,9919 ms
+===> 2020-12-11 11:01:35.870 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:01:35.880 -03:00 [Debug] Execution loop Worker:25af57f1 has started in 14,4658 ms
+===> 2020-12-11 11:01:35.886 -03:00 [Debug] Execution loop DelayedJobScheduler:5432c643 has started in 12,4423 ms
+===> 2020-12-11 11:01:35.894 -03:00 [Information] Server ws-sup024:18996:c23f8012 all the dispatchers started
+===> 2020-12-11 11:01:35.900 -03:00 [Debug] Execution loop RecurringJobScheduler:06abebe8 has started in 17,4473 ms
+===> 2020-12-11 11:01:35.923 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:01:36.009 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:01:36.040 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:01:36.048 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:01:40.516 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 11:01:40.573 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 11:01:40.608 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 11:01:40.611 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 11:01:40.704 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:01:40.818 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 11:01:40.850 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 11:01:40.850 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:01:40.851 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:01:40.851 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:01:40.852 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:01:40.852 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 11:01:40.854 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:01:40.855 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:01:40.861 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 11:01:40.897 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 39.5526ms
+===> 2020-12-11 11:01:40.900 -03:00 [Information] Request finished in 292.8412ms 200 text/html
+===> 2020-12-11 11:01:41.981 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 11:01:41.985 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:01:41.991 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:01:42.011 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 11:01:42.012 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:01:42.015 -03:00 [Information] Request finished in 34.2896ms 404 
+===> 2020-12-11 11:01:54.478 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-11 11:01:54.481 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:01:54.481 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-11 11:01:54.513 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-11 11:01:54.514 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:01:54.514 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:01:54.514 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:01:54.514 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:01:54.514 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:01:54.514 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:01:54.792 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:01:54.797 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:01:54.804 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-11 11:01:54.805 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:01:54.806 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:01:54.842 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:01:54.843 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:01:54.843 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:01:54.853 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:01:56.453 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-11 11:01:56.454 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-11 11:01:56.454 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-11 11:01:56.454 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-11 11:01:56.455 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-11 11:01:56.456 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-11 11:01:56.473 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 1958.9291ms
+===> 2020-12-11 11:01:56.476 -03:00 [Information] Request finished in 1997.6783ms 200 application/json; charset=utf-8
+===> 2020-12-11 11:01:57.140 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-11 11:01:57.141 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:01:57.141 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:01:57.142 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-11 11:01:57.143 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:01:57.144 -03:00 [Information] Request finished in 4.6428ms 404 
+===> 2020-12-11 11:02:05.843 -03:00 [Debug] Server ws-sup024:18996:c23f8012 heartbeat successfully sent
+===> 2020-12-11 11:02:35.850 -03:00 [Debug] Server ws-sup024:18996:c23f8012 heartbeat successfully sent
+===> 2020-12-11 11:03:05.854 -03:00 [Debug] Server ws-sup024:18996:c23f8012 heartbeat successfully sent
+===> 2020-12-11 11:03:35.858 -03:00 [Debug] Server ws-sup024:18996:c23f8012 heartbeat successfully sent
+===> 2020-12-11 11:04:38.181 -03:00 [Information] Starting web host
+===> 2020-12-11 11:04:38.429 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 11:04:38.493 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 11:04:38.502 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 11:04:38.502 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 11:04:38.503 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 11:04:38.510 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 11:04:38.514 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 11:04:38.514 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 11:04:38.514 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 11:04:38.529 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 11:04:38.584 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:04:38.587 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 11:04:38.589 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:04:38.592 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 11:04:38.595 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 11:04:38.599 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 11:04:38.600 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 11:04:38.631 -03:00 [Error] Startup::Configure
+===> 2020-12-11 11:04:38.712 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 11:04:38.721 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 11:04:38.757 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 11:04:39.602 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 11:04:39.629 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 11:04:39.630 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 11:04:39.630 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 11:04:39.650 -03:00 [Debug] Execution loop BackgroundServerProcess:a7b9a3c4 has started in 12,5416 ms
+===> 2020-12-11 11:04:39.778 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 11:04:39.919 -03:00 [Information] Server ws-sup024:18404:ba4655f7 successfully announced in 265,1385 ms
+===> 2020-12-11 11:04:39.927 -03:00 [Debug] Execution loop ServerHeartbeatProcess:b7073cea has started in 7,6325 ms
+===> 2020-12-11 11:04:39.928 -03:00 [Information] Server ws-sup024:18404:ba4655f7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 11:04:39.934 -03:00 [Debug] Execution loop ServerWatchdog:4b26fe9e has started in 5,0344 ms
+===> 2020-12-11 11:04:39.937 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:b1a26b67 has started in 7,8106 ms
+===> 2020-12-11 11:04:39.943 -03:00 [Debug] Execution loop ExpirationManager:aa82b3af has started in 9,0214 ms
+===> 2020-12-11 11:04:39.949 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:04:39.953 -03:00 [Debug] Execution loop CountersAggregator:eb33c125 has started in 15,5199 ms
+===> 2020-12-11 11:04:39.954 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:04:39.966 -03:00 [Debug] Execution loop Worker:be7f8034 has started in 21,2778 ms
+===> 2020-12-11 11:04:39.985 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:04:39.997 -03:00 [Information] Server ws-sup024:18404:ba4655f7 all the dispatchers started
+===> 2020-12-11 11:04:40.001 -03:00 [Debug] Execution loop DelayedJobScheduler:d7c1a175 has started in 40,2116 ms
+===> 2020-12-11 11:04:40.005 -03:00 [Debug] Execution loop RecurringJobScheduler:9a7bd9b0 has started in 27,9521 ms
+===> 2020-12-11 11:04:40.017 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:04:40.091 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:04:40.098 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:04:43.812 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 11:04:43.857 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 11:04:43.893 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 11:04:43.896 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 11:04:43.967 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:04:44.080 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 11:04:44.119 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 11:04:44.120 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:04:44.121 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:04:44.121 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:04:44.121 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:04:44.122 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 11:04:44.123 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:04:44.124 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:04:44.132 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 11:04:44.185 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 59.0175ms
+===> 2020-12-11 11:04:44.188 -03:00 [Information] Request finished in 296.003ms 200 text/html
+===> 2020-12-11 11:04:45.070 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 11:04:45.072 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:04:45.072 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:04:45.091 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 11:04:45.092 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:04:45.093 -03:00 [Information] Request finished in 23.437ms 404 
+===> 2020-12-11 11:04:54.593 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-11 11:04:54.596 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:04:54.597 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-11 11:04:54.625 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-11 11:04:54.625 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:04:54.625 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:04:54.625 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:04:54.626 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:04:54.626 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:04:54.626 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:04:54.859 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:04:54.867 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:04:54.871 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-11 11:04:54.872 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:04:54.873 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:04:54.904 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:04:54.905 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:04:54.905 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:04:54.913 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:04:56.406 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-11 11:04:56.408 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-11 11:04:56.409 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-11 11:04:56.409 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-11 11:04:56.410 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-11 11:04:56.410 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-11 11:04:56.426 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 1800.6217ms
+===> 2020-12-11 11:04:56.429 -03:00 [Information] Request finished in 1836.299ms 200 application/json; charset=utf-8
+===> 2020-12-11 11:04:57.100 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-11 11:04:57.102 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:04:57.103 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:04:57.104 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-11 11:04:57.104 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:04:57.105 -03:00 [Information] Request finished in 5.2753ms 404 
+===> 2020-12-11 11:05:09.943 -03:00 [Debug] Server ws-sup024:18404:ba4655f7 heartbeat successfully sent
+===> 2020-12-11 11:05:33.542 -03:00 [Information] Starting web host
+===> 2020-12-11 11:05:33.682 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 11:05:33.741 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 11:05:33.744 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 11:05:33.744 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 11:05:33.744 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 11:05:33.749 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 11:05:33.755 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 11:05:33.755 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 11:05:33.755 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 11:05:33.765 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 11:05:33.794 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:05:33.797 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 11:05:33.799 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:05:33.803 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 11:05:33.806 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 11:05:33.811 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 11:05:33.812 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 11:05:33.854 -03:00 [Error] Startup::Configure
+===> 2020-12-11 11:05:33.962 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 11:05:33.978 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 11:05:34.017 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 11:05:34.768 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 11:05:34.799 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 11:05:34.800 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 11:05:34.800 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 11:05:34.826 -03:00 [Debug] Execution loop BackgroundServerProcess:60a435fe has started in 17,3317 ms
+===> 2020-12-11 11:05:34.925 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 11:05:35.063 -03:00 [Information] Server ws-sup024:21656:6ce6c0c9 successfully announced in 233,4278 ms
+===> 2020-12-11 11:05:35.078 -03:00 [Information] Server ws-sup024:21656:6ce6c0c9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 11:05:35.077 -03:00 [Debug] Execution loop ServerHeartbeatProcess:6b7aef30 has started in 12,6947 ms
+===> 2020-12-11 11:05:35.094 -03:00 [Debug] Execution loop ServerWatchdog:37c9f38f has started in 16,1243 ms
+===> 2020-12-11 11:05:35.105 -03:00 [Information] 1 servers were removed due to timeout
+===> 2020-12-11 11:05:35.106 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:823f6049 has started in 15,2872 ms
+===> 2020-12-11 11:05:35.116 -03:00 [Debug] Execution loop CountersAggregator:5789c296 has started in 5,977 ms
+===> 2020-12-11 11:05:35.116 -03:00 [Debug] Execution loop ExpirationManager:d08845fc has started in 13,7932 ms
+===> 2020-12-11 11:05:35.118 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:05:35.117 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:05:35.134 -03:00 [Debug] Execution loop Worker:b94a6a95 has started in 21,9644 ms
+===> 2020-12-11 11:05:35.139 -03:00 [Debug] Execution loop DelayedJobScheduler:37b695d4 has started in 14,8524 ms
+===> 2020-12-11 11:05:35.171 -03:00 [Information] Server ws-sup024:21656:6ce6c0c9 all the dispatchers started
+===> 2020-12-11 11:05:35.187 -03:00 [Debug] Execution loop RecurringJobScheduler:1facdf2f has started in 53,1891 ms
+===> 2020-12-11 11:05:35.190 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:05:35.209 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:05:35.240 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:05:35.265 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:05:37.536 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 11:05:37.586 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 11:05:37.633 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 11:05:37.640 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 11:05:37.742 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:05:37.911 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 11:05:37.965 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 11:05:37.968 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:05:37.969 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:05:37.969 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:05:37.970 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:05:37.970 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 11:05:37.972 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:05:37.973 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:05:37.980 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 11:05:38.011 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 37.4072ms
+===> 2020-12-11 11:05:38.016 -03:00 [Information] Request finished in 386.9591ms 200 text/html
+===> 2020-12-11 11:05:39.051 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 11:05:39.055 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:05:39.058 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:05:39.074 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 11:05:39.075 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:05:39.082 -03:00 [Information] Request finished in 26.5805ms 404 
+===> 2020-12-11 11:07:07.740 -03:00 [Information] Starting web host
+===> 2020-12-11 11:07:07.854 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 11:07:07.878 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 11:07:07.883 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 11:07:07.884 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 11:07:07.884 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 11:07:07.891 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 11:07:07.895 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 11:07:07.895 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 11:07:07.895 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 11:07:07.903 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 11:07:07.931 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:07:07.933 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 11:07:07.934 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:07:07.938 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 11:07:07.941 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 11:07:07.945 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 11:07:07.945 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 11:07:07.984 -03:00 [Error] Startup::Configure
+===> 2020-12-11 11:07:08.086 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 11:07:08.097 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 11:07:08.142 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 11:07:08.442 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 11:07:08.470 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 11:07:08.471 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 11:07:08.471 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 11:07:08.498 -03:00 [Debug] Execution loop BackgroundServerProcess:94491d4f has started in 14,7931 ms
+===> 2020-12-11 11:07:08.619 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 11:07:08.731 -03:00 [Information] Server ws-sup024:23236:22730879 successfully announced in 229,4965 ms
+===> 2020-12-11 11:07:08.740 -03:00 [Debug] Execution loop ServerHeartbeatProcess:f0e9930f has started in 8,0727 ms
+===> 2020-12-11 11:07:08.741 -03:00 [Information] Server ws-sup024:23236:22730879 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 11:07:08.747 -03:00 [Debug] Execution loop ServerWatchdog:2b8ab78d has started in 4,6075 ms
+===> 2020-12-11 11:07:08.770 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:8a31ed95 has started in 27,9578 ms
+===> 2020-12-11 11:07:08.781 -03:00 [Debug] Execution loop ExpirationManager:da98eeb5 has started in 9,8943 ms
+===> 2020-12-11 11:07:08.788 -03:00 [Debug] Execution loop CountersAggregator:ccb15438 has started in 14,0693 ms
+===> 2020-12-11 11:07:08.788 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:07:08.789 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:07:08.812 -03:00 [Debug] Execution loop Worker:21d3b68b has started in 15,5292 ms
+===> 2020-12-11 11:07:08.835 -03:00 [Information] Server ws-sup024:23236:22730879 all the dispatchers started
+===> 2020-12-11 11:07:08.837 -03:00 [Debug] Execution loop DelayedJobScheduler:b88b2dc4 has started in 29,9187 ms
+===> 2020-12-11 11:07:08.856 -03:00 [Debug] Execution loop RecurringJobScheduler:f823ed05 has started in 36,4569 ms
+===> 2020-12-11 11:07:08.932 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:07:08.952 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:07:08.966 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:07:08.976 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:07:11.348 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 11:07:11.390 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 11:07:11.426 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 11:07:11.429 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 11:07:11.501 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:07:11.632 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 11:07:11.668 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 11:07:11.669 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:07:11.670 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:07:11.670 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:07:11.670 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:07:11.670 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 11:07:11.672 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:07:11.673 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:07:11.682 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 11:07:11.716 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 41.204ms
+===> 2020-12-11 11:07:11.722 -03:00 [Information] Request finished in 296.42ms 200 text/html
+===> 2020-12-11 11:07:12.660 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 11:07:12.661 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:07:12.663 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:07:12.693 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 11:07:12.694 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:07:12.695 -03:00 [Information] Request finished in 35.9588ms 404 
+===> 2020-12-11 11:07:25.282 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-11 11:07:25.286 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:07:25.286 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-11 11:07:25.309 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-11 11:07:25.310 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:07:25.310 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:07:25.310 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:07:25.310 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:07:25.310 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:07:25.310 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:07:25.572 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:07:25.578 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:07:25.585 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-11 11:07:25.586 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:07:25.586 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:07:25.621 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:07:25.621 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:07:25.621 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:07:25.634 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:07:26.945 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-11 11:07:26.947 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-11 11:07:26.948 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-11 11:07:26.948 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-11 11:07:26.949 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-11 11:07:26.950 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-11 11:07:26.966 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 1655.8075ms
+===> 2020-12-11 11:07:26.968 -03:00 [Information] Request finished in 1686.3387ms 200 application/json; charset=utf-8
+===> 2020-12-11 11:07:27.652 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-11 11:07:27.653 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:07:27.654 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:07:27.655 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-11 11:07:27.655 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:07:27.656 -03:00 [Information] Request finished in 4.6718ms 404 
+===> 2020-12-11 11:07:38.853 -03:00 [Debug] Server ws-sup024:23236:22730879 heartbeat successfully sent
+===> 2020-12-11 11:08:08.945 -03:00 [Debug] Server ws-sup024:23236:22730879 heartbeat successfully sent
+===> 2020-12-11 11:08:47.889 -03:00 [Information] Starting web host
+===> 2020-12-11 11:08:48.018 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 11:08:48.050 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 11:08:48.053 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 11:08:48.053 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 11:08:48.054 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 11:08:48.059 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 11:08:48.061 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 11:08:48.062 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 11:08:48.062 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 11:08:48.069 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 11:08:48.095 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:08:48.099 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 11:08:48.101 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:08:48.104 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 11:08:48.107 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 11:08:48.110 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 11:08:48.111 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 11:08:48.144 -03:00 [Error] Startup::Configure
+===> 2020-12-11 11:08:48.244 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 11:08:48.258 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 11:08:48.292 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 11:08:50.065 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 11:08:50.095 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 11:08:50.098 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 11:08:50.099 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 11:08:50.125 -03:00 [Debug] Execution loop BackgroundServerProcess:a648db75 has started in 11,8599 ms
+===> 2020-12-11 11:08:50.277 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 11:08:50.453 -03:00 [Information] Server ws-sup024:14856:29d0dbd8 successfully announced in 324,9467 ms
+===> 2020-12-11 11:08:50.467 -03:00 [Information] Server ws-sup024:14856:29d0dbd8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 11:08:50.467 -03:00 [Debug] Execution loop ServerHeartbeatProcess:c128888f has started in 12,8532 ms
+===> 2020-12-11 11:08:50.482 -03:00 [Debug] Execution loop ServerWatchdog:29a66758 has started in 14,7759 ms
+===> 2020-12-11 11:08:50.491 -03:00 [Information] 1 servers were removed due to timeout
+===> 2020-12-11 11:08:50.501 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:b0be5906 has started in 23,2861 ms
+===> 2020-12-11 11:08:50.512 -03:00 [Debug] Execution loop ExpirationManager:19eb2210 has started in 19,2874 ms
+===> 2020-12-11 11:08:50.521 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:08:50.521 -03:00 [Debug] Execution loop CountersAggregator:2505d9d8 has started in 17,1177 ms
+===> 2020-12-11 11:08:50.528 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:08:50.534 -03:00 [Debug] Execution loop Worker:5c931268 has started in 23,095 ms
+===> 2020-12-11 11:08:50.564 -03:00 [Debug] Execution loop DelayedJobScheduler:8b153b33 has started in 42,4782 ms
+===> 2020-12-11 11:08:50.577 -03:00 [Information] Server ws-sup024:14856:29d0dbd8 all the dispatchers started
+===> 2020-12-11 11:08:50.585 -03:00 [Debug] Execution loop RecurringJobScheduler:f9be33c4 has started in 49,4419 ms
+===> 2020-12-11 11:08:50.603 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:08:50.722 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:08:50.742 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:08:50.779 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:08:52.625 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 11:08:52.667 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 11:08:52.707 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 11:08:52.713 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 11:08:52.791 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:08:52.945 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 11:08:52.989 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 11:08:52.991 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:08:52.991 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:08:52.992 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:08:52.992 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:08:52.992 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 11:08:52.995 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:08:52.996 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:08:53.006 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 11:08:53.070 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 70.1357ms
+===> 2020-12-11 11:08:53.075 -03:00 [Information] Request finished in 369.4696ms 200 text/html
+===> 2020-12-11 11:08:54.139 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 11:08:54.142 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:08:54.143 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:08:54.164 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 11:08:54.165 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:08:54.167 -03:00 [Information] Request finished in 27.7156ms 404 
+===> 2020-12-11 11:09:06.238 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-11 11:09:06.241 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:09:06.241 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-11 11:09:06.263 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-11 11:09:06.263 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:09:06.263 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:09:06.263 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:09:06.263 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:09:06.263 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:09:06.263 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:09:06.546 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:09:06.552 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:09:06.557 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-11 11:09:06.558 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:09:06.558 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:09:06.589 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:09:06.589 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:09:06.589 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:09:06.599 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:09:07.811 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-11 11:09:07.812 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-11 11:09:07.813 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-11 11:09:07.813 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-11 11:09:07.813 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-11 11:09:07.814 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-11 11:09:07.830 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 1566.4319ms
+===> 2020-12-11 11:09:07.832 -03:00 [Information] Request finished in 1595.2977ms 200 application/json; charset=utf-8
+===> 2020-12-11 11:09:08.534 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-11 11:09:08.535 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:09:08.536 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:09:08.537 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-11 11:09:08.538 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:09:08.539 -03:00 [Information] Request finished in 5.7745ms 404 
+===> 2020-12-11 11:09:20.564 -03:00 [Debug] Server ws-sup024:14856:29d0dbd8 heartbeat successfully sent
+===> 2020-12-11 11:09:46.962 -03:00 [Information] Starting web host
+===> 2020-12-11 11:09:47.080 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 11:09:47.106 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 11:09:47.108 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 11:09:47.109 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 11:09:47.109 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 11:09:47.113 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 11:09:47.117 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 11:09:47.117 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 11:09:47.117 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 11:09:47.126 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 11:09:47.160 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:09:47.162 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 11:09:47.165 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:09:47.168 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 11:09:47.172 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 11:09:47.176 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 11:09:47.176 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 11:09:47.204 -03:00 [Error] Startup::Configure
+===> 2020-12-11 11:09:47.296 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 11:09:47.348 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 11:09:47.395 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 11:09:47.718 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 11:09:47.747 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 11:09:47.747 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 11:09:47.748 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 11:09:47.772 -03:00 [Debug] Execution loop BackgroundServerProcess:4a77e559 has started in 11,9763 ms
+===> 2020-12-11 11:09:47.916 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 11:09:48.041 -03:00 [Information] Server ws-sup024:16212:2d230df0 successfully announced in 263,3704 ms
+===> 2020-12-11 11:09:48.052 -03:00 [Information] Server ws-sup024:16212:2d230df0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 11:09:48.053 -03:00 [Debug] Execution loop ServerHeartbeatProcess:38787a13 has started in 10,2487 ms
+===> 2020-12-11 11:09:48.058 -03:00 [Debug] Execution loop ServerWatchdog:b2b07fd1 has started in 6,3753 ms
+===> 2020-12-11 11:09:48.073 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:9254084a has started in 19,0979 ms
+===> 2020-12-11 11:09:48.088 -03:00 [Debug] Execution loop ExpirationManager:5aac1c0d has started in 24,1032 ms
+===> 2020-12-11 11:09:48.090 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:09:48.097 -03:00 [Debug] Execution loop CountersAggregator:29a7a73c has started in 18,8569 ms
+===> 2020-12-11 11:09:48.098 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:09:48.106 -03:00 [Debug] Execution loop Worker:ed8283d4 has started in 7,5798 ms
+===> 2020-12-11 11:09:48.112 -03:00 [Information] Server ws-sup024:16212:2d230df0 all the dispatchers started
+===> 2020-12-11 11:09:48.117 -03:00 [Debug] Execution loop DelayedJobScheduler:45593184 has started in 16,5501 ms
+===> 2020-12-11 11:09:48.122 -03:00 [Debug] Execution loop RecurringJobScheduler:21acc048 has started in 16,3707 ms
+===> 2020-12-11 11:09:48.147 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:09:48.267 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:09:48.276 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:09:48.291 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:09:51.789 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 11:09:51.825 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 11:09:51.861 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 11:09:51.865 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 11:09:51.952 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:09:52.080 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 11:09:52.110 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 11:09:52.111 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:09:52.112 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:09:52.112 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:09:52.113 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:09:52.113 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 11:09:52.116 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:09:52.117 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:09:52.123 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 11:09:52.155 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 37.9594ms
+===> 2020-12-11 11:09:52.160 -03:00 [Information] Request finished in 300.0299ms 200 text/html
+===> 2020-12-11 11:09:52.953 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 11:09:52.959 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:09:52.968 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:09:52.994 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 11:09:52.996 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:09:52.999 -03:00 [Information] Request finished in 46.2042ms 404 
+===> 2020-12-11 11:09:59.746 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-11 11:09:59.749 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:09:59.750 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-11 11:09:59.773 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-11 11:09:59.774 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:09:59.774 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:09:59.774 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:09:59.774 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:09:59.774 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:09:59.775 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:10:00.009 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:10:00.017 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:10:00.023 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-11 11:10:00.024 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:10:00.025 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:10:00.064 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:10:00.065 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:10:00.065 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:10:00.079 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:10:01.567 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-11 11:10:01.569 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-11 11:10:01.569 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-11 11:10:01.569 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-11 11:10:01.570 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-11 11:10:01.571 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-11 11:10:01.590 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 1815.9499ms
+===> 2020-12-11 11:10:01.592 -03:00 [Information] Request finished in 1847.1241ms 200 application/json; charset=utf-8
+===> 2020-12-11 11:10:02.281 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-11 11:10:02.283 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:10:02.283 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:10:02.285 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-11 11:10:02.286 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:10:02.287 -03:00 [Information] Request finished in 5.5873ms 404 
+===> 2020-12-11 11:10:18.080 -03:00 [Debug] Server ws-sup024:16212:2d230df0 heartbeat successfully sent
+===> 2020-12-11 11:10:48.083 -03:00 [Debug] Server ws-sup024:16212:2d230df0 heartbeat successfully sent
+===> 2020-12-11 11:23:53.271 -03:00 [Information] Starting web host
+===> 2020-12-11 11:23:53.383 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-11 11:23:53.409 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-11 11:23:53.413 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-11 11:23:53.413 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-11 11:23:53.415 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-11 11:23:53.423 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-11 11:23:53.427 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-11 11:23:53.427 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-11 11:23:53.427 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-11 11:23:53.432 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-11 11:23:53.463 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:23:53.466 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-11 11:23:53.467 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-11 11:23:53.471 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-11 11:23:53.474 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-11 11:23:53.477 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-11 11:23:53.478 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-11 11:23:53.513 -03:00 [Error] Startup::Configure
+===> 2020-12-11 11:23:53.610 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-11 11:23:53.619 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-11 11:23:53.666 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-11 11:23:54.992 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-11 11:23:55.020 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-11 11:23:55.020 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-11 11:23:55.021 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-11 11:23:55.040 -03:00 [Debug] Execution loop BackgroundServerProcess:b99cd2e5 has started in 10,5738 ms
+===> 2020-12-11 11:23:55.146 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-11 11:23:55.331 -03:00 [Information] Server ws-sup024:10512:e23d053d successfully announced in 286,9183 ms
+===> 2020-12-11 11:23:55.337 -03:00 [Information] Server ws-sup024:10512:e23d053d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-11 11:23:55.342 -03:00 [Debug] Execution loop ServerHeartbeatProcess:0bb6071f has started in 10,6689 ms
+===> 2020-12-11 11:23:55.359 -03:00 [Debug] Execution loop ServerWatchdog:4048e3cb has started in 18,7206 ms
+===> 2020-12-11 11:23:55.366 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:214e8d72 has started in 15,9314 ms
+===> 2020-12-11 11:23:55.370 -03:00 [Information] 5 servers were removed due to timeout
+===> 2020-12-11 11:23:55.374 -03:00 [Debug] Execution loop ExpirationManager:9e5897e7 has started in 16,8667 ms
+===> 2020-12-11 11:23:55.379 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:23:55.384 -03:00 [Debug] Execution loop CountersAggregator:44220b2d has started in 13,7075 ms
+===> 2020-12-11 11:23:55.385 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:23:55.402 -03:00 [Debug] Execution loop Worker:f2f88a4c has started in 23,5653 ms
+===> 2020-12-11 11:23:55.407 -03:00 [Debug] Execution loop DelayedJobScheduler:9e49b35d has started in 17,5001 ms
+===> 2020-12-11 11:23:55.412 -03:00 [Information] Server ws-sup024:10512:e23d053d all the dispatchers started
+===> 2020-12-11 11:23:55.422 -03:00 [Debug] Execution loop RecurringJobScheduler:2bf8be55 has started in 19,4536 ms
+===> 2020-12-11 11:23:55.432 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:23:55.604 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:23:55.609 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:23:55.611 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:23:58.708 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-11 11:23:58.745 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-11 11:23:58.777 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-11 11:23:58.779 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-11 11:23:58.838 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:23:58.939 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-11 11:23:58.967 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-11 11:23:58.968 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:23:58.968 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:23:58.969 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:23:58.969 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:23:58.969 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-11 11:23:58.970 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:23:58.971 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-11 11:23:58.977 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-11 11:23:59.004 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 31.3209ms
+===> 2020-12-11 11:23:59.009 -03:00 [Information] Request finished in 232.6515ms 200 text/html
+===> 2020-12-11 11:24:00.001 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-11 11:24:00.004 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:24:00.007 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:24:00.027 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-11 11:24:00.028 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:24:00.032 -03:00 [Information] Request finished in 32.0479ms 404 
+===> 2020-12-11 11:24:17.783 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-11 11:24:17.785 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:24:17.786 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-11 11:24:17.804 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-11 11:24:17.805 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-11 11:24:17.805 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-11 11:24:17.805 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:24:17.805 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-11 11:24:17.805 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-11 11:24:17.806 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:24:18.001 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-11 11:24:18.006 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:24:18.010 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-11 11:24:18.011 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:24:18.011 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-11 11:24:18.040 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:24:18.040 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:24:18.041 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-11 11:24:18.048 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-11 11:24:19.221 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-11 11:24:19.223 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-11 11:24:19.223 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-11 11:24:19.223 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-11 11:24:19.224 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-11 11:24:19.224 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-11 11:24:19.239 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 1433.7064ms
+===> 2020-12-11 11:24:19.242 -03:00 [Information] Request finished in 1458.6577ms 200 application/json; charset=utf-8
+===> 2020-12-11 11:24:19.895 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-11 11:24:19.896 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-11 11:24:19.897 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:24:19.898 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-11 11:24:19.898 -03:00 [Debug] Request did not match any routes
+===> 2020-12-11 11:24:19.899 -03:00 [Information] Request finished in 4.6187ms 404 
+===> 2020-12-11 11:24:25.354 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:24:55.456 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:25:25.460 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:25:55.463 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:26:25.465 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:26:55.467 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:27:25.553 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:27:55.702 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:28:25.835 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:28:55.713 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:28:55.904 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:29:25.906 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:29:55.985 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:30:25.988 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:30:55.991 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:31:25.994 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:31:55.997 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:32:26.001 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:32:56.004 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:33:26.007 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:33:56.010 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:33:56.078 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:34:26.013 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:34:56.015 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:35:26.017 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:35:56.021 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:36:26.023 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:36:56.024 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:37:26.026 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:37:56.028 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:38:26.055 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:38:56.056 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:38:56.383 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:39:26.060 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:39:56.065 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:40:26.067 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:40:56.071 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:41:26.072 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:41:56.073 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:42:26.076 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:42:56.078 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:43:26.082 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:43:56.084 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:43:56.396 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:44:26.086 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:44:56.087 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:45:26.101 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:45:56.102 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:46:26.104 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:46:56.106 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:47:26.108 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:47:56.111 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:48:26.113 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:48:56.116 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:48:56.596 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:49:26.117 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:49:56.119 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:50:26.120 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:50:56.122 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:51:26.126 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:51:56.128 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:52:26.217 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:52:56.220 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:53:26.226 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:53:55.612 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-11 11:53:55.627 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-11 11:53:55.724 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-11 11:53:55.729 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-11 11:53:55.732 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-11 11:53:56.227 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:53:56.618 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:54:26.230 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:54:56.231 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:55:26.233 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:55:56.240 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:56:26.244 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:56:56.262 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:57:26.263 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:57:56.266 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:58:26.268 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:58:56.271 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:58:56.678 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 11:59:26.274 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 11:59:56.278 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:00:26.280 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:00:56.289 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:01:26.290 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:01:56.294 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:02:26.296 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:02:56.298 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:03:26.300 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:03:56.302 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:03:56.695 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 12:04:26.304 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:04:56.306 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:05:26.309 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:05:56.311 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:06:26.313 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:06:56.319 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:07:26.321 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:07:56.323 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:08:26.325 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:08:56.327 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:08:56.706 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 12:09:26.330 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:09:56.333 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:10:26.335 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:10:56.337 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:11:26.340 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:11:56.347 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:12:26.349 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:12:56.351 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:13:26.353 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:13:56.355 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:13:56.719 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 12:14:26.357 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:14:56.360 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:15:26.361 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:15:56.366 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:16:26.376 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:16:56.379 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:17:26.385 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:17:56.387 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:18:26.391 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:18:56.393 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:18:56.744 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-11 12:19:26.396 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:19:56.397 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:20:26.399 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:20:56.401 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent
+===> 2020-12-11 12:21:26.404 -03:00 [Debug] Server ws-sup024:10512:e23d053d heartbeat successfully sent

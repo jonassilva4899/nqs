@@ -28,4 +28,9 @@
     <ProjectReference Include="..\NQS.Dtos\Leega.Dtos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\assets\vendors\" />
+    <Folder Include="wwwroot\assets\vendor\iconic-fonts\" />
+  </ItemGroup>
+
 </Project>
