@@ -7687,3 +7687,814 @@ The statement has been terminated.
 ===> 2020-12-12 19:00:27.137 -03:00 [Information] Request finished in 427.8499ms 200 application/json; charset=utf-8
 ===> 2020-12-12 19:00:36.661 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
 ===> 2020-12-12 19:01:06.663 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:01:36.666 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:01:54.821 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:01:54.821 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:01:54.821 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:01:54.821 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:01:54.821 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:01:54.822 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:01:54.822 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:01:54.822 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:01:54.822 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:01:54.822 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:01:54.822 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:01:55.235 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:01:55.236 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:01:55.236 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:01:55.236 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:01:55.236 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:01:55.236 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:01:55.236 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 414.7198ms
+===> 2020-12-12 19:01:55.237 -03:00 [Information] Request finished in 415.6968ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:02:06.669 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:02:09.889 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:02:09.889 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:02:09.889 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:02:09.889 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:02:09.889 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:02:09.890 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:02:09.890 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:02:09.890 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:02:09.890 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:02:09.890 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:02:09.890 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:02:10.300 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:02:10.300 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:02:10.300 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:02:10.300 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:02:10.300 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:02:10.300 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:02:10.301 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 411.3108ms
+===> 2020-12-12 19:02:10.301 -03:00 [Information] Request finished in 412.4043ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:02:27.029 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:02:27.029 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:02:27.029 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:02:27.030 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:02:27.454 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:02:27.454 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:02:27.454 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:02:27.454 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:02:27.454 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:02:27.454 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:02:27.455 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 425.7947ms
+===> 2020-12-12 19:02:27.456 -03:00 [Information] Request finished in 427.0201ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:02:36.671 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:02:36.702 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-12 19:02:50.006 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:02:50.006 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:02:50.006 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:02:50.006 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:02:50.006 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:02:50.007 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:02:50.007 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:02:50.007 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:02:50.007 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:02:50.007 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:02:50.007 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:02:50.426 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:02:50.426 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:02:50.426 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:02:50.426 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:02:50.426 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:02:50.426 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:02:50.427 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 419.9236ms
+===> 2020-12-12 19:02:50.427 -03:00 [Information] Request finished in 421.1808ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:03:06.675 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:03:36.677 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:03:42.268 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:03:42.269 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:03:42.269 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:03:42.680 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:03:42.680 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:03:42.680 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:03:42.680 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:03:42.680 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:03:42.680 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:03:42.681 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 411.5381ms
+===> 2020-12-12 19:03:42.681 -03:00 [Information] Request finished in 412.7051ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:03:47.769 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:03:47.769 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:03:47.769 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:03:47.770 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:03:47.770 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:03:47.771 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:03:47.771 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:03:47.771 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:03:47.771 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:03:47.771 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:03:47.771 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:03:48.182 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:03:48.182 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:03:48.182 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:03:48.182 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:03:48.182 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:03:48.182 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:03:48.183 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 412.2165ms
+===> 2020-12-12 19:03:48.183 -03:00 [Information] Request finished in 414.4729ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:04:02.434 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:04:02.434 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:04:02.434 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:04:02.435 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:04:02.435 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:04:02.435 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:04:02.435 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:04:02.435 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:04:02.435 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:04:02.435 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:04:02.435 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:04:02.853 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:04:02.853 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:04:02.853 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:04:02.853 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:04:02.853 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:04:02.853 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:04:02.854 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 419.0826ms
+===> 2020-12-12 19:04:02.854 -03:00 [Information] Request finished in 419.9724ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:04:06.690 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:04:35.119 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:04:35.119 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:04:35.119 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:04:35.119 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:04:35.119 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:04:35.119 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:04:35.120 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:04:35.120 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:04:35.120 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:04:35.120 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:04:35.120 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:04:35.560 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:04:35.560 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:04:35.560 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:04:35.560 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:04:35.560 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:04:35.560 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:04:35.560 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 440.7472ms
+===> 2020-12-12 19:04:35.561 -03:00 [Information] Request finished in 441.7791ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:04:36.696 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:05:01.163 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:05:01.163 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:05:01.163 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:05:01.164 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:05:01.582 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:05:01.582 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:05:01.583 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:05:01.583 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:05:01.583 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:05:01.583 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:05:01.583 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 420.114ms
+===> 2020-12-12 19:05:01.584 -03:00 [Information] Request finished in 421.105ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:05:06.705 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:05:36.708 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:05:39.653 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:05:39.653 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:05:39.653 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:05:39.653 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:05:39.653 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:05:39.653 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:05:39.653 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:05:39.653 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:05:39.653 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:05:39.654 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:05:39.654 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:05:40.073 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:05:40.073 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:05:40.073 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:05:40.073 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:05:40.073 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:05:40.073 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:05:40.074 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 420.263ms
+===> 2020-12-12 19:05:40.074 -03:00 [Information] Request finished in 421.219ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:06:06.727 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:06:13.870 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:06:13.870 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:06:13.871 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:06:13.871 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:06:14.285 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:06:14.285 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:06:14.285 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:06:14.285 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:06:14.285 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:06:14.285 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:06:14.286 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 414.6711ms
+===> 2020-12-12 19:06:14.286 -03:00 [Information] Request finished in 415.9554ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:06:26.789 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:06:26.789 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:06:26.789 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:06:26.789 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:06:26.790 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:06:26.790 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:06:26.790 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:06:26.790 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:06:26.790 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:06:26.790 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:06:26.791 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:06:27.249 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:06:27.249 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:06:27.249 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:06:27.249 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:06:27.249 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:06:27.249 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:06:27.249 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 459.1975ms
+===> 2020-12-12 19:06:27.250 -03:00 [Information] Request finished in 461.0566ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:06:36.732 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:06:48.721 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:06:48.722 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:06:48.722 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:06:48.723 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:06:48.723 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:06:48.723 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:06:48.723 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:06:48.723 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:06:48.723 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:06:48.723 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:06:48.723 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:06:49.152 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:06:49.152 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:06:49.152 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:06:49.152 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:06:49.152 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:06:49.152 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:06:49.152 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 429.3243ms
+===> 2020-12-12 19:06:49.152 -03:00 [Information] Request finished in 431.081ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:07:06.735 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:07:07.391 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:07:07.391 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:07:07.391 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:07:07.391 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:07:07.391 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:07:07.391 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:07:07.391 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:07:07.392 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:07:07.392 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:07:07.392 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:07:07.392 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:07:07.865 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:07:07.865 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:07:07.865 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:07:07.865 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:07:07.865 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:07:07.865 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:07:07.894 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 502.2982ms
+===> 2020-12-12 19:07:07.894 -03:00 [Information] Request finished in 503.3112ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:07:23.059 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:07:23.059 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:07:23.059 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:07:23.059 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:07:23.060 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:07:23.060 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:07:23.060 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:07:23.060 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:07:23.060 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:07:23.060 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:07:23.060 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:07:23.467 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:07:23.467 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:07:23.467 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:07:23.467 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:07:23.467 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:07:23.467 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:07:23.470 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 409.9462ms
+===> 2020-12-12 19:07:23.470 -03:00 [Information] Request finished in 410.9696ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:07:36.752 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-12 19:07:36.773 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:08:06.794 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:08:09.419 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:08:09.419 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:08:09.419 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:08:09.419 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:08:09.421 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:08:09.421 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:08:09.421 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:08:09.421 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:08:09.421 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:08:09.421 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:08:09.421 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:08:09.827 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:08:09.827 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:08:09.827 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:08:09.827 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:08:09.827 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:08:09.827 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:08:09.828 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 407.0812ms
+===> 2020-12-12 19:08:09.828 -03:00 [Information] Request finished in 409.3466ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:08:36.803 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:09:06.807 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:09:36.808 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:10:04.561 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:10:04.561 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:10:04.561 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:10:04.562 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:10:04.972 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:10:04.972 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:10:04.972 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:10:04.972 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:10:04.973 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:10:04.973 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:10:04.975 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 413.3528ms
+===> 2020-12-12 19:10:04.975 -03:00 [Information] Request finished in 414.2921ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:10:06.818 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:10:34.576 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:10:34.576 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:10:34.576 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:10:34.994 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:10:34.994 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:10:34.994 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:10:34.994 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:10:34.995 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:10:34.995 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:10:34.995 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 418.472ms
+===> 2020-12-12 19:10:34.996 -03:00 [Information] Request finished in 419.7459ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:10:36.820 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:11:06.824 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:11:36.824 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:11:41.790 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:11:41.790 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:11:41.790 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:11:41.791 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:11:41.791 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:11:41.791 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:11:41.791 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:11:41.791 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:11:41.791 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:11:41.791 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:11:41.791 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:11:42.204 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:11:42.204 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:11:42.204 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:11:42.204 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:11:42.204 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:11:42.204 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:11:42.204 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 413.456ms
+===> 2020-12-12 19:11:42.205 -03:00 [Information] Request finished in 414.3211ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:12:06.827 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:12:36.765 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-12 19:12:36.831 -03:00 [Debug] Server ws-sup024:25864:0905756a heartbeat successfully sent
+===> 2020-12-12 19:15:03.960 -03:00 [Information] Starting web host
+===> 2020-12-12 19:15:04.072 -03:00 [Information] User profile is available. Using '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-12-12 19:15:04.100 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-2bdfb959-b5ba-412d-8361-71119848baab.xml"'.
+===> 2020-12-12 19:15:04.104 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-4a536449-6360-42f7-bfb6-4ab75d577c7a.xml"'.
+===> 2020-12-12 19:15:04.105 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-d5abd32b-f10c-4710-bd25-fe477a20dea4.xml"'.
+===> 2020-12-12 19:15:04.106 -03:00 [Debug] Reading data from file '"C:\Users\gustavo.luna\AppData\Local\ASP.NET\DataProtection-Keys\key-dabc7d4f-b585-4bbb-974e-ae37b5b89e97.xml"'.
+===> 2020-12-12 19:15:04.113 -03:00 [Debug] Found key {2bdfb959-b5ba-412d-8361-71119848baab}.
+===> 2020-12-12 19:15:04.118 -03:00 [Debug] Found key {4a536449-6360-42f7-bfb6-4ab75d577c7a}.
+===> 2020-12-12 19:15:04.118 -03:00 [Debug] Found key {d5abd32b-f10c-4710-bd25-fe477a20dea4}.
+===> 2020-12-12 19:15:04.118 -03:00 [Debug] Found key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97}.
+===> 2020-12-12 19:15:04.126 -03:00 [Debug] Considering key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} with expiration date 2021-01-22 02:07:41Z as default key.
+===> 2020-12-12 19:15:04.158 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-12 19:15:04.161 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-12-12 19:15:04.162 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-12-12 19:15:04.165 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-12-12 19:15:04.169 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-12-12 19:15:04.173 -03:00 [Debug] Using key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} as the default key.
+===> 2020-12-12 19:15:04.173 -03:00 [Debug] Key ring with default key {dabc7d4f-b585-4bbb-974e-ae37b5b89e97} was loaded during application startup.
+===> 2020-12-12 19:15:04.213 -03:00 [Error] Startup::Configure
+===> 2020-12-12 19:15:04.302 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-12-12 19:15:04.316 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-12-12 19:15:04.373 -03:00 [Information] Start installing Hangfire SQL objects...
+===> 2020-12-12 19:15:05.774 -03:00 [Information] Hangfire SQL objects installed.
+===> 2020-12-12 19:15:05.797 -03:00 [Information] Starting Hangfire Server using job storage: 'SQL Server: ws-sup024\SQLEXPRESS@goobeeteams'
+===> 2020-12-12 19:15:05.798 -03:00 [Information] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+===> 2020-12-12 19:15:05.798 -03:00 [Information] Using the following options for Hangfire Server:
+    Worker count: 1
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+===> 2020-12-12 19:15:05.816 -03:00 [Debug] Execution loop BackgroundServerProcess:b9e780e6 has started in 8,2241 ms
+===> 2020-12-12 19:15:05.916 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-12-12 19:15:06.105 -03:00 [Information] Server ws-sup024:12596:35d00bcc successfully announced in 285,6997 ms
+===> 2020-12-12 19:15:06.109 -03:00 [Information] Server ws-sup024:12596:35d00bcc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+===> 2020-12-12 19:15:06.113 -03:00 [Debug] Execution loop ServerHeartbeatProcess:f2a42d14 has started in 7,6049 ms
+===> 2020-12-12 19:15:06.117 -03:00 [Debug] Execution loop ServerWatchdog:0f56764a has started in 7,3272 ms
+===> 2020-12-12 19:15:06.123 -03:00 [Debug] Execution loop ServerJobCancellationWatcher:0e062975 has started in 7,9325 ms
+===> 2020-12-12 19:15:06.131 -03:00 [Debug] Execution loop ExpirationManager:cc28dd8a has started in 8,9259 ms
+===> 2020-12-12 19:15:06.134 -03:00 [Debug] Execution loop CountersAggregator:603808d6 has started in 8,8034 ms
+===> 2020-12-12 19:15:06.135 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-12 19:15:06.135 -03:00 [Debug] Removing outdated records from the 'AggregatedCounter' table...
+===> 2020-12-12 19:15:06.140 -03:00 [Debug] Execution loop Worker:60559a86 has started in 11,0585 ms
+===> 2020-12-12 19:15:06.143 -03:00 [Debug] Execution loop DelayedJobScheduler:961f0d15 has started in 7,0942 ms
+===> 2020-12-12 19:15:06.143 -03:00 [Information] Server ws-sup024:12596:35d00bcc all the dispatchers started
+===> 2020-12-12 19:15:06.147 -03:00 [Debug] Execution loop RecurringJobScheduler:6758f8a1 has started in 8,5613 ms
+===> 2020-12-12 19:15:06.219 -03:00 [Debug] Removing outdated records from the 'Job' table...
+===> 2020-12-12 19:15:06.250 -03:00 [Debug] Removing outdated records from the 'List' table...
+===> 2020-12-12 19:15:06.255 -03:00 [Debug] Removing outdated records from the 'Set' table...
+===> 2020-12-12 19:15:06.257 -03:00 [Debug] Removing outdated records from the 'Hash' table...
+===> 2020-12-12 19:15:10.619 -03:00 [Error] The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.OrganizacaoUsuarios' and the index name 'PK_OrganizacaoUsuarios'. The duplicate key value is (eaf2f509-9017-4119-b086-05c6c94cdbaf, 89a10842-2c8a-45bd-d77e-08d7dcaf546f).
+Could not create constraint or index. See previous errors.
+The statement has been terminated.
+===> 2020-12-12 19:15:10.658 -03:00 [Debug] Loaded hosting startup assembly "Leega.Api"
+===> 2020-12-12 19:15:10.693 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/api/info  
+===> 2020-12-12 19:15:10.695 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-12-12 19:15:10.772 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:15:10.948 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-12-12 19:15:11.009 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api").
+===> 2020-12-12 19:15:11.010 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:11.010 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:15:11.010 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:15:11.010 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:11.010 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-12-12 19:15:11.012 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-12 19:15:11.014 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.v1.InfoController" ("Leega.Api")
+===> 2020-12-12 19:15:11.024 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-12-12 19:15:11.061 -03:00 [Information] Executed action "Leega.Api.Controllers.v1.InfoController.ApiInfo (Leega.Api)" in 45.4325ms
+===> 2020-12-12 19:15:11.067 -03:00 [Information] Request finished in 375.5336ms 200 text/html
+===> 2020-12-12 19:15:12.697 -03:00 [Information] Request starting HTTP/2.0 GET https://localhost:44391/favicon.ico  
+===> 2020-12-12 19:15:12.712 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:15:12.712 -03:00 [Debug] Request did not match any routes
+===> 2020-12-12 19:15:12.733 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-12-12 19:15:12.733 -03:00 [Debug] Request did not match any routes
+===> 2020-12-12 19:15:12.736 -03:00 [Information] Request finished in 38.9191ms 404 
+===> 2020-12-12 19:15:18.456 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/api/Token application/json; charset=utf-8 78
+===> 2020-12-12 19:15:18.458 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:15:18.458 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-12-12 19:15:18.475 -03:00 [Information] Route matched with "{action = \"Login\", controller = \"Token\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Leega.Entity.Entity.Login)" on controller "JWT.Controllers.TokenController" ("Leega.Api").
+===> 2020-12-12 19:15:18.475 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:18.475 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:15:18.476 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:15:18.476 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:18.476 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:15:18.476 -03:00 [Debug] Executing controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-12 19:15:18.679 -03:00 [Debug] Executed controller factory for controller "JWT.Controllers.TokenController" ("Leega.Api")
+===> 2020-12-12 19:15:18.685 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-12 19:15:18.689 -03:00 [Debug] Attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"' using the name '""' in request data ...
+===> 2020-12-12 19:15:18.690 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-12 19:15:18.691 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-12 19:15:18.720 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-12 19:15:18.721 -03:00 [Debug] Done attempting to bind parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-12 19:15:18.721 -03:00 [Debug] Attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"' ...
+===> 2020-12-12 19:15:18.728 -03:00 [Debug] Done attempting to validate the bound parameter '"login"' of type '"Leega.Entity.Entity.Login"'.
+===> 2020-12-12 19:15:20.508 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:15:20.509 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:15:20.509 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:15:20.510 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:15:20.510 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:15:20.510 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Domain.UsuarioLogadoViewModel"'.
+===> 2020-12-12 19:15:20.524 -03:00 [Information] Executed action "JWT.Controllers.TokenController.Login (Leega.Api)" in 2048.389ms
+===> 2020-12-12 19:15:20.527 -03:00 [Information] Request finished in 2071.4243ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:15:21.190 -03:00 [Information] Request starting HTTP/1.1 POST https://localhost:44391/pessoa/obterporuser application/json; charset=utf-8 38
+===> 2020-12-12 19:15:21.190 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:15:21.191 -03:00 [Debug] Request did not match any routes
+===> 2020-12-12 19:15:21.191 -03:00 [Debug] "POST" requests are not supported
+===> 2020-12-12 19:15:21.191 -03:00 [Debug] Request did not match any routes
+===> 2020-12-12 19:15:21.192 -03:00 [Information] Request finished in 2.169ms 404 
+===> 2020-12-12 19:15:25.881 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/ListarPacientes  
+===> 2020-12-12 19:15:25.883 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:15:25.884 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/ListarPacientes"'
+===> 2020-12-12 19:15:25.891 -03:00 [Information] Route matched with "{action = \"ListarPacientes\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPacientes()" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:15:25.892 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:25.892 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:15:25.892 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:15:25.892 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:25.893 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:15:25.893 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:15:25.917 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:15:28.220 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:15:28.220 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:15:28.220 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:15:28.220 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:15:28.220 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:15:28.220 -03:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Leega.Application.ViewModels.PacienteMySqlViewModel, Leega.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2020-12-12 19:15:28.234 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.ListarPacientes (Leega.Api)" in 2341.2361ms
+===> 2020-12-12 19:15:28.234 -03:00 [Information] Request finished in 2353.7174ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:15:36.127 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:15:41.382 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:15:41.383 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:15:41.383 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:15:41.394 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:15:41.394 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:41.394 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:15:41.394 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:15:41.394 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:15:41.394 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:15:41.395 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:15:41.395 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:15:41.395 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:15:41.396 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:15:41.396 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:15:41.396 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:15:41.396 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:15:41.397 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:15:41.807 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:15:41.808 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:15:41.808 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:15:41.808 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:15:41.808 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:15:41.808 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:15:41.809 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 414.6832ms
+===> 2020-12-12 19:15:41.809 -03:00 [Information] Request finished in 427.2876ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:16:06.131 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:16:27.053 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:16:27.054 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:16:27.054 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:16:27.057 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:16:27.058 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:16:27.058 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:16:27.058 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:16:27.058 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:16:27.058 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:16:27.058 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:16:27.059 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:16:27.059 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:16:27.060 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:16:27.060 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:16:27.060 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:16:27.060 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:16:27.060 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:16:27.459 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:16:27.459 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:16:27.459 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:16:27.459 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:16:27.459 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:16:27.460 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:16:27.460 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 401.983ms
+===> 2020-12-12 19:16:27.461 -03:00 [Information] Request finished in 407.2998ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:16:36.134 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:17:06.137 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:17:36.142 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:18:06.145 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:18:18.289 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:18:18.290 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:18:18.291 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:18:18.292 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:18:18.292 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:18:18.293 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:18:18.293 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:18:18.293 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:18:18.293 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:18:18.293 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:18:18.293 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:18:18.293 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:18:18.294 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:18:18.294 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:18:18.294 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:18:18.294 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:18:18.294 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:18:18.673 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:18:18.673 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:18:18.674 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:18:18.674 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:18:18.674 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:18:18.674 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:18:18.676 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 382.6727ms
+===> 2020-12-12 19:18:18.679 -03:00 [Information] Request finished in 389.6916ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:18:36.148 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:19:03.967 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:19:03.967 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:19:03.967 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:19:03.968 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:19:03.968 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:19:03.968 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:19:03.968 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:19:03.968 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:19:03.968 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:19:03.969 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:19:03.969 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:19:03.969 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:19:03.970 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:19:03.970 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:19:03.970 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:19:03.970 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:19:03.970 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:19:04.353 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:19:04.353 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:19:04.353 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:19:04.353 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:19:04.353 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:19:04.353 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:19:04.354 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 385.9458ms
+===> 2020-12-12 19:19:04.355 -03:00 [Information] Request finished in 388.0933ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:19:06.159 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:19:35.247 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:19:35.247 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:19:35.248 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:19:35.248 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:19:35.248 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:19:35.248 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:19:35.248 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:19:35.248 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:19:35.248 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:19:35.248 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:19:35.249 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:19:35.249 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:19:35.249 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:19:35.249 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:19:35.249 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:19:35.249 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:19:35.249 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:19:35.644 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:19:35.644 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:19:35.644 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:19:35.644 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:19:35.644 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:19:35.644 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:19:35.645 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 396.5442ms
+===> 2020-12-12 19:19:35.645 -03:00 [Information] Request finished in 398.2964ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:19:36.161 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:20:02.935 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:20:02.936 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:20:02.936 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:20:02.937 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:20:02.937 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:20:02.937 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:20:02.937 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:20:02.937 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:20:02.937 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:20:02.937 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:20:02.937 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:20:02.938 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:20:02.938 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:20:02.938 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:20:02.938 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:20:02.938 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:20:02.938 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:20:03.316 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:20:03.316 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:20:03.316 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:20:03.316 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:20:03.316 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:20:03.316 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:20:03.317 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 379.7783ms
+===> 2020-12-12 19:20:03.317 -03:00 [Information] Request finished in 382.0642ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:20:06.125 -03:00 [Information] 1 servers were removed due to timeout
+===> 2020-12-12 19:20:06.163 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:20:06.167 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-12 19:20:36.166 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:21:06.169 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:21:18.041 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:21:18.042 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:21:18.042 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:21:18.043 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:21:18.043 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:21:18.043 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:21:18.043 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:21:18.043 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:21:18.043 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:21:18.043 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:21:18.043 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:21:18.044 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:21:18.044 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:21:18.044 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:21:18.044 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:21:18.044 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:21:18.044 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:21:18.426 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:21:18.426 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:21:18.426 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:21:18.426 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:21:18.426 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:21:18.426 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:21:18.427 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 383.7976ms
+===> 2020-12-12 19:21:18.427 -03:00 [Information] Request finished in 386.1331ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:21:36.172 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:21:52.480 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:21:52.480 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:21:52.480 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:21:52.481 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:21:52.481 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:21:52.481 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:21:52.481 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:21:52.481 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:21:52.481 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:21:52.481 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:21:52.481 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:21:52.482 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:21:52.482 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:21:52.482 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:21:52.482 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:21:52.482 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:21:52.482 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:21:52.865 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:21:52.865 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:21:52.865 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:21:52.865 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:21:52.865 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:21:52.865 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:21:52.866 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 385.1365ms
+===> 2020-12-12 19:21:52.867 -03:00 [Information] Request finished in 386.9116ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:22:06.175 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:22:36.179 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:23:06.181 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:23:36.185 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:24:06.189 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:24:36.192 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:24:51.638 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:24:51.638 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:24:51.638 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:24:51.639 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:24:51.639 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:24:51.639 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:24:51.639 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:24:51.639 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:24:51.639 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:24:51.639 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:24:51.639 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:24:51.640 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:24:51.640 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:24:51.640 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:24:51.640 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:24:51.640 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:24:51.640 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:24:52.020 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:24:52.020 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:24:52.020 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:24:52.020 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:24:52.020 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:24:52.021 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:24:52.021 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 382.063ms
+===> 2020-12-12 19:24:52.022 -03:00 [Information] Request finished in 383.8808ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:25:06.180 -03:00 [Debug] Aggregating records in 'Counter' table...
+===> 2020-12-12 19:25:06.195 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:25:36.198 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:25:43.789 -03:00 [Information] Request starting HTTP/1.1 GET https://localhost:44391/paciente/Obter/d81be63e-3d9f-4f40-92e9-e3ad38f1ac20  
+===> 2020-12-12 19:25:43.790 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:25:43.790 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Obter/{id?}"'
+===> 2020-12-12 19:25:43.791 -03:00 [Information] Route matched with "{action = \"Obter\", controller = \"Paciente\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Obter(System.Guid)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:25:43.791 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:25:43.791 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:25:43.791 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:25:43.791 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:25:43.791 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:25:43.791 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:25:43.792 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:25:43.793 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:25:43.794 -03:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+===> 2020-12-12 19:25:43.794 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:25:43.794 -03:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:25:43.794 -03:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+===> 2020-12-12 19:25:43.794 -03:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+===> 2020-12-12 19:25:44.204 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-12-12 19:25:44.204 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-12-12 19:25:44.204 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-12-12 19:25:44.204 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-12-12 19:25:44.204 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-12-12 19:25:44.204 -03:00 [Information] Executing ObjectResult, writing value of type '"Leega.Application.ViewModels.PacienteMySqlViewModel"'.
+===> 2020-12-12 19:25:44.205 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Obter (Leega.Api)" in 413.4655ms
+===> 2020-12-12 19:25:44.205 -03:00 [Information] Request finished in 416.1942ms 200 application/json; charset=utf-8
+===> 2020-12-12 19:25:53.643 -03:00 [Information] Request starting HTTP/1.1 PUT https://localhost:44391/Paciente/Atualizar application/json; charset=utf-8 658
+===> 2020-12-12 19:25:53.643 -03:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2020-12-12 19:25:53.643 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"Paciente/Atualizar"'
+===> 2020-12-12 19:25:53.647 -03:00 [Information] Route matched with "{action = \"Atualizar\", controller = \"Paciente\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Atualizar(Leega.DataMySql.Entity.PacienteMySql)" on controller "Leega.Api.Controllers.PacienteController" ("Leega.Api").
+===> 2020-12-12 19:25:53.647 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-12-12 19:25:53.647 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-12-12 19:25:53.647 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:25:53.647 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-12-12 19:25:53.647 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-12-12 19:25:53.648 -03:00 [Debug] Executing controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:25:53.648 -03:00 [Debug] Executed controller factory for controller "Leega.Api.Controllers.PacienteController" ("Leega.Api")
+===> 2020-12-12 19:25:53.648 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-12 19:25:53.649 -03:00 [Debug] Attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' using the name '""' in request data ...
+===> 2020-12-12 19:25:53.649 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-12 19:25:53.649 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json; charset=utf-8"'.
+===> 2020-12-12 19:25:53.664 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-12 19:25:53.664 -03:00 [Debug] Done attempting to bind parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-12 19:25:53.664 -03:00 [Debug] Attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"' ...
+===> 2020-12-12 19:25:53.670 -03:00 [Debug] Done attempting to validate the bound parameter '"objpaciente"' of type '"Leega.DataMySql.Entity.PacienteMySql"'.
+===> 2020-12-12 19:25:56.415 -03:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+===> 2020-12-12 19:25:56.415 -03:00 [Information] Executed action "Leega.Api.Controllers.PacienteController.Atualizar (Leega.Api)" in 2767.8566ms
+===> 2020-12-12 19:25:56.416 -03:00 [Information] Request finished in 2773.3335ms 200 
+===> 2020-12-12 19:26:06.200 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent
+===> 2020-12-12 19:26:36.203 -03:00 [Debug] Server ws-sup024:12596:35d00bcc heartbeat successfully sent

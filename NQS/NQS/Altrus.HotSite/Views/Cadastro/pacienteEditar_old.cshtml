@@ -1,0 +1,342 @@
+﻿@model Leega.Dtos.Paciente
+@using System.Globalization;
+
+<br />
+<form asp-controller="cadastro" asp-action="pacienteEditar" method="post">
+    <div class="container background-color3">
+        <div class="row">
+            <div class="col-sm-12 py-3">
+                <h4 class="title">Cadastro de Paciente - Simplificado</h4>
+                <div class="row justify-content-sm-between">
+
+                    <div class="col-sm-12">
+                        <div class="container px-0 py-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="cpf">Documento de Identificação</label><span class="float-right"></span>
+                                        <input type="text" asp-for="DocumentoIdentificacao" maxlength="150" placeholder="Informe o documento de identificação">
+                                        <span asp-validation-for="DocumentoIdentificacao" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome Completo:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeCompleto" placeholder="Informe o nome do paciente">
+                                        <span asp-validation-for="NomeCompleto" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome Genitor:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeGenitor" placeholder="Informe o nome do genitor">
+                                        <span asp-validation-for="NomeGenitor" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="nascimento">Data de Nascimento:</label>
+                                        <input type="text" asp-for="DataNascimento" id="DataNascimento" placeholder="dd/mm/yyyy" onkeyup="
+                                                var v = this.value;
+                                                if (v.match(/^\d{2}$/) !== null) {
+                                                    this.value = v + '/';
+                                                } else if (v.match(/^\d{2}\/\d{2}$/) !== null) {
+                                                    this.value = v + '/';
+                                               }"
+                                               maxlength="10">
+                                        <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-3 my-4">
+                                    <div class="form-group">
+                                        <button class="btn btn-whiteonblue" type="submit">ATUALIZAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container background-color3">
+        <div class="row">
+            <div class="col-sm-12 py-3">
+                <h4 class="title">Cadastro de Paciente - Completo</h4>
+                <div class="row justify-content-sm-between">
+
+                    <div class="col-sm-12">
+                        <div class="container px-0 py-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="CartaoSus">Cartão Sus</label><span class="float-right"></span>
+                                        <input type="text" asp-for="CartaoSus" maxlength="150" placeholder="Informe o número do Cartão Sus">
+                                        <span asp-validation-for="CartaoSus" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Apelido:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Apelido" placeholder="Como o paciente deseja ser chamado">
+                                        <span asp-validation-for="Apelido" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Rg:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Rg" placeholder="Informe o Rg do paciente">
+                                        <span asp-validation-for="Rg" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome Genitor:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeGenitor2" placeholder="Informe o nome do genitor">
+                                        <span asp-validation-for="NomeGenitor2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Naturalidade">Naturalidade:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Naturalidade", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Acre", Value = "AC" },
+                                            new SelectListItem{ Text="Alagoas", Value = "AL" },
+                                            new SelectListItem{ Text="Amazonas", Value = "AM" },
+                                            new SelectListItem{ Text="Amapá", Value = "AP" },
+                                            new SelectListItem{ Text="Bahia", Value = "BA" },
+                                        })
+                                        <span asp-validation-for="Naturalidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Raca">Raça:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Raca", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Branca", Value = "1" },
+                                            new SelectListItem{ Text="Preta", Value = "2" },
+                                            new SelectListItem{ Text="Parda", Value = "3" },
+                                            new SelectListItem{ Text="Amarela", Value = "4" },
+                                            new SelectListItem{ Text="Indígena", Value = "5" },
+                                        })
+                                        <span asp-validation-for="Raca" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Sexo">Sexo:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Sexo", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Feminino", Value = "1" },
+                                            new SelectListItem{ Text="Masculino", Value = "2" },
+                                        })
+                                        <span asp-validation-for="Sexo" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Nacionalidade">Nacionalidade:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Nacionalidade", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Brasileiro", Value = "1" },
+                                            new SelectListItem{ Text="Outra", Value = "2" },
+                                        })
+                                        <span asp-validation-for="Nacionalidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Escolaridade">Escolaridade:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Escolaridade", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Ensino Médio Incompleto", Value = "1" },
+                                            new SelectListItem{ Text="Ensino Médio Completo", Value = "2" },
+                                            new SelectListItem{ Text="Ensino Superior Incompleto", Value = "3" },
+                                            new SelectListItem{ Text="Ensino Superior Completo", Value = "4" },
+                                            new SelectListItem{ Text="Pós Graduação Incompleto", Value = "5" },
+                                            new SelectListItem{ Text="Pós Graduação Completa", Value = "6" },
+                                            new SelectListItem{ Text="Mestrado", Value = "7" },
+                                            new SelectListItem{ Text="Doutorado", Value = "8" },
+                                        })
+                                        <span asp-validation-for="Escolaridade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="SituacaoFamiliar">Situação Familiar:</label><span class="float-right"></span>
+                                        @Html.DropDownList("SituacaoFamiliar", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Solteiro", Value = "1" },
+                                            new SelectListItem{ Text="Casado", Value = "2" },
+                                            new SelectListItem{ Text="Divorciado", Value = "3" },
+                                            new SelectListItem{ Text="União Estável", Value = "4" },
+                                            new SelectListItem{ Text="Viúvo", Value = "5" },
+                                        })
+                                        <span asp-validation-for="SituacaoFamiliar" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Endereço:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Endereco" placeholder="Informe o Endereco do paciente">
+                                        <span asp-validation-for="Endereco" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Celular:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Celular" placeholder="Informe o Celular do paciente">
+                                        <span asp-validation-for="Celular" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Profissão:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Profissao" placeholder="Informe a Profissão do paciente">
+                                        <span asp-validation-for="Profissao" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">E-mail:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="Email" placeholder="Informe o e-mail do paciente">
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Nome do contato de emergência:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="NomeContatoEmergencia" placeholder="Informe o nome do Contato Emergência do paciente">
+                                        <span asp-validation-for="NomeContatoEmergencia" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Telefone do contato de emergência:</label><span class="float-right"></span>
+                                        <input type="text" asp-for="TelefoneEmergencia" placeholder="Informe o telefone do Contato Emergência do paciente">
+                                        <span asp-validation-for="TelefoneEmergencia" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Convenio">Convênio:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Convenio", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Bradesco", Value = "1" },
+                                            new SelectListItem{ Text="Sulamerica", Value = "2" },
+                                            new SelectListItem{ Text="Unimed", Value = "3" },
+                                        })
+                                        <span asp-validation-for="Convenio" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Especialidade">Especialidade:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Especialidade", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Clínico", Value = "1" },
+                                            new SelectListItem{ Text="Pediatra", Value = "2" },
+                                            new SelectListItem{ Text="Ortopedista", Value = "3" },
+                                            new SelectListItem{ Text="Cardiologista", Value = "4" },
+                                        })
+                                        <span asp-validation-for="Especialidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="AtendimentoPrioritario">Atendimento Prioritário:</label><span class="float-right"></span>
+                                        @*<input type="text" asp-for="AtendimentoPrioritario" placeholder="Atendimento Prioritario">*@
+                                        <select id="AtendimentoPrioritario" name="AtendimentoPrioritario">
+                                            <option value="false">Não</option>
+                                            <option value="true">Sim</option>
+                                        </select>
+                                        <span asp-validation-for="AtendimentoPrioritario" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="MotivoAtendimento">Motivo do Atendimento:</label><span class="float-right"></span>
+                                        @Html.DropDownList("MotivoAtendimento", new List<SelectListItem>
+                                        {
+                                            new SelectListItem{ Text="Rotina", Value = "1" },
+                                            new SelectListItem{ Text="Emergência", Value = "2" },
+                                            new SelectListItem{ Text="Retorno", Value = "3" },
+                                            new SelectListItem{ Text="Exame", Value = "4" },
+                                        })
+                                        <span asp-validation-for="MotivoAtendimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Impressão:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Impressao", new List<SelectListItem>
+                                        {
+                                           new SelectListItem{ Text="FAA", Value = "1" },
+                                           new SelectListItem{ Text="RAAT/CAT/REMICAT", Value = "2" },
+                                           new SelectListItem{ Text="ETIQUETA", Value = "3" },
+                                           new SelectListItem{ Text="DECLARAÇÃO DE HORAS", Value = "4" },
+                                        })
+                                        <span asp-validation-for="Impressao" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Procedência:</label><span class="float-right"></span>
+                                        @Html.DropDownList("Procedencia", new List<SelectListItem>
+                                        {
+                                           new SelectListItem{ Text="Meios Próprios", Value = "1" },
+                                           new SelectListItem{ Text="Familiares", Value = "2" },
+                                           new SelectListItem{ Text="Bombeiros", Value = "3" },
+                                           new SelectListItem{ Text="Samu", Value = "4" },
+                                        })
+                                        <span asp-validation-for="Procedencia" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="OrigemAtendimento">Origem:</label><span class="float-right"></span>
+                                        @Html.DropDownList("OrigemAtendimento", new List<SelectListItem>
+                                        {
+                                           new SelectListItem{ Text="Residência", Value = "1" },
+                                           new SelectListItem{ Text="Morador de área livre", Value = "2" },
+                                           new SelectListItem{ Text="Hospital", Value = "3" },
+                                           new SelectListItem{ Text="Outros", Value = "4" },
+                                        })
+                                        <span asp-validation-for="OrigemAtendimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="DesfechoAtendimento">Desfecho do Atendimento:</label><span class="float-right"></span>
+                                        @Html.DropDownList("DesfechoAtendimento", new List<SelectListItem>
+                                        {
+                                           new SelectListItem{ Text="Transfêrencia Hospitalar", Value = "1" },
+                                           new SelectListItem{ Text="Alta Hospitalar", Value = "2" },
+                                           new SelectListItem{ Text="Evasão", Value = "3" },
+                                           new SelectListItem{ Text="Óbito", Value = "4" },
+                                        })
+                                        <span asp-validation-for="DesfechoAtendimento" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 my-1">
+                                    <div class="form-group">
+                                        <button class="btn btn-whiteonblue" type="submit">ATUALIZAR</button>
+                                        <button class="btn btn-whiteonblue" type="submit">IMPRIMIR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
