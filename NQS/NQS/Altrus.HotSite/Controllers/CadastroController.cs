@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using RestSharp;
 using Leega.Dtos;
 
+
+
 namespace Leega.UI.Controllers
 {
     public class CadastroController : Controller
@@ -22,30 +24,7 @@ namespace Leega.UI.Controllers
             _configuration = configuration;
             apiClient.BaseAddress = new Uri(_configuration["ApiBaseAddres"]);
         }
-        public IActionResult Altruista()
-        {
-            ViewBag.State = false;
-            return View();
-        }
-        [HttpPost]
-        public IActionResult Altruista(Leega.Dtos.Pessoa model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            StringContent content = new StringContent(JsonSerializer.Serialize(model, typeof(Leega.Dtos.Pessoa)), Encoding.UTF8, "application/json");
-
-            HttpResponseMessage httpResponse = apiClient.PostAsync("/pessoa/create", content).Result;
-
-            if (httpResponse.IsSuccessStatusCode)
-            {
-                ViewBag.State = true;
-            }
-
-            return View(model);
-        }
+       
         
 
         //[HttpPost]
@@ -94,6 +73,32 @@ namespace Leega.UI.Controllers
             return View(model);
         }
 
+        [HttpGet("RetornaListaPacienteGrid")]
+        private async Task<JsonResult> RetornaListaPacienteGrid()
+        {
+            //int maxRows = 5;
+
+            HttpResponseMessage httpResponse = await apiClient.GetAsync("/paciente/ListarPacientes");
+
+            var content = await httpResponse.Content.ReadAsStringAsync();
+            List<Leega.Dtos.Paciente> model = JsonSerializer.Deserialize<List<Leega.Dtos.Paciente>>(content, new JsonSerializerOptions() { IgnoreNullValues = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+            
+            
+            return Json(new { data = model });
+        }
+
+        public async Task<IActionResult> PacienteLista()
+        {
+            HttpResponseMessage httpResponse = await apiClient.GetAsync("/paciente/ListarPacientes");            
+            //List<EquipamentoMySql> clienteMySqls = _equipamentoMySqlRepository.ListarTodos().ToList();
+
+
+            var result = await httpResponse.Content.ReadAsStringAsync();
+            List<Leega.Dtos.Paciente> model = System.Text.Json.JsonSerializer.Deserialize<List<Leega.Dtos.Paciente>>(result, new JsonSerializerOptions() { IgnoreNullValues = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+
+
+            return View(model);
+        }
 
         private async Task<Leega.Dtos.ListaPacientes> RetornaListaPaciente(int currentPage)
         {
@@ -122,30 +127,31 @@ namespace Leega.UI.Controllers
         }
         [HttpGet]
 
-        public async Task<IActionResult> PacienteLista()
-        {
+        //public async Task<IActionResult> PacienteLista()
+        //{
 
-            //HttpResponseMessage httpResponse = await apiClient.GetAsync("/paciente/ListarPacientes");
+        //    //HttpResponseMessage httpResponse = await apiClient.GetAsync("/paciente/ListarPacientes");
 
-            //var content = await httpResponse.Content.ReadAsStringAsync();
+        //    //var content = await httpResponse.Content.ReadAsStringAsync();
 
-            //List<Leega.Dtos.Paciente> model = JsonSerializer.Deserialize<List<Leega.Dtos.Paciente>>(content, new JsonSerializerOptions() { IgnoreNullValues = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+        //    //List<Leega.Dtos.Paciente> model = JsonSerializer.Deserialize<List<Leega.Dtos.Paciente>>(content, new JsonSerializerOptions() { IgnoreNullValues = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
 
-            var model = await RetornaListaPaciente(1);
+        //    var model = await RetornaListaPaciente(1);
 
-            ViewBag.State = false;
-            return View(model);
-        }
+        //    ViewBag.State = false;
+        //    return View(model);
+        //}
 
-        [HttpGet("PacienteLista/{currentPage}")]
-        public async Task<IActionResult> PacienteLista(int currentPage)
-        {
+        //[HttpGet("PacienteLista/{currentPage}")]
+        //public async Task<IActionResult> PacienteLista(int currentPage)
+        //{
 
-            var model = await RetornaListaPaciente(currentPage);
+        //    /*var model = await RetornaListaPaciente(currentPage);*/
 
-            ViewBag.State = false;
-            return View(model);
-        }
+        //    ViewBag.State = false;
+        //    //return View(model);
+        //    return View();
+        //}
 
         [HttpPost]
         public async Task<IActionResult> Paciente(Leega.Dtos.Paciente model)

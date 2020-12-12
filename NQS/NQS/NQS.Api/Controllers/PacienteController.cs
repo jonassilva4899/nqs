@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace Leega.Api.Controllers
 {
-    
-    [Route("[controller]")]    
+
+    [Route("[controller]")]
     [ApiController]
     public class PacienteController : Controller
     {
@@ -27,7 +27,7 @@ namespace Leega.Api.Controllers
         {
             return View();
         }
-        
+
         [HttpPost, Route("Adicionar")]
         //public async Task<IActionResult> Adicionar([FromBody] PacienteMySql objpaciente)
         public IActionResult Adicionar([FromBody] PacienteMySql objpaciente)
@@ -45,8 +45,8 @@ namespace Leega.Api.Controllers
                     return BadRequest();
                 }
 
-                
-                _pacienteMySqlService.Adicionar(objpaciente);                
+
+                _pacienteMySqlService.Adicionar(objpaciente);
 
                 return Ok();
             }
@@ -57,7 +57,7 @@ namespace Leega.Api.Controllers
         }
 
 
-        [HttpPut, Route("Atualizar")]        
+        [HttpPut, Route("Atualizar")]
         public IActionResult Atualizar([FromBody] PacienteMySql objpaciente)
         {
             if (!ModelState.IsValid)
@@ -90,6 +90,26 @@ namespace Leega.Api.Controllers
             var pacientes = await _pacienteMySqlService.ListarTodos();
 
             return Ok(pacientes);
+        }
+
+        [HttpPost("ListarPacientesGrid")]
+        public ActionResult ListarPacientesGrid()
+        {
+            var pacientes = _pacienteMySqlService.ListarTodos();
+
+            //Task<List<pacientes>> pac = new List<pacientes>();
+            
+
+
+            dynamic response = new
+            {
+                Data = pacientes.Result,
+                Draw = 1,
+                RecordsFiltered = pacientes.Result.Count,
+                RecordsTotal = pacientes.Result.Count()
+            };
+
+            return Ok(response);
         }
 
         [HttpGet("Obter/{id?}")]

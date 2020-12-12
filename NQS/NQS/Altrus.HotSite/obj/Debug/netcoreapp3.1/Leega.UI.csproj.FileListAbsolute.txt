@@ -3534,6 +3534,7 @@ C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\A
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\paciente.cshtml.g.cs
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\pacienteEditar.cshtml.g.cs
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\pacienteLista.cshtml.g.cs
+C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Footer.cshtml.g.cs
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_InternalLayout.cshtml.g.cs
@@ -3548,4 +3549,3 @@ C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.cspr
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.dll
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.pdb
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.genruntimeconfig.cache
-C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
