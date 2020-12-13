@@ -1,6 +1,19 @@
-﻿@model IEnumerable<Leega.Dtos.Paciente>
-@using Newtonsoft.Json;
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Header>
+	<Title>Criar tela de cadastro</Title>
+	<Author>Gustavo Luna</Author>
+	<Description>View de cadastro</Description>
+	<Shortcut>telaCadastro</Shortcut>
+</Header>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title></Title>
+		</Header>
+		<Snippet>
+			<Code Language="">
+				<![CDATA[@model $Model$
+@using System.Globalization;
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,15 +40,10 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon.ico">
-    <!-- Page Specific Css (Datatables.css) -->
-    <link href="../../assets/css/datatables.min.css" rel="stylesheet">
 
 </head>
 
 <body class="ms-body ms-aside-left-open ms-primary-theme ms-has-quickbar">
-
-
-
     <!-- Preloader -->
     <div id="preloader-wrap">
         <div class="spinner spinner-8">
@@ -54,8 +62,12 @@
         </div>
     </div>
 
-    
+    <!-- Overlays -->
+    <div class="ms-aside-overlay ms-overlay-left ms-toggler" data-target="#ms-side-nav" data-toggle="slideLeft"></div>
+    <div class="ms-aside-overlay ms-overlay-right ms-toggler" data-target="#ms-recent-activity" data-toggle="slideRight"></div>
 
+    <!-- Sidebar Navigation Left -->
+    
 
     <!-- Main Content -->
     <main class="body-content">
@@ -80,41 +92,57 @@
         </nav>
 
 
+
         <!-- Body Content Wrapper -->
         <div class="ms-content-wrapper">
             <div class="row">
-
                 <div class="col-md-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb pl-0">
                             <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Paciente</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Cadastro Paciente</li>
+                            <li class="breadcrumb-item"><a href="#">$NomeTela$</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Adicionar $NomeTela$</li>
                         </ol>
                     </nav>
-
-
-                    @*monta grid*@
+                </div>
+                <div class="col-xl-12 col-md-12">
                     <div class="ms-panel">
                         <div class="ms-panel-header ms-panel-custome">
-                            <h6>Cadastro Paciente</h6>
-                            <a href="../cadastro/Paciente"><h6>Adicionar Paciente</h6></a>
+                            <h6>Cadastro de Paciente</h6>
+                            <a href="../Cadastro/PacienteLista" class="ms-text-primary">Buscar $NomeTela$</a>
                         </div>
                         <div class="ms-panel-body">
-                            <div class="table-responsive">
-                                @*Grid com ajax*@
-                                <table id="GridPaciente" class="table table-striped thead-primary w-100"></table>
-                            </div>
+                            <form class="needs-validation" novalidate asp-controller="$NomeController$" asp-action="$NomeMetodo$" method="post">
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="$ID1$">$LabelCampo1$:</label>
+                                        <div class="input-group">                                            
+                                            <input class="form-control" type="text" asp-for="$ID1$" maxlength="150" placeholder="$TxtPlaceHolder1$">
+                                            <span asp-validation-for="$ID1$" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="$ID2$">$LabelCampo2$:</label>
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" asp-for="$ID2$" maxlength="150" placeholder="$TxtPlaceHolder2$">
+                                            <span asp-validation-for="$ID2$" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button class="btn btn-primary mt-4 d-inline w-20" type="submit">$TextoBotao$</button>
+                            </form>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </main>
-
-
-
 
     <!-- SCRIPTS -->
     <!-- Global Required Scripts Start -->
@@ -132,10 +160,6 @@
     <script src="../../assets/js/Chart.Financial.js"></script>
 
     <!-- Page Specific Scripts Finish -->
-    <!-- Page Specific Scripts Start -->
-    <script src="../../assets/js/datatables.min.js"></script>
-    <script src="../../assets/js/data-tables.js"></script>
-    <!-- Page Specific Scripts End -->
     <!-- Medboard core JavaScript -->
     <script src="../../assets/js/framework.js"></script>
 
@@ -144,61 +168,9 @@
 
 </body>
 
-
-<script>
-
-    //alert(dataSet);
-    jQuery(document).ready(function () {
-        var dataSet = @Html.Raw(JsonConvert.SerializeObject(this.Model));
-        dataSet = JSON.stringify(dataSet)
-        var obj = JSON.parse(dataSet);
-        
-        $('#GridPaciente').DataTable({
-            data: obj,
-            "language": {
-                "lengthMenu": "Exibe _MENU_ Registros por página",
-                "search": "Procurar",
-                "paginate": { "previous": "Retorna", "next": "Avança" },
-                "zeroRecords": "Nada foi encontrado",
-                "info": "Exibindo página _PAGE_ de _PAGES_",
-                "infoEmpty": "Sem registros",
-                "infoFiltered": "(filtrado de _MAX_ regitros totais)"
-            },
-            "processing": true, // mostrar a progress bar
-            //"serverSide": true, // processamento no servidor
-            "filter": true, // habilita o filtro(search box)
-            "lengthMenu": [[3, 5, 10, 25, 50, -1], [3, 5, 10, 25, 50, "Todos"]],
-            "pageLength": 10, // define o tamanho da página
-            //"ajax": {
-            //    "url": "https://localhost:44391/PACIENTE/ListarPacientesGrid",
-            //    "type": "POST",
-            //    "dataType": "json"
-            //},
-            "columns":
-             [
-                 { "data": "NomeCompleto", "title": "Nome", "autowidth": true },
-                 { "data": "Celular", "title": "Celular", "autowidth": true },
-                    { "data": "Rg", "title": "Rg", "autowidth": true },
-                    {
-                        "render": function (data, type, full, meta) {
-                            return '<a class="fa-edit" href="../cadastro/pacienteEditar/' + full.Id + '">Editar</a>'; }
-                    },  
-                    //{
-                    //    data: null,
-                    //    className: "center",
-                    //    defaultContent: '<a href="../cadastro/paciente"  class="editor_edit">Edit</a> / <a href="../cadastro/paciente" class="editor_remove">Deletar</a>'
-                    //},
-                     //{
-                     //   data: "Id",
-                     //   render: function (data, type, row) {
-                     //       return `<button class='edit' >edit</button>`;
-                     //   }
-             ]
-        });
-    });
-
-
-</script>
-
 </html>
-
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -3550,3 +3550,5 @@ C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.dll
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.pdb
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Leega.UI.genruntimeconfig.cache
 C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\pacienteEditar_old.cshtml.g.cs
+C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LeftMenu.cshtml.cshtml.g.cs
+C:\nsq_08122020\nqs\NQS\NQS\Altrus.HotSite\obj\Debug\netcoreapp3.1\Razor\Views\Medico\MedicoCadastro.cshtml.g.cs
